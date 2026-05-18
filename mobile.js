@@ -597,10 +597,10 @@ viewSizeEl.addEventListener("input", () => setViewerSize(viewSizeEl.value));
 loadAuthorizedButton.addEventListener("click", loadAuthorizedPlates);
 plateFormEl.addEventListener("submit", saveAuthorizedPlate);
 downloadAuthorizedButton.addEventListener("click", () =>
-  downloadFile("/api/download/authorized-plates", "authorized_plates.xlsx"),
+  downloadFile("/api/download/authorized-plates", "已登錄車牌紀錄.xlsx"),
 );
 downloadEventsButton.addEventListener("click", () =>
-  downloadFile("/api/download/unauthorized-events", "unauthorized_plate_events.xlsx"),
+  downloadFile("/api/download/unauthorized-events", "未登錄車牌紀錄.xlsx"),
 );
 authorizedListEl.addEventListener("click", (event) => {
   const button = event.target.closest("[data-delete-plate]");
