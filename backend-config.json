@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://enter-trout-entered-migration.trycloudflare.com",
+    "backendUrl":  "https://forecasts-brings-builder-combine.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-05-18 16:05:46 +08:00",
+    "updatedAt":  "2026-05-18 16:49:27 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }

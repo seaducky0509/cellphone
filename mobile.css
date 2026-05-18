@@ -19,12 +19,38 @@ body.alerting {
   background: #fff1f0;
 }
 
-.app {
+.tabs {
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  padding: 8px 12px 0;
+}
+
+.tab {
+  min-height: 40px;
+  color: #175cd3;
+  background: #e8f0fe;
+  border: 1px solid #bed2f7;
+}
+
+.tab.active {
+  color: #fff;
+  background: #175cd3;
+}
+
+.view {
+  display: none;
+}
+
+.view.active {
+  display: grid;
+}
+
+.app {
   grid-template-columns: minmax(0, 1fr) 340px;
   gap: 14px;
   padding: 12px;
-  min-height: 100vh;
+  min-height: calc(100vh - 48px);
 }
 
 .camera {
@@ -104,6 +130,78 @@ body.alerting {
   background: #fff;
   border: 1px solid #d6dce2;
   border-radius: 8px;
+}
+
+.admin-view {
+  padding: 12px;
+}
+
+.admin-card {
+  display: grid;
+  gap: 14px;
+  width: min(100%, 980px);
+  padding: 16px;
+  background: #fff;
+  border: 1px solid #d6dce2;
+  border-radius: 8px;
+}
+
+.admin-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.admin-header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.status.small {
+  font-size: 15px;
+}
+
+.admin-actions {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.plate-form {
+  display: grid;
+  grid-template-columns: 170px 1fr 1fr 180px;
+  align-items: end;
+  gap: 10px;
+}
+
+.admin-message {
+  min-height: 24px;
+  color: #384450;
+  overflow-wrap: anywhere;
+}
+
+.authorized-list {
+  display: grid;
+  gap: 8px;
+}
+
+.authorized-item {
+  display: grid;
+  grid-template-columns: 150px 1fr 1fr auto;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #d6dce2;
+  border-radius: 8px;
+}
+
+.authorized-item strong {
+  font-family: "Segoe UI Mono", Consolas, monospace;
+  font-size: 18px;
+}
+
+.authorized-item button {
+  min-width: 82px;
+  background: #d93025;
 }
 
 .status {
@@ -245,6 +343,12 @@ dd {
   .camera {
     width: 100%;
   }
+
+  .admin-actions,
+  .plate-form,
+  .authorized-item {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (orientation: landscape) {
@@ -256,7 +360,7 @@ dd {
     grid-template-columns: minmax(0, 1fr) minmax(300px, 32vw);
     gap: 10px;
     padding: 8px;
-    height: 100vh;
+    height: calc(100vh - 48px);
   }
 
   .panel {

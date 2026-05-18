@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>CELL PHONE</title>
     <meta name="description" content="手機辨識車牌" />
-    <link rel="stylesheet" href="./mobile.css?v=20260518-1" />
+    <link rel="stylesheet" href="./mobile.css?v=20260518-2" />
   </head>
   <body>
-    <main class="app">
+    <nav class="tabs" aria-label="主要分頁">
+      <button class="tab active" type="button" data-tab="recognition">辨識畫面</button>
+      <button class="tab" type="button" data-tab="admin">名單管理</button>
+    </nav>
+
+    <main class="app view active" id="recognition-view">
       <section class="camera">
         <div class="stage">
           <video id="camera" playsinline autoplay muted></video>
@@ -65,7 +70,49 @@
       </section>
     </main>
 
+    <main class="admin-view view" id="admin-view">
+      <section class="admin-card">
+        <div class="admin-header">
+          <h1>名單管理</h1>
+          <div class="status small">
+            <span id="admin-dot" class="dot"></span>
+            <strong id="admin-state">尚未讀取</strong>
+          </div>
+        </div>
+
+        <label class="field">
+          <span>管理密碼</span>
+          <input id="admin-token" type="password" autocomplete="current-password" placeholder="請輸入管理密碼" />
+        </label>
+
+        <div class="row admin-actions">
+          <button id="load-authorized" type="button">讀取登錄名單</button>
+          <button id="download-authorized" type="button">下載登錄名單</button>
+          <button id="download-events" type="button">下載未登錄紀錄</button>
+        </div>
+
+        <form class="plate-form" id="plate-form">
+          <label class="field">
+            <span>車牌號碼</span>
+            <input id="admin-plate" type="text" inputmode="latin" placeholder="例如 ABC-1234" required />
+          </label>
+          <label class="field">
+            <span>車主</span>
+            <input id="admin-owner" type="text" placeholder="可留空" />
+          </label>
+          <label class="field">
+            <span>備註</span>
+            <input id="admin-note" type="text" placeholder="可留空" />
+          </label>
+          <button type="submit">新增或更新車牌</button>
+        </form>
+
+        <div class="admin-message" id="admin-message">切到此分頁後，輸入密碼即可管理名單。</div>
+        <div class="authorized-list" id="authorized-list"></div>
+      </section>
+    </main>
+
     <canvas id="capture" hidden></canvas>
-    <script src="./mobile.js?v=20260518-1"></script>
+    <script src="./mobile.js?v=20260518-2"></script>
   </body>
 </html>

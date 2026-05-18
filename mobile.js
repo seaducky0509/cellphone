@@ -18,6 +18,20 @@ const mqttEl = document.querySelector("#mqtt");
 const messageEl = document.querySelector("#message");
 const viewSizeEl = document.querySelector("#view-size");
 const viewSizeLabelEl = document.querySelector("#view-size-label");
+const tabButtons = document.querySelectorAll(".tab");
+const views = document.querySelectorAll(".view");
+const adminTokenEl = document.querySelector("#admin-token");
+const adminPlateEl = document.querySelector("#admin-plate");
+const adminOwnerEl = document.querySelector("#admin-owner");
+const adminNoteEl = document.querySelector("#admin-note");
+const adminStateEl = document.querySelector("#admin-state");
+const adminDotEl = document.querySelector("#admin-dot");
+const adminMessageEl = document.querySelector("#admin-message");
+const authorizedListEl = document.querySelector("#authorized-list");
+const loadAuthorizedButton = document.querySelector("#load-authorized");
+const downloadAuthorizedButton = document.querySelector("#download-authorized");
+const downloadEventsButton = document.querySelector("#download-events");
+const plateFormEl = document.querySelector("#plate-form");
 
 let stream = null;
 let running = false;
@@ -47,6 +61,38 @@ function normalizeUrl(value) {
 function setState(text, level = "") {
   stateEl.textContent = text;
   dotEl.className = `dot ${level}`.trim();
+}
+
+function setAdminState(text, level = "") {
+  adminStateEl.textContent = text;
+  adminDotEl.className = `dot ${level}`.trim();
+}
+
+function adminToken() {
+  return adminTokenEl.value.trim();
+}
+
+function adminHeaders() {
+  return { "X-Admin-Token": adminToken() };
+}
+
+async function ensureBackendUrlForAdmin() {
+  if (!backendUrl) {
+    await loadBackendConfig();
+  }
+  if (!backendUrl) {
+    throw new Error("尚未取得後端網址，請先更新 tunnel 設定。");
+  }
+}
+
+function switchTab(name) {
+  tabButtons.forEach((button) => button.classList.toggle("active", button.dataset.tab === name));
+  views.forEach((view) => view.classList.toggle("active", view.id === `${name}-view`));
+  if (name === "admin") {
+    window.setTimeout(() => adminTokenEl.focus(), 0);
+  } else {
+    window.setTimeout(resizeOverlay, 0);
+  }
 }
 
 function setViewerSize(value) {
@@ -400,6 +446,141 @@ async function toggleRecognition() {
   }
 }
 
+function renderAuthorizedList(items) {
+  if (!items.length) {
+    authorizedListEl.innerHTML = `<div class="admin-message">目前沒有登錄車牌。</div>`;
+    return;
+  }
+  authorizedListEl.innerHTML = items
+    .map(
+      (item) => `
+        <div class="authorized-item">
+          <strong>${item.plate || ""}</strong>
+          <span>${item.owner || ""}</span>
+          <span>${item.note || ""}</span>
+          <button type="button" data-delete-plate="${item.plate || ""}">刪除</button>
+        </div>
+      `,
+    )
+    .join("");
+}
+
+async function loadAuthorizedPlates() {
+  if (!adminToken()) {
+    setAdminState("請輸入密碼", "warn");
+    adminMessageEl.textContent = "請先輸入管理密碼。";
+    return;
+  }
+  try {
+    await ensureBackendUrlForAdmin();
+    setAdminState("讀取中", "ok");
+    const response = await fetch(`${backendUrl}/api/authorized-plates?t=${Date.now()}`, {
+      headers: adminHeaders(),
+      cache: "no-store",
+    });
+    if (!response.ok) {
+      throw new Error(response.status === 401 ? "管理密碼錯誤" : `讀取失敗：HTTP ${response.status}`);
+    }
+    const data = await response.json();
+    renderAuthorizedList(data.plates || []);
+    setAdminState("已讀取", "ok");
+    adminMessageEl.textContent = `已讀取 ${(data.plates || []).length} 筆登錄車牌。`;
+  } catch (error) {
+    setAdminState("讀取失敗", "warn");
+    adminMessageEl.textContent = error.message;
+  }
+}
+
+async function saveAuthorizedPlate(event) {
+  event.preventDefault();
+  if (!adminToken()) {
+    setAdminState("請輸入密碼", "warn");
+    adminMessageEl.textContent = "請先輸入管理密碼。";
+    return;
+  }
+  try {
+    await ensureBackendUrlForAdmin();
+    const response = await fetch(`${backendUrl}/api/authorized-plates`, {
+      method: "POST",
+      headers: {
+        ...adminHeaders(),
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        plate: adminPlateEl.value,
+        owner: adminOwnerEl.value,
+        note: adminNoteEl.value,
+      }),
+    });
+    if (!response.ok) {
+      throw new Error(response.status === 401 ? "管理密碼錯誤" : `儲存失敗：HTTP ${response.status}`);
+    }
+    adminPlateEl.value = "";
+    adminOwnerEl.value = "";
+    adminNoteEl.value = "";
+    setAdminState("已儲存", "ok");
+    adminMessageEl.textContent = "登錄車牌已更新。";
+    await loadAuthorizedPlates();
+  } catch (error) {
+    setAdminState("儲存失敗", "warn");
+    adminMessageEl.textContent = error.message;
+  }
+}
+
+async function deleteAuthorizedPlate(plate) {
+  if (!plate || !adminToken()) {
+    return;
+  }
+  try {
+    await ensureBackendUrlForAdmin();
+    const response = await fetch(`${backendUrl}/api/authorized-plates/${encodeURIComponent(plate)}`, {
+      method: "DELETE",
+      headers: adminHeaders(),
+    });
+    if (!response.ok) {
+      throw new Error(response.status === 401 ? "管理密碼錯誤" : `刪除失敗：HTTP ${response.status}`);
+    }
+    setAdminState("已刪除", "ok");
+    adminMessageEl.textContent = `${plate} 已刪除。`;
+    await loadAuthorizedPlates();
+  } catch (error) {
+    setAdminState("刪除失敗", "warn");
+    adminMessageEl.textContent = error.message;
+  }
+}
+
+async function downloadFile(path, filename) {
+  if (!adminToken()) {
+    setAdminState("請輸入密碼", "warn");
+    adminMessageEl.textContent = "請先輸入管理密碼。";
+    return;
+  }
+  try {
+    await ensureBackendUrlForAdmin();
+    const response = await fetch(`${backendUrl}${path}`, {
+      headers: adminHeaders(),
+      cache: "no-store",
+    });
+    if (!response.ok) {
+      throw new Error(response.status === 401 ? "管理密碼錯誤" : `下載失敗：HTTP ${response.status}`);
+    }
+    const blob = await response.blob();
+    const url = URL.createObjectURL(blob);
+    const anchor = document.createElement("a");
+    anchor.href = url;
+    anchor.download = filename;
+    document.body.appendChild(anchor);
+    anchor.click();
+    anchor.remove();
+    URL.revokeObjectURL(url);
+    setAdminState("已下載", "ok");
+    adminMessageEl.textContent = `${filename} 已開始下載。`;
+  } catch (error) {
+    setAdminState("下載失敗", "warn");
+    adminMessageEl.textContent = error.message;
+  }
+}
+
 startButton.addEventListener("click", async () => {
   try {
     await openCamera();
@@ -408,10 +589,25 @@ startButton.addEventListener("click", async () => {
     messageEl.textContent = error.message;
   }
 });
+tabButtons.forEach((button) => button.addEventListener("click", () => switchTab(button.dataset.tab)));
 toggleButton.addEventListener("click", toggleRecognition);
 saveUrlButton.addEventListener("click", saveBackendUrl);
 reloadConfigButton.addEventListener("click", loadBackendConfig);
 viewSizeEl.addEventListener("input", () => setViewerSize(viewSizeEl.value));
+loadAuthorizedButton.addEventListener("click", loadAuthorizedPlates);
+plateFormEl.addEventListener("submit", saveAuthorizedPlate);
+downloadAuthorizedButton.addEventListener("click", () =>
+  downloadFile("/api/download/authorized-plates", "authorized_plates.xlsx"),
+);
+downloadEventsButton.addEventListener("click", () =>
+  downloadFile("/api/download/unauthorized-events", "unauthorized_plate_events.xlsx"),
+);
+authorizedListEl.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-delete-plate]");
+  if (button) {
+    deleteAuthorizedPlate(button.dataset.deletePlate);
+  }
+});
 window.addEventListener("resize", resizeOverlay);
 window.addEventListener("orientationchange", () => window.setTimeout(resizeOverlay, 250));
 window.setInterval(loadBackendConfig, 30000);
