@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://compiled-pdt-connectivity-doug.trycloudflare.com",
+    "backendUrl":  "https://warner-cruise-terrorists-adapted.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-05-18 11:49:27 +08:00",
+    "updatedAt":  "2026-05-18 11:52:26 +08:00",
     "note":  "Auto-updated by scripts/start-host-camera-tunnel.ps1; shared backend for cellphone and host camera"
 }
