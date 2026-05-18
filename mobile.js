@@ -29,6 +29,7 @@ let latestDrawnSeq = 0;
 let lastMotionSample = null;
 let lastMotionCheck = 0;
 let lastMotionAt = 0;
+let lastDetectionAt = 0;
 let overlayHasBoxes = false;
 
 const captureWidth = 480;
@@ -215,6 +216,7 @@ function detectMotion() {
   lastMotionSample = new Uint8ClampedArray(current);
   if (averageDiff > motionClearThreshold) {
     lastMotionAt = now;
+    lastDetectionAt = 0;
     clearOverlay();
     clearAlertForNewScan();
     setState("辨識車牌中", "ok");
@@ -309,9 +311,11 @@ async function recognizeOnce() {
   requestBusy = true;
   const seq = ++requestSeq;
   try {
-    clearAlertForNewScan();
-    setState("辨識車牌中", "ok");
-    messageEl.textContent = "正在辨識新畫面...";
+    if (!overlayHasBoxes) {
+      clearAlertForNewScan();
+      setState("辨識車牌中", "ok");
+      messageEl.textContent = "正在辨識新畫面...";
+    }
     const capture = await captureFrame();
     const controller = new AbortController();
     const timeout = window.setTimeout(() => controller.abort(), requestTimeoutMs);
@@ -340,13 +344,26 @@ async function recognizeOnce() {
       return;
     }
     latestDrawnSeq = seq;
-    drawResults(result, capture);
-    updatePanel(result);
+    const plates = Array.isArray(result.plates) ? result.plates : [];
+    if (plates.length > 0) {
+      lastDetectionAt = performance.now();
+      drawResults(result, capture);
+      updatePanel(result);
+    } else if (overlayHasBoxes && performance.now() - lastDetectionAt < 2500) {
+      messageEl.textContent = "持續追蹤目前車牌...";
+    } else {
+      drawResults(result, capture);
+      updatePanel(result);
+    }
   } catch (error) {
-    clearOverlay();
-    clearAlertForNewScan();
-    setState("辨識車牌中", "ok");
-    messageEl.textContent = error.name === "AbortError" ? "本次辨識超過 3 秒，已送出下一張畫面。" : error.message;
+    if (!overlayHasBoxes) {
+      clearOverlay();
+      clearAlertForNewScan();
+      setState("辨識車牌中", "ok");
+      messageEl.textContent = error.name === "AbortError" ? "本次辨識超過 3 秒，已送出下一張畫面。" : error.message;
+    } else {
+      messageEl.textContent = error.name === "AbortError" ? "持續追蹤目前車牌，本次辨識逾時。" : error.message;
+    }
   } finally {
     requestBusy = false;
     if (running) {
