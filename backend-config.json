@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://doll-qualification-classical-introduced.trycloudflare.com",
+    "backendUrl":  "https://cedar-hiring-copyrighted-oldest.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-05-18 16:52:29 +08:00",
+    "updatedAt":  "2026-05-18 16:56:28 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
