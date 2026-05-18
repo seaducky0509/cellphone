@@ -46,45 +46,12 @@ function setState(text, level = "") {
 }
 
 async function loadBackendConfig() {
-  const configUrls = [
-    `./backend-config.json?t=${Date.now()}`,
-    `https://seaducky0509.github.io/cellphone/backend-config.json?t=${Date.now()}`,
-  ];
-  const configs = [];
   try {
-    try {
-      const githubResponse = await fetch(
-        `https://api.github.com/repos/seaducky0509/cellphone/contents/backend-config.json?ref=main&t=${Date.now()}`,
-        { cache: "no-store", headers: { Accept: "application/vnd.github+json" } },
-      );
-      if (githubResponse.ok) {
-        const payload = await githubResponse.json();
-        if (payload.content) {
-          const jsonText = decodeURIComponent(
-            Array.from(atob(String(payload.content).replace(/\s/g, "")))
-              .map((char) => `%${char.charCodeAt(0).toString(16).padStart(2, "0")}`)
-              .join(""),
-          );
-          configs.push(JSON.parse(jsonText));
-        }
-      }
-    } catch (_) {
-      // GitHub API is only a cache-bypass fallback; normal config URLs are tried below.
+    const response = await fetch(`./backend-config.json?t=${Date.now()}`, { cache: "no-store" });
+    if (!response.ok) {
+      throw new Error(`設定檔讀取失敗 ${response.status}`);
     }
-    for (const url of configUrls) {
-      try {
-        const response = await fetch(url, { cache: "no-store" });
-        if (response.ok) {
-          configs.push(await response.json());
-        }
-      } catch (_) {
-        // Try the next config source.
-      }
-    }
-    if (!configs.length) {
-      throw new Error("設定檔讀取失敗");
-    }
-    const config = configs.sort((a, b) => String(b.updatedAt || "").localeCompare(String(a.updatedAt || "")))[0];
+    const config = await response.json();
     const configuredUrl = normalizeUrl(config.backendUrl);
     const savedUrl = normalizeUrl(localStorage.getItem("plateBackendUrl"));
     backendUrl = configuredUrl || savedUrl;
@@ -102,27 +69,6 @@ async function loadBackendConfig() {
   } catch (error) {
     setState("設定讀取失敗", "warn");
     messageEl.textContent = error.message;
-  }
-}
-
-async function ensureBackendReady() {
-  await loadBackendConfig();
-  backendUrl = normalizeUrl(backendInput.value || backendUrl);
-  if (!backendUrl) {
-    throw new Error("尚未取得後端網址，請先在電腦端執行 tunnel 啟動腳本");
-  }
-  const controller = new AbortController();
-  const timeout = window.setTimeout(() => controller.abort(), 8000);
-  try {
-    const response = await fetch(`${backendUrl}/api/status?t=${Date.now()}`, {
-      cache: "no-store",
-      signal: controller.signal,
-    });
-    if (!response.ok) {
-      throw new Error(`後端狀態檢查失敗 ${response.status}`);
-    }
-  } finally {
-    window.clearTimeout(timeout);
   }
 }
 
@@ -364,35 +310,16 @@ async function recognizeOnce() {
   }
 }
 
-async function toggleRecognition() {
+function toggleRecognition() {
+  running = !running;
+  toggleButton.textContent = running ? "停止辨識" : "開始辨識";
+  setState(running ? "辨識中" : "已停止", running ? "ok" : "");
   if (running) {
-    running = false;
-    toggleButton.textContent = "開始辨識";
-    setState("已停止", "");
-    window.clearTimeout(timer);
-    clearOverlay();
-    return;
-  }
-
-  toggleButton.disabled = true;
-  setState("連線檢查中", "warn");
-  messageEl.textContent = "正在重新讀取後端設定並檢查連線";
-  try {
-    await ensureBackendReady();
-    running = true;
-    toggleButton.textContent = "停止辨識";
-    toggleButton.disabled = false;
-    setState("辨識中", "ok");
     lastMotionSample = null;
     recognizeOnce();
-  } catch (error) {
-    running = false;
-    toggleButton.textContent = "開始辨識";
-    toggleButton.disabled = false;
+  } else {
+    window.clearTimeout(timer);
     clearOverlay();
-    setState("連線錯誤", "warn");
-    messageEl.textContent =
-      `${error.message}。請在電腦端執行 scripts\\start-mobile-tunnel.ps1 -Provider cloudflared 後，重新上架最新 ZIP 或推送 GitHub Pages。`;
   }
 }
 

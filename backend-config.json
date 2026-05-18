@@ -1,6 +1,6 @@
-﻿{
-    "backendUrl":  "https://warner-cruise-terrorists-adapted.trycloudflare.com",
-    "provider":  "cloudflared",
-    "updatedAt":  "2026-05-18 11:52:26 +08:00",
-    "note":  "Auto-updated by scripts/start-host-camera-tunnel.ps1; shared backend for cellphone and host camera"
+{
+  "backendUrl": "https://north-away-critical-brunette.trycloudflare.com",
+  "provider": "cloudflared",
+  "updatedAt": "2026-05-15 17:01:13 +08:00",
+  "note": "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
