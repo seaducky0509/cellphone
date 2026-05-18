@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://aaron-findarticles-transcript-cooling.trycloudflare.com",
+    "backendUrl":  "https://operational-pepper-starring-reaction.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-05-18 12:30:58 +08:00",
+    "updatedAt":  "2026-05-18 12:34:37 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
