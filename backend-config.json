@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://supporting-keep-cast-fascinating.trycloudflare.com",
+    "backendUrl":  "https://program-carter-philips-the.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-05-18 10:34:28 +08:00",
-    "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
+    "updatedAt":  "2026-05-18 11:45:48 +08:00",
+    "note":  "Auto-updated by scripts/start-host-camera-tunnel.ps1; shared backend for cellphone and host camera"
 }
