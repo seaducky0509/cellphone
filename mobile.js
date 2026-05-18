@@ -72,6 +72,28 @@ async function loadBackendConfig() {
   }
 }
 
+async function assertBackendReady() {
+  await loadBackendConfig();
+  if (!backendUrl) {
+    throw new Error("尚未取得後端網址，請先在電腦端執行 scripts\\start-mobile-tunnel.ps1 -Provider cloudflared -PushGitHubPages");
+  }
+  const controller = new AbortController();
+  const timeout = window.setTimeout(() => controller.abort(), 5000);
+  try {
+    const response = await fetch(`${backendUrl}/api/status?t=${Date.now()}`, {
+      cache: "no-store",
+      signal: controller.signal,
+    });
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}`);
+    }
+  } catch (error) {
+    throw new Error(`後端連線失敗：${error.message}`);
+  } finally {
+    window.clearTimeout(timeout);
+  }
+}
+
 function saveBackendUrl() {
   backendUrl = normalizeUrl(backendInput.value);
   localStorage.setItem("plateBackendUrl", backendUrl);
@@ -310,7 +332,20 @@ async function recognizeOnce() {
   }
 }
 
-function toggleRecognition() {
+async function toggleRecognition() {
+  if (!running) {
+    try {
+      setState("檢查後端連線", "warn");
+      messageEl.textContent = "正在重新讀取最新後端設定...";
+      await assertBackendReady();
+    } catch (error) {
+      running = false;
+      clearOverlay();
+      setState("連線錯誤", "warn");
+      messageEl.textContent = error.message;
+      return;
+    }
+  }
   running = !running;
   toggleButton.textContent = running ? "停止辨識" : "開始辨識";
   setState(running ? "辨識中" : "已停止", running ? "ok" : "");

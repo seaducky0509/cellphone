@@ -1,6 +1,6 @@
-{
-  "backendUrl": "https://north-away-critical-brunette.trycloudflare.com",
-  "provider": "cloudflared",
-  "updatedAt": "2026-05-15 17:01:13 +08:00",
-  "note": "Auto-updated by scripts/start-mobile-tunnel.ps1"
+﻿{
+    "backendUrl":  "https://aaron-findarticles-transcript-cooling.trycloudflare.com",
+    "provider":  "cloudflared",
+    "updatedAt":  "2026-05-18 12:30:58 +08:00",
+    "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
