@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://forecasts-brings-builder-combine.trycloudflare.com",
+    "backendUrl":  "https://doll-qualification-classical-introduced.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-05-18 16:49:27 +08:00",
+    "updatedAt":  "2026-05-18 16:52:29 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
