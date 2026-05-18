@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CELL PHONE</title>
+    <meta name="description" content="手機辨識車牌" />
+    <link rel="stylesheet" href="./mobile.css?v=20260518-02" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="camera">
+        <div class="stage">
+          <video id="camera" playsinline autoplay muted></video>
+          <canvas id="preview"></canvas>
+          <canvas id="overlay"></canvas>
+        </div>
+        <div class="controls">
+          <button id="start" type="button">開啟鏡頭</button>
+          <button id="toggle" type="button" disabled>開始辨識</button>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="status">
+          <span id="dot" class="dot"></span>
+          <strong id="state">尚未連線</strong>
+        </div>
+
+        <label class="field">
+          <span>後端網址</span>
+          <input id="backend-url" type="url" placeholder="https://xxxx.trycloudflare.com" />
+        </label>
+        <div class="row">
+          <button id="save-url" type="button">儲存網址</button>
+          <button id="reload-config" type="button">重新讀取設定</button>
+        </div>
+
+        <div class="plate" id="latest-plate">--</div>
+        <div class="alert" id="alert">
+          <strong>未登錄車牌</strong>
+          <span id="alert-plate">--</span>
+        </div>
+        <div class="plate-list" id="plate-list"></div>
+
+        <dl class="metrics">
+          <div>
+            <dt>耗時</dt>
+            <dd id="elapsed">--</dd>
+          </div>
+          <div>
+            <dt>MQTT</dt>
+            <dd id="mqtt">--</dd>
+          </div>
+          <div>
+            <dt>訊息</dt>
+            <dd id="message">請先開啟鏡頭</dd>
+          </div>
+        </dl>
+      </section>
+    </main>
+
+    <canvas id="capture" hidden></canvas>
+    <script src="./mobile.js?v=20260518-02"></script>
+  </body>
+</html>
