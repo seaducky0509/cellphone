@@ -16,21 +16,24 @@ const plateListEl = document.querySelector("#plate-list");
 const elapsedEl = document.querySelector("#elapsed");
 const mqttEl = document.querySelector("#mqtt");
 const messageEl = document.querySelector("#message");
+const viewSizeEl = document.querySelector("#view-size");
+const viewSizeLabelEl = document.querySelector("#view-size-label");
 
 let stream = null;
 let running = false;
 let requestBusy = false;
 let timer = 0;
 let backendUrl = "";
-let previewFrame = { width: 0, height: 0 };
 let requestSeq = 0;
 let latestDrawnSeq = 0;
 let lastMotionSample = null;
 let lastMotionCheck = 0;
 let lastMotionAt = 0;
 let overlayHasBoxes = false;
-const captureWidth = 640;
-const recognizeIntervalMs = 80;
+
+const captureWidth = 480;
+const recognizeIntervalMs = 100;
+const requestTimeoutMs = 3000;
 const motionClearThreshold = 45;
 const motionCanvas = document.createElement("canvas");
 motionCanvas.width = 48;
@@ -45,11 +48,20 @@ function setState(text, level = "") {
   dotEl.className = `dot ${level}`.trim();
 }
 
+function setViewerSize(value) {
+  const size = Math.max(360, Math.min(1100, Number(value) || 760));
+  document.documentElement.style.setProperty("--viewer-width", `${size}px`);
+  viewSizeEl.value = String(size);
+  viewSizeLabelEl.textContent = `${size}px`;
+  localStorage.setItem("plateViewerWidth", String(size));
+  window.setTimeout(resizeOverlay, 0);
+}
+
 async function loadBackendConfig() {
   try {
     const response = await fetch(`./backend-config.json?t=${Date.now()}`, { cache: "no-store" });
     if (!response.ok) {
-      throw new Error(`設定檔讀取失敗 ${response.status}`);
+      throw new Error(`讀取設定失敗：HTTP ${response.status}`);
     }
     const config = await response.json();
     const configuredUrl = normalizeUrl(config.backendUrl);
@@ -60,11 +72,11 @@ async function loadBackendConfig() {
     }
     backendInput.value = backendUrl;
     if (backendUrl) {
-      setState("後端網址已載入", "ok");
-      messageEl.textContent = config.updatedAt ? `設定更新時間：${config.updatedAt}` : "後端網址已載入";
+      setState("後端已設定", "ok");
+      messageEl.textContent = config.updatedAt ? `設定更新時間：${config.updatedAt}` : "後端網址已讀取";
     } else {
       setState("尚未設定後端", "warn");
-      messageEl.textContent = "請先執行電腦端 tunnel 啟動腳本，或手動填入後端網址";
+      messageEl.textContent = "請先在電腦端啟動 tunnel。";
     }
   } catch (error) {
     setState("設定讀取失敗", "warn");
@@ -75,7 +87,7 @@ async function loadBackendConfig() {
 async function assertBackendReady() {
   await loadBackendConfig();
   if (!backendUrl) {
-    throw new Error("尚未取得後端網址，請先在電腦端執行 scripts\\start-mobile-tunnel.ps1 -Provider cloudflared -PushGitHubPages");
+    throw new Error("尚未取得後端網址，請先在電腦端執行 tunnel 更新腳本。");
   }
   const controller = new AbortController();
   const timeout = window.setTimeout(() => controller.abort(), 5000);
@@ -101,11 +113,14 @@ function saveBackendUrl() {
 }
 
 async function openCamera() {
+  if (stream) {
+    return;
+  }
   stream = await navigator.mediaDevices.getUserMedia({
     video: {
       facingMode: { ideal: "environment" },
-      width: { ideal: 1920 },
-      height: { ideal: 1080 },
+      width: { ideal: 1280 },
+      height: { ideal: 720 },
       aspectRatio: { ideal: 1.7777778 },
     },
     audio: false,
@@ -114,7 +129,7 @@ async function openCamera() {
   await videoEl.play();
   toggleButton.disabled = false;
   setState("鏡頭已開啟", "ok");
-  messageEl.textContent = "按開始辨識後會傳送手機截圖到後端";
+  messageEl.textContent = "請按開始辨識。";
   resizeOverlay();
   requestAnimationFrame(renderPreview);
 }
@@ -127,14 +142,19 @@ function resizeOverlay() {
   previewEl.height = height;
   overlayEl.width = width;
   overlayEl.height = height;
-  previewFrame = { width, height };
-  overlayEl.getContext("2d").clearRect(0, 0, overlayEl.width, overlayEl.height);
+  clearOverlay();
 }
 
 function clearOverlay() {
   const context = overlayEl.getContext("2d");
   context.clearRect(0, 0, overlayEl.width, overlayEl.height);
   overlayHasBoxes = false;
+}
+
+function clearAlertForNewScan() {
+  document.body.classList.remove("alerting");
+  alertEl.classList.remove("show");
+  alertPlateEl.textContent = "--";
 }
 
 function sourceCoverRect(sourceWidth, sourceHeight, targetWidth, targetHeight) {
@@ -173,7 +193,7 @@ function renderPreview() {
 
 function detectMotion() {
   const now = performance.now();
-  if (!running || now - lastMotionCheck < 220 || !previewEl.width || !previewEl.height) {
+  if (!running || now - lastMotionCheck < 180 || !previewEl.width || !previewEl.height) {
     return;
   }
   lastMotionCheck = now;
@@ -195,10 +215,10 @@ function detectMotion() {
   lastMotionSample = new Uint8ClampedArray(current);
   if (averageDiff > motionClearThreshold) {
     lastMotionAt = now;
-    if (overlayHasBoxes) {
-      clearOverlay();
-      messageEl.textContent = "畫面移動中，等待重新偵測車牌";
-    }
+    clearOverlay();
+    clearAlertForNewScan();
+    setState("辨識車牌中", "ok");
+    messageEl.textContent = "畫面已移動，正在辨識新車牌。";
   }
 }
 
@@ -221,7 +241,7 @@ function captureFrame() {
           capturedAt: performance.now(),
         }),
       "image/jpeg",
-      0.72,
+      0.62,
     ),
   );
 }
@@ -233,7 +253,6 @@ function drawResults(result, captureMeta) {
   }
   resizeOverlay();
   const context = overlayEl.getContext("2d");
-  context.clearRect(0, 0, overlayEl.width, overlayEl.height);
   const sourceWidth = Math.max(1, result.width || captureEl.width);
   const sourceHeight = Math.max(1, result.height || captureEl.height);
   const scaleX = overlayEl.width / sourceWidth;
@@ -280,20 +299,22 @@ function updatePanel(result) {
       return `<div class="chip ${danger ? "danger" : "allowed"}"><span>${item.plate}</span><small>${label} ${Number(item.confidence || 0).toFixed(3)}</small></div>`;
     })
     .join("");
-  setState(unauthorized.length ? "偵測到未登錄車牌" : running ? "辨識中" : "已停止", unauthorized.length ? "warn" : "ok");
+  setState(unauthorized.length ? "偵測到未登錄車牌" : running ? "辨識車牌中" : "已停止", unauthorized.length ? "warn" : "ok");
 }
 
 async function recognizeOnce() {
-  if (!running || !backendUrl) {
-    return;
-  }
-  if (requestBusy) {
+  if (!running || !backendUrl || requestBusy) {
     return;
   }
   requestBusy = true;
   const seq = ++requestSeq;
   try {
+    clearAlertForNewScan();
+    setState("辨識車牌中", "ok");
+    messageEl.textContent = "正在辨識新畫面...";
     const capture = await captureFrame();
+    const controller = new AbortController();
+    const timeout = window.setTimeout(() => controller.abort(), requestTimeoutMs);
     const response = await fetch(`${backendUrl}/api/mobile-recognize`, {
       method: "POST",
       headers: {
@@ -302,7 +323,9 @@ async function recognizeOnce() {
       },
       body: capture.blob,
       cache: "no-store",
+      signal: controller.signal,
     });
+    window.clearTimeout(timeout);
     if (!response.ok) {
       throw new Error(`後端回應 ${response.status}`);
     }
@@ -321,8 +344,9 @@ async function recognizeOnce() {
     updatePanel(result);
   } catch (error) {
     clearOverlay();
-    setState("連線錯誤", "warn");
-    messageEl.textContent = error.message;
+    clearAlertForNewScan();
+    setState("辨識車牌中", "ok");
+    messageEl.textContent = error.name === "AbortError" ? "本次辨識超過 3 秒，已送出下一張畫面。" : error.message;
   } finally {
     requestBusy = false;
     if (running) {
@@ -348,13 +372,14 @@ async function toggleRecognition() {
   }
   running = !running;
   toggleButton.textContent = running ? "停止辨識" : "開始辨識";
-  setState(running ? "辨識中" : "已停止", running ? "ok" : "");
+  setState(running ? "辨識車牌中" : "已停止", running ? "ok" : "");
   if (running) {
     lastMotionSample = null;
     recognizeOnce();
   } else {
     window.clearTimeout(timer);
     clearOverlay();
+    clearAlertForNewScan();
   }
 }
 
@@ -369,7 +394,9 @@ startButton.addEventListener("click", async () => {
 toggleButton.addEventListener("click", toggleRecognition);
 saveUrlButton.addEventListener("click", saveBackendUrl);
 reloadConfigButton.addEventListener("click", loadBackendConfig);
+viewSizeEl.addEventListener("input", () => setViewerSize(viewSizeEl.value));
 window.addEventListener("resize", resizeOverlay);
 window.addEventListener("orientationchange", () => window.setTimeout(resizeOverlay, 250));
 window.setInterval(loadBackendConfig, 30000);
+setViewerSize(localStorage.getItem("plateViewerWidth") || viewSizeEl.value);
 loadBackendConfig();

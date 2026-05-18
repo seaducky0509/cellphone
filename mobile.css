@@ -3,6 +3,7 @@
 }
 
 :root {
+  --viewer-width: 760px;
   color-scheme: light;
   font-family: "Segoe UI", system-ui, sans-serif;
 }
@@ -28,7 +29,9 @@ body.alerting {
 
 .camera {
   display: grid;
+  align-content: start;
   gap: 10px;
+  width: min(100%, var(--viewer-width));
   min-width: 0;
 }
 
@@ -36,8 +39,9 @@ body.alerting {
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: calc(100vh - 82px);
-  min-height: 260px;
+  aspect-ratio: 16 / 9;
+  min-height: 240px;
+  max-height: calc(100vh - 130px);
   background: #101418;
   border: 1px solid #d6dce2;
   border-radius: 8px;
@@ -64,6 +68,31 @@ body.alerting {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 8px;
+}
+
+.size-control {
+  display: grid;
+  grid-template-columns: auto minmax(160px, 1fr) 58px;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  background: #fff;
+  border: 1px solid #d6dce2;
+  border-radius: 8px;
+  color: #384450;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.size-control input {
+  width: 100%;
+  min-height: auto;
+  padding: 0;
+}
+
+.size-control output {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
 }
 
 .panel {
@@ -213,8 +242,8 @@ dd {
     grid-template-columns: 1fr;
   }
 
-  .stage {
-    height: min(64vh, 520px);
+  .camera {
+    width: 100%;
   }
 }
 
@@ -228,20 +257,6 @@ dd {
     gap: 10px;
     padding: 8px;
     height: 100vh;
-  }
-
-  .camera {
-    grid-template-rows: minmax(0, 1fr) auto;
-    min-height: 0;
-  }
-
-  .stage {
-    height: auto;
-    min-height: 0;
-  }
-
-  .controls {
-    grid-template-columns: 1fr 1fr;
   }
 
   .panel {

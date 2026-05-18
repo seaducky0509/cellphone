@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>CELL PHONE</title>
     <meta name="description" content="手機辨識車牌" />
-    <link rel="stylesheet" href="./mobile.css?v=20260515-13" />
+    <link rel="stylesheet" href="./mobile.css?v=20260518-1" />
   </head>
   <body>
     <main class="app">
@@ -19,6 +19,11 @@
           <button id="start" type="button">開啟鏡頭</button>
           <button id="toggle" type="button" disabled>開始辨識</button>
         </div>
+        <label class="size-control">
+          <span>辨識畫面大小</span>
+          <input id="view-size" type="range" min="360" max="1100" step="20" value="760" />
+          <output id="view-size-label">760px</output>
+        </label>
       </section>
 
       <section class="panel">
@@ -61,6 +66,6 @@
     </main>
 
     <canvas id="capture" hidden></canvas>
-    <script src="./mobile.js?v=20260515-13"></script>
+    <script src="./mobile.js?v=20260518-1"></script>
   </body>
 </html>
