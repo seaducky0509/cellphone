@@ -52,6 +52,25 @@ async function loadBackendConfig() {
   ];
   const configs = [];
   try {
+    try {
+      const githubResponse = await fetch(
+        `https://api.github.com/repos/seaducky0509/cellphone/contents/backend-config.json?ref=main&t=${Date.now()}`,
+        { cache: "no-store", headers: { Accept: "application/vnd.github+json" } },
+      );
+      if (githubResponse.ok) {
+        const payload = await githubResponse.json();
+        if (payload.content) {
+          const jsonText = decodeURIComponent(
+            Array.from(atob(String(payload.content).replace(/\s/g, "")))
+              .map((char) => `%${char.charCodeAt(0).toString(16).padStart(2, "0")}`)
+              .join(""),
+          );
+          configs.push(JSON.parse(jsonText));
+        }
+      }
+    } catch (_) {
+      // GitHub API is only a cache-bypass fallback; normal config URLs are tried below.
+    }
     for (const url of configUrls) {
       try {
         const response = await fetch(url, { cache: "no-store" });

@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://club-unsigned-helps-southampton.trycloudflare.com",
+    "backendUrl":  "https://discussed-yeast-classics-ron.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-05-18 11:47:20 +08:00",
+    "updatedAt":  "2026-05-18 11:48:53 +08:00",
     "note":  "Auto-updated by scripts/start-host-camera-tunnel.ps1; shared backend for cellphone and host camera"
 }
