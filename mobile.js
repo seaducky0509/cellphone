@@ -33,8 +33,10 @@ const adminStateEl = document.querySelector("#admin-state");
 const adminDotEl = document.querySelector("#admin-dot");
 const adminMessageEl = document.querySelector("#admin-message");
 const authorizedListEl = document.querySelector("#authorized-list");
+const unauthorizedListEl = document.querySelector("#unauthorized-list");
 const loadAuthorizedButton = document.querySelector("#load-authorized");
 const downloadAuthorizedButton = document.querySelector("#download-authorized");
+const previewEventsButton = document.querySelector("#preview-events");
 const downloadEventsButton = document.querySelector("#download-events");
 const clearEventsButton = document.querySelector("#clear-events");
 const plateFormEl = document.querySelector("#plate-form");
@@ -494,6 +496,32 @@ function renderAuthorizedList(items) {
     .join("");
 }
 
+function renderUnauthorizedList(items) {
+  if (!items.length) {
+    unauthorizedListEl.innerHTML = `<div class="admin-message">目前沒有未登錄紀錄。</div>`;
+    return;
+  }
+  unauthorizedListEl.innerHTML = items
+    .map((item) => {
+      const imageLink = item.image_url
+        ? `<a href="${item.image_url}" target="_blank" rel="noopener">查看截圖</a>`
+        : `${item.image_path || "--"}`;
+      return `
+        <div class="record-item">
+          <strong>${item.plate || "--"}</strong>
+          <div class="record-meta">
+            <span>時間：${item.time || "--"}</span>
+            <span>狀態：${item.status || "--"}</span>
+            <span>信心值：${item.confidence || "--"}</span>
+            <span>截圖：${imageLink}</span>
+            <span>備註：${item.note || "--"}</span>
+          </div>
+        </div>
+      `;
+    })
+    .join("");
+}
+
 async function loadAuthorizedPlates() {
   if (!adminToken()) {
     setAdminState("請輸入密碼", "warn");
@@ -514,6 +542,32 @@ async function loadAuthorizedPlates() {
     renderAuthorizedList(data.plates || []);
     setAdminState("已讀取", "ok");
     adminMessageEl.textContent = `已讀取 ${(data.plates || []).length} 筆登錄車牌。`;
+  } catch (error) {
+    setAdminState("讀取失敗", "warn");
+    adminMessageEl.textContent = error.message;
+  }
+}
+
+async function previewUnauthorizedEvents() {
+  if (!adminToken()) {
+    setAdminState("請輸入密碼", "warn");
+    adminMessageEl.textContent = "請先輸入管理密碼。";
+    return;
+  }
+  try {
+    await ensureBackendUrlForAdmin();
+    setAdminState("讀取中", "ok");
+    const response = await fetch(`${backendUrl}/api/unauthorized-events?t=${Date.now()}`, {
+      headers: adminHeaders(),
+      cache: "no-store",
+    });
+    if (!response.ok) {
+      throw new Error(response.status === 401 ? "管理密碼錯誤" : `讀取失敗：HTTP ${response.status}`);
+    }
+    const data = await response.json();
+    renderUnauthorizedList(data.records || []);
+    setAdminState("已讀取", "ok");
+    adminMessageEl.textContent = `已讀取 ${(data.records || []).length} 筆未登錄紀錄。`;
   } catch (error) {
     setAdminState("讀取失敗", "warn");
     adminMessageEl.textContent = error.message;
@@ -680,6 +734,7 @@ async function clearUnauthorizedEvents() {
     }
     setAdminState("紀錄已清空", "ok");
     adminMessageEl.textContent = "未登錄紀錄已清空，截圖檔案已保留。";
+    renderUnauthorizedList([]);
   } catch (error) {
     setAdminState("清空紀錄失敗", "warn");
     adminMessageEl.textContent = error.message;
@@ -719,6 +774,7 @@ downloadAuthorizedButton.addEventListener("click", () =>
 downloadEventsButton.addEventListener("click", () =>
   downloadFile("/api/download/unauthorized-events", "未登錄車牌紀錄.xlsx"),
 );
+previewEventsButton.addEventListener("click", previewUnauthorizedEvents);
 clearEventsButton.addEventListener("click", clearUnauthorizedEvents);
 authorizedListEl.addEventListener("click", (event) => {
   const button = event.target.closest("[data-delete-plate]");

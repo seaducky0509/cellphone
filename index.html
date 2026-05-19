@@ -107,17 +107,23 @@
           </form>
         </details>
 
-        <div class="row admin-actions">
-          <button id="load-authorized" type="button">讀取登錄名單</button>
-          <button id="download-authorized" type="button">下載登錄名單</button>
-        </div>
+        <details class="admin-section">
+          <summary>登錄名單</summary>
+          <div class="row admin-actions two">
+            <button id="load-authorized" type="button">預覽名單</button>
+            <button id="download-authorized" type="button">下載名單</button>
+          </div>
+          <div class="authorized-list" id="authorized-list"></div>
+        </details>
 
         <details class="admin-section">
           <summary>未登錄紀錄</summary>
           <div class="row admin-actions two">
-            <button id="download-events" type="button">下載未登錄紀錄</button>
-            <button id="clear-events" class="danger-button" type="button">清空紀錄</button>
+            <button id="preview-events" type="button">預覽名單</button>
+            <button id="download-events" type="button">下載名單</button>
+            <button id="clear-events" class="danger-button full-row" type="button">清空紀錄</button>
           </div>
+          <div class="record-list" id="unauthorized-list"></div>
         </details>
 
         <details class="admin-section">
@@ -140,7 +146,6 @@
         </details>
 
         <div class="admin-message" id="admin-message">切到此分頁後，輸入密碼即可管理名單。</div>
-        <div class="authorized-list" id="authorized-list"></div>
       </section>
     </main>
 
