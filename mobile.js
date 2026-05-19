@@ -4,8 +4,10 @@ const overlayEl = document.querySelector("#overlay");
 const captureEl = document.querySelector("#capture");
 const startButton = document.querySelector("#start");
 const toggleButton = document.querySelector("#toggle");
-const hostModeButton = document.querySelector("#host-mode");
-const viewerModeButton = document.querySelector("#viewer-mode");
+const landingView = document.querySelector("#landing-view");
+const appShells = document.querySelectorAll(".app-shell");
+const enterHostButton = document.querySelector("#enter-host");
+const enterViewerButton = document.querySelector("#enter-viewer");
 const backendInput = document.querySelector("#backend-url");
 const saveUrlButton = document.querySelector("#save-url");
 const reloadConfigButton = document.querySelector("#reload-config");
@@ -56,6 +58,7 @@ let lastMotionAt = 0;
 let lastDetectionAt = 0;
 let overlayHasBoxes = false;
 let mobileMode = localStorage.getItem("plateMobileMode") || "host";
+let appEntered = false;
 let lastCommandId = 0;
 let commandTimer = 0;
 let viewerTimer = 0;
@@ -177,10 +180,11 @@ function saveBackendUrl() {
 function setMobileMode(mode) {
   mobileMode = mode === "viewer" ? "viewer" : "host";
   localStorage.setItem("plateMobileMode", mobileMode);
-  hostModeButton.classList.toggle("active", mobileMode === "host");
-  viewerModeButton.classList.toggle("active", mobileMode === "viewer");
   window.clearTimeout(commandTimer);
   window.clearTimeout(viewerTimer);
+  if (!appEntered) {
+    return;
+  }
   if (mobileMode === "viewer") {
     closeCamera();
     startButton.textContent = "遠端開啟鏡頭";
@@ -197,6 +201,14 @@ function setMobileMode(mode) {
     messageEl.textContent = "此手機會開啟鏡頭並傳送畫面給後端辨識。";
     startHostCommandPolling();
   }
+}
+
+function enterApp(mode) {
+  appEntered = true;
+  landingView.classList.add("hidden");
+  appShells.forEach((element) => element.classList.remove("hidden"));
+  switchTab("recognition");
+  setMobileMode(mode);
 }
 
 async function startHostCommandPolling() {
@@ -988,8 +1000,8 @@ toggleButton.addEventListener("click", async () => {
   }
   toggleRecognition();
 });
-hostModeButton.addEventListener("click", () => setMobileMode("host"));
-viewerModeButton.addEventListener("click", () => setMobileMode("viewer"));
+enterHostButton.addEventListener("click", () => enterApp("host"));
+enterViewerButton.addEventListener("click", () => enterApp("viewer"));
 saveUrlButton.addEventListener("click", saveBackendUrl);
 reloadConfigButton.addEventListener("click", loadBackendConfig);
 viewSizeEl.addEventListener("input", () => setViewerSize(viewSizeEl.value));
