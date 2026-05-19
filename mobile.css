@@ -181,7 +181,7 @@ body.alerting {
   display: block;
   padding: 16px;
   color: #fff;
-  background: #3f3f46;
+  background: #175cd3;
   border-radius: 8px;
   font-size: 18px;
   font-weight: 800;
@@ -219,13 +219,13 @@ body.alerting {
 .admin-actions button,
 .password-change-form button,
 .plate-form button {
-  background: #52525b;
+  background: #16803c;
 }
 
 .admin-actions button:hover,
 .password-change-form button:hover,
 .plate-form button:hover {
-  background: #3f3f46;
+  background: #11632f;
 }
 
 .danger-button,
