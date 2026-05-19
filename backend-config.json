@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://transcription-medicare-serving-student.trycloudflare.com",
+    "backendUrl":  "https://geek-land-assessing-manitoba.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-05-19 14:12:57 +08:00",
+    "updatedAt":  "2026-05-19 14:52:07 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }

@@ -73,6 +73,7 @@ function setState(text, level = "") {
 
 function setAdminState(text, level = "") {
   adminStateEl.textContent = text;
+  adminStateEl.className = `status-text ${level}`.trim();
   adminDotEl.className = `dot ${level}`.trim();
 }
 
@@ -522,17 +523,17 @@ function renderUnauthorizedList(items) {
     .join("");
 }
 
-async function loadAuthorizedPlates(forceRefresh = false) {
+async function loadAuthorizedPlates(forceRefresh = false, successStateText = "已讀取") {
   if (authorizedListEl.dataset.visible === "1" && !forceRefresh) {
     authorizedListEl.innerHTML = "";
     authorizedListEl.dataset.visible = "0";
     loadAuthorizedButton.textContent = "預覽名單";
-    setAdminState("已收合", "ok");
+    setAdminState("已收合", "info");
     adminMessageEl.textContent = "登錄名單已收合。";
     return;
   }
   if (!adminToken()) {
-    setAdminState("請輸入密碼", "warn");
+    setAdminState("請輸入密碼", "");
     adminMessageEl.textContent = "請先輸入管理密碼。";
     return;
   }
@@ -544,16 +545,22 @@ async function loadAuthorizedPlates(forceRefresh = false) {
       cache: "no-store",
     });
     if (!response.ok) {
-      throw new Error(response.status === 401 ? "管理密碼錯誤" : `讀取失敗：HTTP ${response.status}`);
+      if (response.status === 401) {
+        setAdminState("密碼錯誤", "warn");
+        throw new Error("管理密碼錯誤");
+      }
+      throw new Error(`讀取失敗：HTTP ${response.status}`);
     }
     const data = await response.json();
     renderAuthorizedList(data.plates || []);
     authorizedListEl.dataset.visible = "1";
     loadAuthorizedButton.textContent = "收合名單";
-    setAdminState("已讀取", "ok");
+    setAdminState(successStateText, "ok");
     adminMessageEl.textContent = `已讀取 ${(data.plates || []).length} 筆登錄車牌。`;
   } catch (error) {
-    setAdminState("讀取失敗", "warn");
+    if (adminStateEl.textContent !== "密碼錯誤") {
+      setAdminState("讀取失敗", "warn");
+    }
     adminMessageEl.textContent = error.message;
   }
 }
@@ -563,12 +570,12 @@ async function previewUnauthorizedEvents() {
     unauthorizedListEl.innerHTML = "";
     unauthorizedListEl.dataset.visible = "0";
     previewEventsButton.textContent = "預覽名單";
-    setAdminState("已收合", "ok");
+    setAdminState("已收合", "info");
     adminMessageEl.textContent = "未登錄紀錄已收合。";
     return;
   }
   if (!adminToken()) {
-    setAdminState("請輸入密碼", "warn");
+    setAdminState("請輸入密碼", "");
     adminMessageEl.textContent = "請先輸入管理密碼。";
     return;
   }
@@ -580,7 +587,11 @@ async function previewUnauthorizedEvents() {
       cache: "no-store",
     });
     if (!response.ok) {
-      throw new Error(response.status === 401 ? "管理密碼錯誤" : `讀取失敗：HTTP ${response.status}`);
+      if (response.status === 401) {
+        setAdminState("密碼錯誤", "warn");
+        throw new Error("管理密碼錯誤");
+      }
+      throw new Error(`讀取失敗：HTTP ${response.status}`);
     }
     const data = await response.json();
     renderUnauthorizedList(data.records || []);
@@ -589,7 +600,9 @@ async function previewUnauthorizedEvents() {
     setAdminState("已讀取", "ok");
     adminMessageEl.textContent = `已讀取 ${(data.records || []).length} 筆未登錄紀錄。`;
   } catch (error) {
-    setAdminState("讀取失敗", "warn");
+    if (adminStateEl.textContent !== "密碼錯誤") {
+      setAdminState("讀取失敗", "warn");
+    }
     adminMessageEl.textContent = error.message;
   }
 }
@@ -597,7 +610,7 @@ async function previewUnauthorizedEvents() {
 async function saveAuthorizedPlate(event) {
   event.preventDefault();
   if (!adminToken()) {
-    setAdminState("請輸入密碼", "warn");
+    setAdminState("請輸入密碼", "");
     adminMessageEl.textContent = "請先輸入管理密碼。";
     return;
   }
@@ -658,7 +671,7 @@ async function changeAdminPassword(event) {
   const newPassword = newAdminTokenEl.value.trim();
   const confirmPassword = confirmNewAdminTokenEl.value.trim();
   if (!oldPassword || !newPassword || !confirmPassword) {
-    setAdminState("請輸入密碼", "warn");
+    setAdminState("請輸入密碼", "");
     adminMessageEl.textContent = "請輸入原始密碼、新密碼和確認新密碼。";
     return;
   }
@@ -703,7 +716,7 @@ async function changeAdminPassword(event) {
 
 async function downloadFile(path, filename) {
   if (!adminToken()) {
-    setAdminState("請輸入密碼", "warn");
+    setAdminState("請輸入密碼", "");
     adminMessageEl.textContent = "請先輸入管理密碼。";
     return;
   }
@@ -735,7 +748,7 @@ async function downloadFile(path, filename) {
 
 async function clearUnauthorizedEvents() {
   if (!adminToken()) {
-    setAdminState("請輸入密碼", "warn");
+    setAdminState("請輸入密碼", "");
     adminMessageEl.textContent = "請先輸入管理密碼。";
     return;
   }
@@ -781,12 +794,12 @@ saveUrlButton.addEventListener("click", saveBackendUrl);
 reloadConfigButton.addEventListener("click", loadBackendConfig);
 viewSizeEl.addEventListener("input", () => setViewerSize(viewSizeEl.value));
 loadAuthorizedButton.addEventListener("click", () => loadAuthorizedPlates());
-confirmAdminTokenButton.addEventListener("click", loadAuthorizedPlates);
+confirmAdminTokenButton.addEventListener("click", () => loadAuthorizedPlates(true, "密碼成功"));
 passwordChangeFormEl.addEventListener("submit", changeAdminPassword);
 adminTokenEl.addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
     event.preventDefault();
-    loadAuthorizedPlates();
+    loadAuthorizedPlates(true, "密碼成功");
   }
 });
 plateFormEl.addEventListener("submit", saveAuthorizedPlate);

@@ -160,7 +160,6 @@ body.alerting {
 }
 
 .status.small {
-  color: #175cd3;
   font-size: 15px;
 }
 
@@ -322,15 +321,35 @@ body.alerting {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #175cd3;
+  background: #88939e;
 }
 
 .dot.ok {
   background: #0f9d58;
 }
 
+.dot.info {
+  background: #175cd3;
+}
+
 .dot.warn {
   background: #d93025;
+}
+
+.status-text {
+  color: #6b7280;
+}
+
+.status-text.ok {
+  color: #0f9d58;
+}
+
+.status-text.info {
+  color: #175cd3;
+}
+
+.status-text.warn {
+  color: #d93025;
 }
 
 .field {
@@ -360,6 +379,26 @@ button {
 }
 
 button:disabled {
+  background: #98a2b3;
+}
+
+#start,
+#toggle,
+#save-url,
+#reload-config,
+#confirm-admin-token {
+  background: #175cd3;
+}
+
+#start:hover,
+#toggle:hover,
+#save-url:hover,
+#reload-config:hover,
+#confirm-admin-token:hover {
+  background: #0f4bb8;
+}
+
+#toggle:disabled {
   background: #98a2b3;
 }
 
