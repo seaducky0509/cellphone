@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://indie-generates-mega-insertion.trycloudflare.com",
+    "backendUrl":  "https://alternate-viewers-fantastic-playlist.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-05-19 13:19:26 +08:00",
+    "updatedAt":  "2026-05-19 13:54:18 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }

@@ -522,7 +522,15 @@ function renderUnauthorizedList(items) {
     .join("");
 }
 
-async function loadAuthorizedPlates() {
+async function loadAuthorizedPlates(forceRefresh = false) {
+  if (authorizedListEl.dataset.visible === "1" && !forceRefresh) {
+    authorizedListEl.innerHTML = "";
+    authorizedListEl.dataset.visible = "0";
+    loadAuthorizedButton.textContent = "預覽名單";
+    setAdminState("已收合", "ok");
+    adminMessageEl.textContent = "登錄名單已收合。";
+    return;
+  }
   if (!adminToken()) {
     setAdminState("請輸入密碼", "warn");
     adminMessageEl.textContent = "請先輸入管理密碼。";
@@ -540,6 +548,8 @@ async function loadAuthorizedPlates() {
     }
     const data = await response.json();
     renderAuthorizedList(data.plates || []);
+    authorizedListEl.dataset.visible = "1";
+    loadAuthorizedButton.textContent = "收合名單";
     setAdminState("已讀取", "ok");
     adminMessageEl.textContent = `已讀取 ${(data.plates || []).length} 筆登錄車牌。`;
   } catch (error) {
@@ -549,6 +559,14 @@ async function loadAuthorizedPlates() {
 }
 
 async function previewUnauthorizedEvents() {
+  if (unauthorizedListEl.dataset.visible === "1") {
+    unauthorizedListEl.innerHTML = "";
+    unauthorizedListEl.dataset.visible = "0";
+    previewEventsButton.textContent = "預覽名單";
+    setAdminState("已收合", "ok");
+    adminMessageEl.textContent = "未登錄紀錄已收合。";
+    return;
+  }
   if (!adminToken()) {
     setAdminState("請輸入密碼", "warn");
     adminMessageEl.textContent = "請先輸入管理密碼。";
@@ -566,6 +584,8 @@ async function previewUnauthorizedEvents() {
     }
     const data = await response.json();
     renderUnauthorizedList(data.records || []);
+    unauthorizedListEl.dataset.visible = "1";
+    previewEventsButton.textContent = "收合名單";
     setAdminState("已讀取", "ok");
     adminMessageEl.textContent = `已讀取 ${(data.records || []).length} 筆未登錄紀錄。`;
   } catch (error) {
@@ -603,7 +623,7 @@ async function saveAuthorizedPlate(event) {
     adminNoteEl.value = "";
     setAdminState("已儲存", "ok");
     adminMessageEl.textContent = "登錄車牌已更新。";
-    await loadAuthorizedPlates();
+    await loadAuthorizedPlates(true);
   } catch (error) {
     setAdminState("儲存失敗", "warn");
     adminMessageEl.textContent = error.message;
@@ -625,7 +645,7 @@ async function deleteAuthorizedPlate(plate) {
     }
     setAdminState("已刪除", "ok");
     adminMessageEl.textContent = `${plate} 已刪除。`;
-    await loadAuthorizedPlates();
+    await loadAuthorizedPlates(true);
   } catch (error) {
     setAdminState("刪除失敗", "warn");
     adminMessageEl.textContent = error.message;
@@ -735,6 +755,8 @@ async function clearUnauthorizedEvents() {
     setAdminState("紀錄已清空", "ok");
     adminMessageEl.textContent = "未登錄紀錄已清空，截圖檔案已保留。";
     renderUnauthorizedList([]);
+    unauthorizedListEl.dataset.visible = "1";
+    previewEventsButton.textContent = "收合名單";
   } catch (error) {
     setAdminState("清空紀錄失敗", "warn");
     adminMessageEl.textContent = error.message;
@@ -758,7 +780,7 @@ toggleButton.addEventListener("click", toggleRecognition);
 saveUrlButton.addEventListener("click", saveBackendUrl);
 reloadConfigButton.addEventListener("click", loadBackendConfig);
 viewSizeEl.addEventListener("input", () => setViewerSize(viewSizeEl.value));
-loadAuthorizedButton.addEventListener("click", loadAuthorizedPlates);
+loadAuthorizedButton.addEventListener("click", () => loadAuthorizedPlates());
 confirmAdminTokenButton.addEventListener("click", loadAuthorizedPlates);
 passwordChangeFormEl.addEventListener("submit", changeAdminPassword);
 adminTokenEl.addEventListener("keydown", (event) => {
