@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://whatever-highlight-rendered-country.trycloudflare.com",
+    "backendUrl":  "https://pgp-paso-abroad-neon.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-05-19 15:34:01 +08:00",
+    "updatedAt":  "2026-05-19 15:38:16 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }

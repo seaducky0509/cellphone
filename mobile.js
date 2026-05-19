@@ -195,6 +195,28 @@ function setMobileMode(mode) {
     toggleButton.disabled = !stream;
     setState("手機主機端", "info");
     messageEl.textContent = "此手機會開啟鏡頭並傳送畫面給後端辨識。";
+    startHostCommandPolling();
+  }
+}
+
+async function startHostCommandPolling() {
+  try {
+    if (!backendUrl) {
+      await loadBackendConfig();
+    }
+    if (backendUrl) {
+      const response = await fetch(
+        `${backendUrl}/api/mobile-command?last_id=999999999&camera_open=${stream ? "true" : "false"}&recognition_running=${running ? "true" : "false"}&t=${Date.now()}`,
+        { cache: "no-store" },
+      );
+      if (response.ok) {
+        const data = await response.json();
+        lastCommandId = Number(data.command_id || 0);
+      }
+    }
+  } catch (error) {
+    messageEl.textContent = `遠端命令同步失敗：${error.message}`;
+  } finally {
     pollHostCommand();
   }
 }
