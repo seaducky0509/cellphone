@@ -62,9 +62,10 @@ let appEntered = false;
 let lastCommandId = 0;
 let commandTimer = 0;
 let viewerTimer = 0;
+let warmupStarted = false;
 
 const captureWidth = 480;
-const recognizeIntervalMs = 100;
+const recognizeIntervalMs = 60;
 const requestTimeoutMs = 3000;
 const motionClearThreshold = 45;
 const motionCanvas = document.createElement("canvas");
@@ -139,6 +140,7 @@ async function loadBackendConfig() {
     if (backendUrl) {
       setState("後端已設定", "ok");
       messageEl.textContent = config.updatedAt ? `設定更新時間：${config.updatedAt}` : "後端網址已讀取";
+      warmupBackend();
     } else {
       setState("尚未設定後端", "warn");
       messageEl.textContent = "請先在電腦端啟動 tunnel。";
@@ -171,6 +173,20 @@ async function assertBackendReady() {
   }
 }
 
+function warmupBackend() {
+  if (warmupStarted || !backendUrl) {
+    return;
+  }
+  warmupStarted = true;
+  fetch(`${backendUrl}/api/mobile-warmup`, {
+    method: "POST",
+    cache: "no-store",
+    keepalive: true,
+  }).catch(() => {
+    warmupStarted = false;
+  });
+}
+
 function saveBackendUrl() {
   backendUrl = normalizeUrl(backendInput.value);
   localStorage.setItem("plateBackendUrl", backendUrl);
@@ -199,6 +215,7 @@ function setMobileMode(mode) {
     toggleButton.disabled = !stream;
     setState("手機主機端", "info");
     messageEl.textContent = "此手機會開啟鏡頭並傳送畫面給後端辨識。";
+    warmupBackend();
     startHostCommandPolling();
   }
 }
@@ -270,7 +287,7 @@ async function pollHostCommand() {
   } catch (error) {
     messageEl.textContent = `遠端命令讀取失敗：${error.message}`;
   } finally {
-    commandTimer = window.setTimeout(pollHostCommand, 500);
+    commandTimer = window.setTimeout(pollHostCommand, 250);
   }
 }
 
@@ -310,25 +327,41 @@ async function pollViewerState() {
     setState("觀看端連線錯誤", "warn");
     messageEl.textContent = error.message;
   } finally {
-    viewerTimer = window.setTimeout(pollViewerState, 600);
+    viewerTimer = window.setTimeout(pollViewerState, 350);
   }
 }
 
 async function renderViewerState(data) {
   const result = data.result || { plates: [], width: 0, height: 0 };
-  if (data.frame_available && data.frame_url) {
-    await drawViewerFrame(`${backendUrl}${data.frame_url}`);
-  }
-  drawResults(result, { width: result.width, height: result.height });
-  updatePanel(result);
   const host = data.host || {};
   startButton.textContent = host.camera_open ? "遠端關閉鏡頭" : "遠端開啟鏡頭";
   toggleButton.textContent = host.recognition_running ? "遠端停止辨識" : "遠端開始辨識";
   toggleButton.disabled = false;
-  if (!data.frame_available) {
+  if (!host.camera_open) {
+    clearViewerFrame();
+    updatePanel({ ok: true, plates: [], message: "手機主機端鏡頭已關閉" });
+    setState("等待手機主機端", "info");
+    messageEl.textContent = "A 手機主機端鏡頭已關閉。";
+    return;
+  }
+  if (data.frame_available && data.frame_url) {
+    await drawViewerFrame(`${backendUrl}${data.frame_url}`);
+    drawResults(result, { width: result.width, height: result.height });
+    updatePanel(result);
+  } else {
+    clearViewerFrame();
     setState("等待手機主機端", "info");
     messageEl.textContent = "A 手機主機端尚未傳送畫面。";
   }
+}
+
+function clearViewerFrame() {
+  clearOverlay();
+  clearAlertForNewScan();
+  const context = previewEl.getContext("2d", { willReadFrequently: false });
+  context.clearRect(0, 0, previewEl.width, previewEl.height);
+  latestPlateEl.textContent = "--";
+  plateListEl.innerHTML = "";
 }
 
 function drawViewerFrame(url) {
@@ -661,7 +694,7 @@ async function toggleRecognition() {
   setState(running ? "辨識車牌中" : "已停止", running ? "ok" : "");
   if (running) {
     lastMotionSample = null;
-    recognizeOnce();
+    window.setTimeout(recognizeOnce, 0);
   } else {
     window.clearTimeout(timer);
     clearOverlay();
@@ -978,6 +1011,7 @@ startButton.addEventListener("click", async () => {
     if (stream) {
       closeCamera();
     } else {
+      warmupBackend();
       await openCamera();
     }
   } catch (error) {
