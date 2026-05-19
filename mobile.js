@@ -48,6 +48,7 @@ const plateFormEl = document.querySelector("#plate-form");
 let stream = null;
 let running = false;
 let requestBusy = false;
+let liveFrameBusy = false;
 let timer = 0;
 let backendUrl = "";
 let requestSeq = 0;
@@ -63,9 +64,11 @@ let lastCommandId = 0;
 let commandTimer = 0;
 let viewerTimer = 0;
 let warmupStarted = false;
+let lastLiveFrameAt = 0;
 
 const captureWidth = 480;
 const recognizeIntervalMs = 60;
+const liveFrameIntervalMs = 250;
 const requestTimeoutMs = 3000;
 const motionClearThreshold = 45;
 const motionCanvas = document.createElement("canvas");
@@ -490,6 +493,9 @@ function renderPreview() {
       previewEl.height,
     );
     detectMotion();
+    if (!running) {
+      uploadLiveFrame();
+    }
   }
   requestAnimationFrame(renderPreview);
 }
@@ -548,6 +554,33 @@ function captureFrame() {
       0.62,
     ),
   );
+}
+
+async function uploadLiveFrame() {
+  const now = performance.now();
+  if (!backendUrl || liveFrameBusy || requestBusy || now - lastLiveFrameAt < liveFrameIntervalMs) {
+    return;
+  }
+  liveFrameBusy = true;
+  lastLiveFrameAt = now;
+  try {
+    const capture = await captureFrame();
+    await fetch(`${backendUrl}/api/mobile-frame`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "image/jpeg",
+        "X-Frame-Id": `live-${Date.now()}`,
+        "X-Frame-Width": String(capture.width),
+        "X-Frame-Height": String(capture.height),
+      },
+      body: capture.blob,
+      cache: "no-store",
+    });
+  } catch (error) {
+    // Live preview upload is best-effort; recognition errors are reported separately.
+  } finally {
+    liveFrameBusy = false;
+  }
 }
 
 function drawResults(result, captureMeta) {
