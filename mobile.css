@@ -96,6 +96,23 @@ body.alerting {
   gap: 8px;
 }
 
+.mode-switch {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.mode-button {
+  background: #e8f0fe;
+  color: #175cd3;
+  border: 1px solid #bed2f7;
+}
+
+.mode-button.active {
+  color: #fff;
+  background: #175cd3;
+}
+
 .size-control {
   display: grid;
   grid-template-columns: auto minmax(160px, 1fr) 58px;

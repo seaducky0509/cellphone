@@ -4,6 +4,8 @@ const overlayEl = document.querySelector("#overlay");
 const captureEl = document.querySelector("#capture");
 const startButton = document.querySelector("#start");
 const toggleButton = document.querySelector("#toggle");
+const hostModeButton = document.querySelector("#host-mode");
+const viewerModeButton = document.querySelector("#viewer-mode");
 const backendInput = document.querySelector("#backend-url");
 const saveUrlButton = document.querySelector("#save-url");
 const reloadConfigButton = document.querySelector("#reload-config");
@@ -53,6 +55,10 @@ let lastMotionCheck = 0;
 let lastMotionAt = 0;
 let lastDetectionAt = 0;
 let overlayHasBoxes = false;
+let mobileMode = localStorage.getItem("plateMobileMode") || "host";
+let lastCommandId = 0;
+let commandTimer = 0;
+let viewerTimer = 0;
 
 const captureWidth = 480;
 const recognizeIntervalMs = 100;
@@ -168,6 +174,144 @@ function saveBackendUrl() {
   setState(backendUrl ? "後端網址已儲存" : "尚未設定後端", backendUrl ? "ok" : "warn");
 }
 
+function setMobileMode(mode) {
+  mobileMode = mode === "viewer" ? "viewer" : "host";
+  localStorage.setItem("plateMobileMode", mobileMode);
+  hostModeButton.classList.toggle("active", mobileMode === "host");
+  viewerModeButton.classList.toggle("active", mobileMode === "viewer");
+  window.clearTimeout(commandTimer);
+  window.clearTimeout(viewerTimer);
+  if (mobileMode === "viewer") {
+    closeCamera();
+    startButton.textContent = "遠端開啟鏡頭";
+    toggleButton.textContent = "遠端開始辨識";
+    toggleButton.disabled = false;
+    setState("手機觀看端", "info");
+    messageEl.textContent = "觀看 A 手機主機端畫面，可遠端控制鏡頭與辨識。";
+    pollViewerState();
+  } else {
+    startButton.textContent = stream ? "關閉鏡頭" : "開啟鏡頭";
+    toggleButton.textContent = running ? "停止辨識" : "開始辨識";
+    toggleButton.disabled = !stream;
+    setState("手機主機端", "info");
+    messageEl.textContent = "此手機會開啟鏡頭並傳送畫面給後端辨識。";
+    pollHostCommand();
+  }
+}
+
+async function sendMobileControl(command) {
+  await assertBackendReady();
+  const response = await fetch(`${backendUrl}/api/mobile-control`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ command }),
+    cache: "no-store",
+  });
+  if (!response.ok) {
+    throw new Error(`遠端控制失敗：HTTP ${response.status}`);
+  }
+  return response.json();
+}
+
+async function pollHostCommand() {
+  if (mobileMode !== "host") {
+    return;
+  }
+  try {
+    if (backendUrl) {
+      const response = await fetch(
+        `${backendUrl}/api/mobile-command?last_id=${lastCommandId}&camera_open=${stream ? "true" : "false"}&recognition_running=${running ? "true" : "false"}&t=${Date.now()}`,
+        { cache: "no-store" },
+      );
+      if (response.ok) {
+        const data = await response.json();
+        if (data.command_id) {
+          lastCommandId = Number(data.command_id);
+        }
+        if (data.command) {
+          await applyHostCommand(data.command);
+        }
+      }
+    }
+  } catch (error) {
+    messageEl.textContent = `遠端命令讀取失敗：${error.message}`;
+  } finally {
+    commandTimer = window.setTimeout(pollHostCommand, 500);
+  }
+}
+
+async function applyHostCommand(command) {
+  if (command === "open_camera") {
+    await openCamera();
+  } else if (command === "close_camera") {
+    closeCamera();
+  } else if (command === "start_recognition") {
+    if (!stream) {
+      await openCamera();
+    }
+    if (!running) {
+      await toggleRecognition();
+    }
+  } else if (command === "stop_recognition" && running) {
+    await toggleRecognition();
+  }
+}
+
+async function pollViewerState() {
+  if (mobileMode !== "viewer") {
+    return;
+  }
+  try {
+    if (!backendUrl) {
+      await loadBackendConfig();
+    }
+    if (backendUrl) {
+      const response = await fetch(`${backendUrl}/api/mobile-live-state?t=${Date.now()}`, { cache: "no-store" });
+      if (response.ok) {
+        const data = await response.json();
+        await renderViewerState(data);
+      }
+    }
+  } catch (error) {
+    setState("觀看端連線錯誤", "warn");
+    messageEl.textContent = error.message;
+  } finally {
+    viewerTimer = window.setTimeout(pollViewerState, 600);
+  }
+}
+
+async function renderViewerState(data) {
+  const result = data.result || { plates: [], width: 0, height: 0 };
+  if (data.frame_available && data.frame_url) {
+    await drawViewerFrame(`${backendUrl}${data.frame_url}`);
+  }
+  drawResults(result, { width: result.width, height: result.height });
+  updatePanel(result);
+  const host = data.host || {};
+  startButton.textContent = host.camera_open ? "遠端關閉鏡頭" : "遠端開啟鏡頭";
+  toggleButton.textContent = host.recognition_running ? "遠端停止辨識" : "遠端開始辨識";
+  toggleButton.disabled = false;
+  if (!data.frame_available) {
+    setState("等待手機主機端", "info");
+    messageEl.textContent = "A 手機主機端尚未傳送畫面。";
+  }
+}
+
+function drawViewerFrame(url) {
+  return new Promise((resolve) => {
+    const image = new Image();
+    image.onload = () => {
+      resizeOverlay();
+      const context = previewEl.getContext("2d", { willReadFrequently: false });
+      context.clearRect(0, 0, previewEl.width, previewEl.height);
+      context.drawImage(image, 0, 0, previewEl.width, previewEl.height);
+      resolve();
+    };
+    image.onerror = () => resolve();
+    image.src = url;
+  });
+}
+
 async function openCamera() {
   if (stream) {
     return;
@@ -246,7 +390,7 @@ function sourceCoverRect(sourceWidth, sourceHeight, targetWidth, targetHeight) {
 }
 
 function renderPreview() {
-  if (!stream) {
+  if (!stream || mobileMode !== "host") {
     return;
   }
   const sourceWidth = videoEl.videoWidth || 1280;
@@ -778,6 +922,12 @@ async function clearUnauthorizedEvents() {
 
 startButton.addEventListener("click", async () => {
   try {
+    if (mobileMode === "viewer") {
+      const closing = startButton.textContent.includes("關閉");
+      await sendMobileControl(closing ? "close_camera" : "open_camera");
+      messageEl.textContent = closing ? "已送出遠端關閉鏡頭命令。" : "已送出遠端開啟鏡頭命令。";
+      return;
+    }
     if (stream) {
       closeCamera();
     } else {
@@ -789,7 +939,22 @@ startButton.addEventListener("click", async () => {
   }
 });
 tabButtons.forEach((button) => button.addEventListener("click", () => switchTab(button.dataset.tab)));
-toggleButton.addEventListener("click", toggleRecognition);
+toggleButton.addEventListener("click", async () => {
+  if (mobileMode === "viewer") {
+    try {
+      const stopping = toggleButton.textContent.includes("停止");
+      await sendMobileControl(stopping ? "stop_recognition" : "start_recognition");
+      messageEl.textContent = stopping ? "已送出遠端停止辨識命令。" : "已送出遠端開始辨識命令。";
+    } catch (error) {
+      setState("遠端控制失敗", "warn");
+      messageEl.textContent = error.message;
+    }
+    return;
+  }
+  toggleRecognition();
+});
+hostModeButton.addEventListener("click", () => setMobileMode("host"));
+viewerModeButton.addEventListener("click", () => setMobileMode("viewer"));
 saveUrlButton.addEventListener("click", saveBackendUrl);
 reloadConfigButton.addEventListener("click", loadBackendConfig);
 viewSizeEl.addEventListener("input", () => setViewerSize(viewSizeEl.value));
@@ -822,3 +987,4 @@ window.addEventListener("orientationchange", () => window.setTimeout(resizeOverl
 window.setInterval(loadBackendConfig, 30000);
 setViewerSize(localStorage.getItem("plateViewerWidth") || viewSizeEl.value);
 loadBackendConfig();
+setMobileMode(mobileMode);
