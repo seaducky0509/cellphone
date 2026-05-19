@@ -74,6 +74,7 @@ const motionClearThreshold = 45;
 const motionCanvas = document.createElement("canvas");
 motionCanvas.width = 48;
 motionCanvas.height = 27;
+const liveFrameCanvas = document.createElement("canvas");
 
 function normalizeUrl(value) {
   return String(value || "").trim().replace(/\/+$/, "");
@@ -406,13 +407,12 @@ async function openCamera() {
 }
 
 function closeCamera() {
-  if (!stream) {
-    return;
-  }
   running = false;
   window.clearTimeout(timer);
-  for (const track of stream.getTracks()) {
-    track.stop();
+  if (stream) {
+    for (const track of stream.getTracks()) {
+      track.stop();
+    }
   }
   stream = null;
   videoEl.srcObject = null;
@@ -529,20 +529,21 @@ function detectMotion() {
     clearAlertForNewScan();
     setState("辨識車牌中", "ok");
     messageEl.textContent = "畫面已移動，正在辨識新車牌。";
+    uploadLiveFrame(true);
   }
 }
 
-function captureFrame() {
+function encodePreviewFrame(targetCanvas) {
   const previewWidth = previewEl.width || 1280;
   const previewHeight = previewEl.height || 720;
   const width = Math.min(captureWidth, previewWidth);
   const height = Math.round((previewHeight / previewWidth) * width);
-  captureEl.width = width;
-  captureEl.height = height;
-  const context = captureEl.getContext("2d", { willReadFrequently: false });
+  targetCanvas.width = width;
+  targetCanvas.height = height;
+  const context = targetCanvas.getContext("2d", { willReadFrequently: false });
   context.drawImage(previewEl, 0, 0, width, height);
   return new Promise((resolve) =>
-    captureEl.toBlob(
+    targetCanvas.toBlob(
       (blob) =>
         resolve({
           blob,
@@ -556,15 +557,19 @@ function captureFrame() {
   );
 }
 
-async function uploadLiveFrame() {
+function captureFrame() {
+  return encodePreviewFrame(captureEl);
+}
+
+async function uploadLiveFrame(force = false) {
   const now = performance.now();
-  if (!backendUrl || liveFrameBusy || requestBusy || now - lastLiveFrameAt < liveFrameIntervalMs) {
+  if (!backendUrl || liveFrameBusy || (!force && requestBusy) || (!force && now - lastLiveFrameAt < liveFrameIntervalMs)) {
     return;
   }
   liveFrameBusy = true;
   lastLiveFrameAt = now;
   try {
-    const capture = await captureFrame();
+    const capture = await encodePreviewFrame(liveFrameCanvas);
     await fetch(`${backendUrl}/api/mobile-frame`, {
       method: "POST",
       headers: {
