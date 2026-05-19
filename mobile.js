@@ -175,11 +175,34 @@ async function openCamera() {
   });
   videoEl.srcObject = stream;
   await videoEl.play();
+  startButton.textContent = "關閉鏡頭";
   toggleButton.disabled = false;
   setState("鏡頭已開啟", "ok");
   messageEl.textContent = "請按開始辨識。";
   resizeOverlay();
   requestAnimationFrame(renderPreview);
+}
+
+function closeCamera() {
+  if (!stream) {
+    return;
+  }
+  running = false;
+  window.clearTimeout(timer);
+  for (const track of stream.getTracks()) {
+    track.stop();
+  }
+  stream = null;
+  videoEl.srcObject = null;
+  startButton.textContent = "開啟鏡頭";
+  toggleButton.textContent = "開始辨識";
+  toggleButton.disabled = true;
+  clearOverlay();
+  clearAlertForNewScan();
+  const previewContext = previewEl.getContext("2d");
+  previewContext.clearRect(0, 0, previewEl.width, previewEl.height);
+  setState("鏡頭已關閉", "");
+  messageEl.textContent = "請先開啟鏡頭。";
 }
 
 function resizeOverlay() {
@@ -584,7 +607,11 @@ async function downloadFile(path, filename) {
 
 startButton.addEventListener("click", async () => {
   try {
-    await openCamera();
+    if (stream) {
+      closeCamera();
+    } else {
+      await openCamera();
+    }
   } catch (error) {
     setState("鏡頭開啟失敗", "warn");
     messageEl.textContent = error.message;
