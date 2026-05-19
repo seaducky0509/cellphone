@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://pgp-paso-abroad-neon.trycloudflare.com",
+    "backendUrl":  "https://probe-refugees-labs-resistant.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-05-19 15:38:16 +08:00",
+    "updatedAt":  "2026-05-19 15:41:29 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
