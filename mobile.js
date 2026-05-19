@@ -21,6 +21,7 @@ const viewSizeLabelEl = document.querySelector("#view-size-label");
 const tabButtons = document.querySelectorAll(".tab");
 const views = document.querySelectorAll(".view");
 const adminTokenEl = document.querySelector("#admin-token");
+const confirmAdminTokenButton = document.querySelector("#confirm-admin-token");
 const adminPlateEl = document.querySelector("#admin-plate");
 const adminOwnerEl = document.querySelector("#admin-owner");
 const adminNoteEl = document.querySelector("#admin-note");
@@ -595,6 +596,13 @@ saveUrlButton.addEventListener("click", saveBackendUrl);
 reloadConfigButton.addEventListener("click", loadBackendConfig);
 viewSizeEl.addEventListener("input", () => setViewerSize(viewSizeEl.value));
 loadAuthorizedButton.addEventListener("click", loadAuthorizedPlates);
+confirmAdminTokenButton.addEventListener("click", loadAuthorizedPlates);
+adminTokenEl.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    loadAuthorizedPlates();
+  }
+});
 plateFormEl.addEventListener("submit", saveAuthorizedPlate);
 downloadAuthorizedButton.addEventListener("click", () =>
   downloadFile("/api/download/authorized-plates", "已登錄車牌紀錄.xlsx"),

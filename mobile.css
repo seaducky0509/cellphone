@@ -166,6 +166,12 @@ body.alerting {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.password-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 112px;
+  gap: 8px;
+}
+
 .plate-form {
   display: grid;
   grid-template-columns: 170px 1fr 1fr 180px;
@@ -345,6 +351,7 @@ dd {
   }
 
   .admin-actions,
+  .password-row,
   .plate-form,
   .authorized-item {
     grid-template-columns: 1fr;
