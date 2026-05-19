@@ -172,6 +172,17 @@ body.alerting {
   gap: 8px;
 }
 
+.password-change-form {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) 180px;
+  align-items: end;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid #d6dce2;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
 .plate-form {
   display: grid;
   grid-template-columns: 170px 1fr 1fr 180px;
@@ -351,9 +362,14 @@ dd {
   }
 
   .admin-actions,
+  .password-change-form,
   .plate-form,
   .authorized-item {
     grid-template-columns: 1fr;
+  }
+
+  .password-row {
+    grid-template-columns: minmax(0, 1fr) 104px;
   }
 }
 

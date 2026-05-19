@@ -88,6 +88,22 @@
           </span>
         </label>
 
+        <form class="password-change-form" id="password-change-form">
+          <label class="field">
+            <span>原始密碼</span>
+            <input id="old-admin-token" type="password" autocomplete="current-password" placeholder="目前密碼" />
+          </label>
+          <label class="field">
+            <span>新密碼</span>
+            <input id="new-admin-token" type="password" autocomplete="new-password" placeholder="至少 4 個字元" />
+          </label>
+          <label class="field">
+            <span>確認新密碼</span>
+            <input id="confirm-new-admin-token" type="password" autocomplete="new-password" placeholder="再次輸入新密碼" />
+          </label>
+          <button id="change-admin-token" type="submit">送出變更密碼</button>
+        </form>
+
         <div class="row admin-actions">
           <button id="load-authorized" type="button">讀取登錄名單</button>
           <button id="download-authorized" type="button">下載登錄名單</button>
@@ -116,6 +132,6 @@
     </main>
 
     <canvas id="capture" hidden></canvas>
-    <script src="./mobile.js?v=20260518-2"></script>
+    <script src="./mobile.js?v=20260519-1"></script>
   </body>
 </html>

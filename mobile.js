@@ -22,6 +22,10 @@ const tabButtons = document.querySelectorAll(".tab");
 const views = document.querySelectorAll(".view");
 const adminTokenEl = document.querySelector("#admin-token");
 const confirmAdminTokenButton = document.querySelector("#confirm-admin-token");
+const oldAdminTokenEl = document.querySelector("#old-admin-token");
+const newAdminTokenEl = document.querySelector("#new-admin-token");
+const confirmNewAdminTokenEl = document.querySelector("#confirm-new-admin-token");
+const passwordChangeFormEl = document.querySelector("#password-change-form");
 const adminPlateEl = document.querySelector("#admin-plate");
 const adminOwnerEl = document.querySelector("#admin-owner");
 const adminNoteEl = document.querySelector("#admin-note");
@@ -573,6 +577,52 @@ async function deleteAuthorizedPlate(plate) {
   }
 }
 
+async function changeAdminPassword(event) {
+  event.preventDefault();
+  const oldPassword = oldAdminTokenEl.value.trim();
+  const newPassword = newAdminTokenEl.value.trim();
+  const confirmPassword = confirmNewAdminTokenEl.value.trim();
+  if (!oldPassword || !newPassword || !confirmPassword) {
+    setAdminState("請輸入密碼", "warn");
+    adminMessageEl.textContent = "請輸入原始密碼、新密碼和確認新密碼。";
+    return;
+  }
+  if (newPassword.length < 4) {
+    setAdminState("新密碼太短", "warn");
+    adminMessageEl.textContent = "新密碼至少需要 4 個字元。";
+    return;
+  }
+  if (newPassword !== confirmPassword) {
+    setAdminState("確認不一致", "warn");
+    adminMessageEl.textContent = "新密碼和確認新密碼不一致。";
+    return;
+  }
+  try {
+    await ensureBackendUrlForAdmin();
+    const response = await fetch(`${backendUrl}/api/admin-password`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        old_password: oldPassword,
+        new_password: newPassword,
+      }),
+    });
+    if (!response.ok) {
+      const detail = await response.json().catch(() => ({}));
+      throw new Error(detail.detail || `變更密碼失敗：HTTP ${response.status}`);
+    }
+    adminTokenEl.value = newPassword;
+    oldAdminTokenEl.value = "";
+    newAdminTokenEl.value = "";
+    confirmNewAdminTokenEl.value = "";
+    setAdminState("密碼已變更", "ok");
+    adminMessageEl.textContent = "管理密碼已更新，之後請使用新密碼。";
+  } catch (error) {
+    setAdminState("變更密碼失敗", "warn");
+    adminMessageEl.textContent = error.message;
+  }
+}
+
 async function downloadFile(path, filename) {
   if (!adminToken()) {
     setAdminState("請輸入密碼", "warn");
@@ -624,6 +674,7 @@ reloadConfigButton.addEventListener("click", loadBackendConfig);
 viewSizeEl.addEventListener("input", () => setViewerSize(viewSizeEl.value));
 loadAuthorizedButton.addEventListener("click", loadAuthorizedPlates);
 confirmAdminTokenButton.addEventListener("click", loadAuthorizedPlates);
+passwordChangeFormEl.addEventListener("submit", changeAdminPassword);
 adminTokenEl.addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
     event.preventDefault();
