@@ -28,14 +28,14 @@ body.alerting {
 
 .tab {
   min-height: 40px;
-  color: #3f3f46;
-  background: #f4f4f5;
-  border: 1px solid #d4d4d8;
+  color: #175cd3;
+  background: #e8f0fe;
+  border: 1px solid #bed2f7;
 }
 
 .tab.active {
   color: #fff;
-  background: #3f3f46;
+  background: #175cd3;
 }
 
 .view {
@@ -155,10 +155,12 @@ body.alerting {
 
 .admin-header h1 {
   margin: 0;
+  color: #175cd3;
   font-size: 24px;
 }
 
 .status.small {
+  color: #175cd3;
   font-size: 15px;
 }
 
@@ -320,7 +322,7 @@ body.alerting {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #88939e;
+  background: #175cd3;
 }
 
 .dot.ok {
