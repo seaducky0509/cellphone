@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://fishing-filename-francisco-whole.trycloudflare.com",
+    "backendUrl":  "https://drawn-museum-feb-submit.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-05-19 11:49:43 +08:00",
+    "updatedAt":  "2026-05-19 12:15:09 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }

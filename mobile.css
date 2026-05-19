@@ -163,13 +163,41 @@ body.alerting {
 }
 
 .admin-actions {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .password-row {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 112px;
   gap: 8px;
+}
+
+.admin-section {
+  display: grid;
+  gap: 10px;
+}
+
+.admin-section summary {
+  display: block;
+  padding: 16px;
+  color: #fff;
+  background: #175cd3;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 800;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.admin-section[open] summary {
+  border-radius: 8px 8px 0 0;
+}
+
+.admin-section > form,
+.admin-section > .row {
+  margin-top: 0;
+  border-radius: 0 0 8px 8px;
 }
 
 .password-change-form {
@@ -181,6 +209,10 @@ body.alerting {
   border: 1px solid #d6dce2;
   border-radius: 8px;
   background: #f8fafc;
+}
+
+.danger-button {
+  background: #d93025;
 }
 
 .plate-form {

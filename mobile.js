@@ -36,6 +36,7 @@ const authorizedListEl = document.querySelector("#authorized-list");
 const loadAuthorizedButton = document.querySelector("#load-authorized");
 const downloadAuthorizedButton = document.querySelector("#download-authorized");
 const downloadEventsButton = document.querySelector("#download-events");
+const clearEventsButton = document.querySelector("#clear-events");
 const plateFormEl = document.querySelector("#plate-form");
 
 let stream = null;
@@ -601,7 +602,10 @@ async function changeAdminPassword(event) {
     await ensureBackendUrlForAdmin();
     const response = await fetch(`${backendUrl}/api/admin-password`, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+        ...adminHeaders(),
+      },
       body: JSON.stringify({
         old_password: oldPassword,
         new_password: newPassword,
@@ -655,6 +659,33 @@ async function downloadFile(path, filename) {
   }
 }
 
+async function clearUnauthorizedEvents() {
+  if (!adminToken()) {
+    setAdminState("請輸入密碼", "warn");
+    adminMessageEl.textContent = "請先輸入管理密碼。";
+    return;
+  }
+  if (!window.confirm("確定要清空未登錄紀錄嗎？截圖檔案會保留。")) {
+    return;
+  }
+  try {
+    await ensureBackendUrlForAdmin();
+    const response = await fetch(`${backendUrl}/api/unauthorized-events`, {
+      method: "DELETE",
+      headers: adminHeaders(),
+      cache: "no-store",
+    });
+    if (!response.ok) {
+      throw new Error(response.status === 401 ? "管理密碼錯誤" : `清空紀錄失敗：HTTP ${response.status}`);
+    }
+    setAdminState("紀錄已清空", "ok");
+    adminMessageEl.textContent = "未登錄紀錄已清空，截圖檔案已保留。";
+  } catch (error) {
+    setAdminState("清空紀錄失敗", "warn");
+    adminMessageEl.textContent = error.message;
+  }
+}
+
 startButton.addEventListener("click", async () => {
   try {
     if (stream) {
@@ -688,6 +719,7 @@ downloadAuthorizedButton.addEventListener("click", () =>
 downloadEventsButton.addEventListener("click", () =>
   downloadFile("/api/download/unauthorized-events", "未登錄車牌紀錄.xlsx"),
 );
+clearEventsButton.addEventListener("click", clearUnauthorizedEvents);
 authorizedListEl.addEventListener("click", (event) => {
   const button = event.target.closest("[data-delete-plate]");
   if (button) {
