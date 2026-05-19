@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://probe-refugees-labs-resistant.trycloudflare.com",
+    "backendUrl":  "https://california-baltimore-probability-invite.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-05-19 15:41:29 +08:00",
+    "updatedAt":  "2026-05-19 15:56:28 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }

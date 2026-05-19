@@ -390,6 +390,19 @@ function resizeOverlay() {
   clearOverlay();
 }
 
+function resizeOverlayOnly() {
+  const rect = previewEl.getBoundingClientRect();
+  const width = Math.max(1, Math.round(rect.width * window.devicePixelRatio));
+  const height = Math.max(1, Math.round(rect.height * window.devicePixelRatio));
+  if (overlayEl.width !== width) {
+    overlayEl.width = width;
+  }
+  if (overlayEl.height !== height) {
+    overlayEl.height = height;
+  }
+  clearOverlay();
+}
+
 function clearOverlay() {
   const context = overlayEl.getContext("2d");
   context.clearRect(0, 0, overlayEl.width, overlayEl.height);
@@ -497,7 +510,7 @@ function drawResults(result, captureMeta) {
     clearOverlay();
     return;
   }
-  resizeOverlay();
+  resizeOverlayOnly();
   const context = overlayEl.getContext("2d");
   const sourceWidth = Math.max(1, result.width || captureEl.width);
   const sourceHeight = Math.max(1, result.height || captureEl.height);
