@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://spa-sheffield-certificates-artist.trycloudflare.com",
+    "backendUrl":  "https://width-supervisor-familiar-incentive.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-05-20 10:26:42 +08:00",
+    "updatedAt":  "2026-05-20 10:30:43 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
