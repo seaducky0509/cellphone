@@ -71,6 +71,7 @@ const recognizeIntervalMs = 60;
 const liveFrameIntervalMs = 250;
 const requestTimeoutMs = 3000;
 const motionClearThreshold = 45;
+const githubRawConfigUrl = "https://raw.githubusercontent.com/seaducky0509/cellphone/main/backend-config.json";
 const motionCanvas = document.createElement("canvas");
 motionCanvas.width = 48;
 motionCanvas.height = 27;
@@ -127,18 +128,37 @@ function setViewerSize(value) {
   window.setTimeout(resizeOverlay, 0);
 }
 
-async function loadBackendConfig() {
-  try {
-    const response = await fetch(`./backend-config.json?t=${Date.now()}`, { cache: "no-store" });
-    if (!response.ok) {
-      throw new Error(`讀取設定失敗：HTTP ${response.status}`);
+async function fetchBackendConfig(forceRemote = false) {
+  const localUrl = `./backend-config.json?t=${Date.now()}`;
+  const remoteUrl = `${githubRawConfigUrl}?t=${Date.now()}`;
+  const urls = forceRemote ? [remoteUrl, localUrl] : [localUrl, remoteUrl];
+  let lastError = null;
+  for (const url of urls) {
+    try {
+      const response = await fetch(url, { cache: "no-store" });
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}`);
+      }
+      return await response.json();
+    } catch (error) {
+      lastError = error;
     }
-    const config = await response.json();
+  }
+  throw new Error(`讀取設定失敗：${lastError ? lastError.message : "unknown"}`);
+}
+
+async function loadBackendConfig(options = {}) {
+  try {
+    const config = await fetchBackendConfig(Boolean(options.forceRemote));
     const configuredUrl = normalizeUrl(config.backendUrl);
     const savedUrl = normalizeUrl(localStorage.getItem("plateBackendUrl"));
+    const previousUrl = backendUrl;
     backendUrl = configuredUrl || savedUrl;
     if (configuredUrl) {
       localStorage.setItem("plateBackendUrl", configuredUrl);
+    }
+    if (previousUrl && previousUrl !== backendUrl) {
+      warmupStarted = false;
     }
     backendInput.value = backendUrl;
     if (backendUrl) {
@@ -155,26 +175,53 @@ async function loadBackendConfig() {
   }
 }
 
+async function checkBackendStatus(url) {
+  const controller = new AbortController();
+  const timeout = window.setTimeout(() => controller.abort(), 4500);
+  try {
+    const response = await fetch(`${url}/api/status?t=${Date.now()}`, {
+      cache: "no-store",
+      signal: controller.signal,
+    });
+    return response.ok;
+  } finally {
+    window.clearTimeout(timeout);
+  }
+}
+
+async function reloadBackendSettings() {
+  setState("重新讀取設定", "info");
+  messageEl.textContent = "正在讀取最新後端網址...";
+  await loadBackendConfig({ forceRemote: true });
+  if (!backendUrl) {
+    throw new Error("尚未取得後端網址。");
+  }
+  const ok = await checkBackendStatus(backendUrl);
+  if (!ok) {
+    throw new Error("最新後端網址仍無法連線，請在電腦端重新啟動 tunnel。");
+  }
+  setState("後端已設定", "ok");
+  messageEl.textContent = "已讀取最新後端網址，連線正常。";
+}
+
 async function assertBackendReady() {
   await loadBackendConfig();
   if (!backendUrl) {
     throw new Error("尚未取得後端網址，請先在電腦端執行 tunnel 更新腳本。");
   }
-  const controller = new AbortController();
-  const timeout = window.setTimeout(() => controller.abort(), 5000);
   try {
-    const response = await fetch(`${backendUrl}/api/status?t=${Date.now()}`, {
-      cache: "no-store",
-      signal: controller.signal,
-    });
-    if (!response.ok) {
-      throw new Error(`HTTP ${response.status}`);
+    if (await checkBackendStatus(backendUrl)) {
+      return;
     }
   } catch (error) {
-    throw new Error(`後端連線失敗：${error.message}`);
-  } finally {
-    window.clearTimeout(timeout);
+    // Try the GitHub raw config below before reporting the stale URL.
   }
+  const staleUrl = backendUrl;
+  await loadBackendConfig({ forceRemote: true });
+  if (backendUrl && backendUrl !== staleUrl && (await checkBackendStatus(backendUrl))) {
+    return;
+  }
+  throw new Error("後端連線失敗：目前網址已失效，請在電腦端重新啟動 tunnel 更新腳本。");
 }
 
 function warmupBackend() {
@@ -328,8 +375,12 @@ async function pollViewerState() {
       }
     }
   } catch (error) {
-    setState("觀看端連線錯誤", "warn");
-    messageEl.textContent = error.message;
+    try {
+      await reloadBackendSettings();
+    } catch (reloadError) {
+      setState("觀看端連線錯誤", "warn");
+      messageEl.textContent = reloadError.message || error.message;
+    }
   } finally {
     viewerTimer = window.setTimeout(pollViewerState, 350);
   }
@@ -1075,7 +1126,14 @@ toggleButton.addEventListener("click", async () => {
 enterHostButton.addEventListener("click", () => enterApp("host"));
 enterViewerButton.addEventListener("click", () => enterApp("viewer"));
 saveUrlButton.addEventListener("click", saveBackendUrl);
-reloadConfigButton.addEventListener("click", loadBackendConfig);
+reloadConfigButton.addEventListener("click", async () => {
+  try {
+    await reloadBackendSettings();
+  } catch (error) {
+    setState("連線錯誤", "warn");
+    messageEl.textContent = error.message;
+  }
+});
 viewSizeEl.addEventListener("input", () => setViewerSize(viewSizeEl.value));
 loadAuthorizedButton.addEventListener("click", () => loadAuthorizedPlates());
 confirmAdminTokenButton.addEventListener("click", () => loadAuthorizedPlates(true, "密碼成功"));
