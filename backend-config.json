@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://sections-soa-riding-russell.trycloudflare.com",
+    "backendUrl":  "https://measured-controls-thumbnails-exchange.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-05-20 10:50:38 +08:00",
+    "updatedAt":  "2026-05-20 10:52:44 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
