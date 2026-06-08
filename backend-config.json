@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://difficulties-untitled-appropriations-mods.trycloudflare.com",
+    "backendUrl":  "https://rounds-stream-sources-techno.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-08 17:28:46 +08:00",
+    "updatedAt":  "2026-06-08 17:35:18 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
