@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://speeches-draw-trio-spatial.trycloudflare.com",
+    "backendUrl":  "https://uncertainty-assembly-would-meditation.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-09 01:39:48 +08:00",
+    "updatedAt":  "2026-06-09 02:41:30 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
