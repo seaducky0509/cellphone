@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://subscription-coffee-fabric-integral.trycloudflare.com",
+    "backendUrl":  "https://above-passes-oxford-clinic.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-08 17:51:55 +08:00",
+    "updatedAt":  "2026-06-08 17:56:25 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
