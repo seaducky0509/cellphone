@@ -205,7 +205,9 @@ async function reloadBackendSettings() {
 }
 
 async function assertBackendReady() {
-  await loadBackendConfig();
+  setState("取得最新後端網址", "info");
+  messageEl.textContent = "正在取得最新免費後端網址，確認可用後才開始辨識...";
+  await loadBackendConfig({ forceRemote: true });
   if (!backendUrl) {
     throw new Error("尚未取得後端網址，請先在電腦端執行 tunnel 更新腳本。");
   }
@@ -221,7 +223,7 @@ async function assertBackendReady() {
   if (backendUrl && backendUrl !== staleUrl && (await checkBackendStatus(backendUrl))) {
     return;
   }
-  throw new Error("後端連線失敗：目前網址已失效，請在電腦端重新啟動 tunnel 更新腳本。");
+  throw new Error("後端連線失敗：最新免費網址仍無法使用，電腦端 watchdog 正在修復，請稍後按重新讀取設定。");
 }
 
 function warmupBackend() {
