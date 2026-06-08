@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://pmc-alternate-bracelets-medicaid.trycloudflare.com",
+    "backendUrl":  "https://someone-particularly-march-dad.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-08 17:44:28 +08:00",
+    "updatedAt":  "2026-06-08 17:48:26 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
