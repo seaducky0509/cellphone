@@ -131,7 +131,7 @@ function setViewerSize(value) {
 async function fetchBackendConfig(forceRemote = false) {
   const localUrl = `./backend-config.json?t=${Date.now()}`;
   const remoteUrl = `${githubRawConfigUrl}?t=${Date.now()}`;
-  const urls = forceRemote ? [remoteUrl, localUrl] : [localUrl, remoteUrl];
+  const urls = [localUrl, remoteUrl];
   let lastError = null;
   for (const url of urls) {
     try {
