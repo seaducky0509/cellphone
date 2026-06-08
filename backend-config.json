@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://andreas-public-journalist-tongue.trycloudflare.com",
+    "backendUrl":  "https://dvds-series-fonts-population.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-08 16:39:35 +08:00",
+    "updatedAt":  "2026-06-08 16:46:05 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
