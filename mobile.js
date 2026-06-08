@@ -1,4 +1,4 @@
-const videoEl = document.querySelector("#camera");
+﻿const videoEl = document.querySelector("#camera");
 const previewEl = document.querySelector("#preview");
 const overlayEl = document.querySelector("#overlay");
 const captureEl = document.querySelector("#capture");
@@ -175,9 +175,9 @@ async function loadBackendConfig(options = {}) {
   }
 }
 
-async function checkBackendStatus(url) {
+async function checkBackendStatus(url, timeoutMs = 4500) {
   const controller = new AbortController();
-  const timeout = window.setTimeout(() => controller.abort(), 4500);
+  const timeout = window.setTimeout(() => controller.abort(), timeoutMs);
   try {
     const response = await fetch(`${url}/api/status?t=${Date.now()}`, {
       cache: "no-store",
@@ -189,6 +189,32 @@ async function checkBackendStatus(url) {
   }
 }
 
+function sleep(ms) {
+  return new Promise((resolve) => window.setTimeout(resolve, ms));
+}
+
+async function waitForBackendStatus(url, options = {}) {
+  const timeoutMs = options.timeoutMs || 30000;
+  const intervalMs = options.intervalMs || 2500;
+  const startedAt = Date.now();
+  let attempt = 0;
+  while (Date.now() - startedAt < timeoutMs) {
+    attempt += 1;
+    try {
+      if (await checkBackendStatus(url, options.requestTimeoutMs || 6000)) {
+        return true;
+      }
+    } catch (error) {
+      // Cloudflare Quick Tunnel often needs a short DNS/edge propagation window.
+    }
+    if (options.message) {
+      messageEl.textContent = `${options.message}（第 ${attempt} 次確認）`;
+    }
+    await sleep(intervalMs);
+  }
+  return false;
+}
+
 async function reloadBackendSettings() {
   setState("重新讀取設定", "info");
   messageEl.textContent = "正在讀取最新後端網址...";
@@ -196,12 +222,15 @@ async function reloadBackendSettings() {
   if (!backendUrl) {
     throw new Error("尚未取得後端網址。");
   }
-  const ok = await checkBackendStatus(backendUrl);
+  const ok = await waitForBackendStatus(backendUrl, {
+    timeoutMs: 30000,
+    message: "正在等待最新後端網址連線",
+  });
   if (!ok) {
-    throw new Error("最新後端網址仍無法連線，請在電腦端重新啟動 tunnel。");
+    throw new Error("最新後端網址仍無法連線，電腦端 watchdog 會繼續自動修復，請稍後再按一次重新讀取設定。");
   }
   setState("後端已設定", "ok");
-  messageEl.textContent = "已讀取最新後端網址，連線正常。";
+  messageEl.textContent = "已讀取最新可用後端網址。";
 }
 
 async function assertBackendReady() {
@@ -209,21 +238,23 @@ async function assertBackendReady() {
   messageEl.textContent = "正在取得最新免費後端網址，確認可用後才開始辨識...";
   await loadBackendConfig({ forceRemote: true });
   if (!backendUrl) {
-    throw new Error("尚未取得後端網址，請先在電腦端執行 tunnel 更新腳本。");
+    throw new Error("尚未取得後端網址，請確認電腦端 watchdog 已啟動。");
   }
-  try {
-    if (await checkBackendStatus(backendUrl)) {
-      return;
-    }
-  } catch (error) {
-    // Try the GitHub raw config below before reporting the stale URL.
+  if (await waitForBackendStatus(backendUrl, {
+    timeoutMs: 30000,
+    message: "正在等待最新免費後端網址可用",
+  })) {
+    return;
   }
   const staleUrl = backendUrl;
   await loadBackendConfig({ forceRemote: true });
-  if (backendUrl && backendUrl !== staleUrl && (await checkBackendStatus(backendUrl))) {
+  if (backendUrl && backendUrl !== staleUrl && (await waitForBackendStatus(backendUrl, {
+    timeoutMs: 20000,
+    message: "已取得新網址，正在確認連線",
+  }))) {
     return;
   }
-  throw new Error("後端連線失敗：最新免費網址仍無法使用，電腦端 watchdog 正在修復，請稍後按重新讀取設定。");
+  throw new Error("後端連線失敗：電腦端 watchdog 正在自動更新免費網址，請稍後再按開始辨識或重新讀取設定。");
 }
 
 function warmupBackend() {
