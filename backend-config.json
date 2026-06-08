@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://solar-tulsa-cycles-leaving.trycloudflare.com",
+    "backendUrl":  "https://feedback-package-arrival-entire.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-08 21:35:06 +08:00",
+    "updatedAt":  "2026-06-08 22:36:08 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
