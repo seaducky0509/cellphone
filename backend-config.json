@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://rounds-stream-sources-techno.trycloudflare.com",
+    "backendUrl":  "https://pmc-alternate-bracelets-medicaid.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-08 17:35:18 +08:00",
+    "updatedAt":  "2026-06-08 17:44:28 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
