@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://push-scholarships-clinics-tabs.trycloudflare.com",
+    "backendUrl":  "https://andreas-public-journalist-tongue.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-08 16:37:52 +08:00",
+    "updatedAt":  "2026-06-08 16:39:35 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
