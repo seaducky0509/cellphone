@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://development-into-curious-commitments.trycloudflare.com",
+    "backendUrl":  "https://database-harper-glass-rating.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-09 09:31:32 +08:00",
+    "updatedAt":  "2026-06-09 09:35:19 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
