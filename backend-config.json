@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://eva-cream-pirates-small.trycloudflare.com",
+    "backendUrl":  "https://britain-trees-questionnaire-concerned.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-09 11:17:04 +08:00",
+    "updatedAt":  "2026-06-09 11:33:42 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
