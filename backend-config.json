@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://ton-statement-wilderness-isa.trycloudflare.com",
+    "backendUrl":  "https://importance-titled-digit-oaks.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-10 03:08:01 +08:00",
+    "updatedAt":  "2026-06-10 04:09:07 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
