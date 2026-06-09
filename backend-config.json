@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://still-lake-jacob-asylum.trycloudflare.com",
+    "backendUrl":  "https://pastor-make-training-cats.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-09 23:03:39 +08:00",
+    "updatedAt":  "2026-06-10 00:04:22 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
