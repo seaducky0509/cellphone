@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://posts-namely-shelter-publications.trycloudflare.com",
+    "backendUrl":  "https://processes-recall-from-means.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-09 15:48:00 +08:00",
+    "updatedAt":  "2026-06-09 15:51:10 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
