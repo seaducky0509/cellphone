@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://pastor-make-training-cats.trycloudflare.com",
+    "backendUrl":  "https://linked-repairs-expression-suppose.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-10 00:04:22 +08:00",
+    "updatedAt":  "2026-06-10 01:05:29 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
