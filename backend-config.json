@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://processes-recall-from-means.trycloudflare.com",
+    "backendUrl":  "https://related-stream-dozens-timeline.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-09 15:51:10 +08:00",
+    "updatedAt":  "2026-06-09 15:55:55 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
