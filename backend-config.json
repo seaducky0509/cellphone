@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://parliamentary-earning-sight-expenditure.trycloudflare.com",
+    "backendUrl":  "https://ton-statement-wilderness-isa.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-10 02:07:01 +08:00",
+    "updatedAt":  "2026-06-10 03:08:01 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
