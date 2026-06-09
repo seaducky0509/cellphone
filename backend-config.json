@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://pipes-given-spend-ecommerce.trycloudflare.com",
+    "backendUrl":  "https://briefs-expanded-penn-pgp.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-09 09:42:19 +08:00",
+    "updatedAt":  "2026-06-09 09:52:39 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
