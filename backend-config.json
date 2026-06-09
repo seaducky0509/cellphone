@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://briefs-expanded-penn-pgp.trycloudflare.com",
+    "backendUrl":  "https://metal-cycles-movie-mesa.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-09 09:52:39 +08:00",
+    "updatedAt":  "2026-06-09 09:56:33 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
