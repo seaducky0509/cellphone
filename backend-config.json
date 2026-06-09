@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://names-albuquerque-duke-reproduced.trycloudflare.com",
+    "backendUrl":  "https://development-into-curious-commitments.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-09 08:40:51 +08:00",
+    "updatedAt":  "2026-06-09 09:31:32 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
