@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://pumps-webshots-wright-justin.trycloudflare.com",
+    "backendUrl":  "https://qualifying-pairs-dubai-mentor.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-09 16:56:12 +08:00",
+    "updatedAt":  "2026-06-09 17:57:20 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
