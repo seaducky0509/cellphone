@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://cams-executive-wrist-exchange.trycloudflare.com",
+    "backendUrl":  "https://amplifier-honey-taste-searching.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-09 10:30:28 +08:00",
+    "updatedAt":  "2026-06-09 10:39:00 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
