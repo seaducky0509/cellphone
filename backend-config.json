@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://believed-absorption-mods-analyses.trycloudflare.com",
+    "backendUrl":  "https://eva-cream-pirates-small.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-09 10:51:50 +08:00",
+    "updatedAt":  "2026-06-09 11:17:04 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
