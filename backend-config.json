@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://characteristic-pull-incredible-doug.trycloudflare.com",
+    "backendUrl":  "https://still-lake-jacob-asylum.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-09 22:01:53 +08:00",
+    "updatedAt":  "2026-06-09 23:03:39 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
