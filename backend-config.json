@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://metal-cycles-movie-mesa.trycloudflare.com",
+    "backendUrl":  "https://junction-midlands-gardens-remedies.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-09 09:56:33 +08:00",
+    "updatedAt":  "2026-06-09 10:02:01 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
