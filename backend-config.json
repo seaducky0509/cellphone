@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://qualifying-pairs-dubai-mentor.trycloudflare.com",
+    "backendUrl":  "https://hamilton-made-cord-remember.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-09 17:57:20 +08:00",
+    "updatedAt":  "2026-06-09 18:58:54 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
