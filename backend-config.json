@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://cooper-nerve-interests-validation.trycloudflare.com",
+    "backendUrl":  "https://powder-picking-remained-guam.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-11 02:15:41 +08:00",
+    "updatedAt":  "2026-06-11 03:16:43 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
