@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://sight-signed-voice-bibliographic.trycloudflare.com",
+    "backendUrl":  "https://cooper-nerve-interests-validation.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-11 01:13:45 +08:00",
+    "updatedAt":  "2026-06-11 02:15:41 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
