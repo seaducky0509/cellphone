@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://coming-grid-february-sections.trycloudflare.com",
+    "backendUrl":  "https://collected-books-talent-ship.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-10 14:54:50 +08:00",
+    "updatedAt":  "2026-06-10 15:55:26 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
