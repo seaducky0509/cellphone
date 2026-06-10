@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://row-veterinary-rfc-algebra.trycloudflare.com",
+    "backendUrl":  "https://erik-optional-parenting-clusters.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-11 04:18:12 +08:00",
+    "updatedAt":  "2026-06-11 05:20:40 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
