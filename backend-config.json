@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://compile-flowers-gps-sofa.trycloudflare.com",
+    "backendUrl":  "https://thereby-consistency-continually-travis.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-10 16:56:26 +08:00",
+    "updatedAt":  "2026-06-10 17:57:33 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
