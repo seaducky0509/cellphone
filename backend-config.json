@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://dylan-topic-become-notify.trycloudflare.com",
+    "backendUrl":  "https://edge-discounts-label-therapy.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-12 03:36:22 +08:00",
+    "updatedAt":  "2026-06-12 04:37:47 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
