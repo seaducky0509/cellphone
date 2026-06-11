@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://forward-lectures-excerpt-butter.trycloudflare.com",
+    "backendUrl":  "https://convinced-widescreen-principles-contacted.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-11 17:01:45 +08:00",
+    "updatedAt":  "2026-06-11 17:19:29 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
