@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://tower-fcc-href-influence.trycloudflare.com",
+    "backendUrl":  "https://gold-studios-personality-tournament.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-11 11:27:22 +08:00",
+    "updatedAt":  "2026-06-11 12:27:48 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
