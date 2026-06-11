@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://joined-invision-sic-items.trycloudflare.com",
+    "backendUrl":  "https://accounting-spouse-theaters-see.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-11 15:31:19 +08:00",
+    "updatedAt":  "2026-06-11 15:36:05 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
