@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://circular-weblogs-nominated-picked.trycloudflare.com",
+    "backendUrl":  "https://contrary-retrieval-mumbai-feb.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-11 21:28:16 +08:00",
+    "updatedAt":  "2026-06-11 22:29:50 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
