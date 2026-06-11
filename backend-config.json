@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://sims-highs-wondering-hosted.trycloudflare.com",
+    "backendUrl":  "https://joined-invision-sic-items.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-11 14:30:10 +08:00",
+    "updatedAt":  "2026-06-11 15:31:19 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
