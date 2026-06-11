@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://sagem-draft-growth-patches.trycloudflare.com",
+    "backendUrl":  "https://dylan-topic-become-notify.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-12 02:34:50 +08:00",
+    "updatedAt":  "2026-06-12 03:36:22 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
