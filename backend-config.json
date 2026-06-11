@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://kirk-distributors-fewer-tours.trycloudflare.com",
+    "backendUrl":  "https://jill-gdp-galleries-episodes.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-11 23:31:26 +08:00",
+    "updatedAt":  "2026-06-12 00:32:24 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
