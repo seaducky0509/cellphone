@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://counting-term-results-treating.trycloudflare.com",
+    "backendUrl":  "https://officers-completion-commented-jobs.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-13 04:57:34 +08:00",
+    "updatedAt":  "2026-06-13 05:59:11 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
