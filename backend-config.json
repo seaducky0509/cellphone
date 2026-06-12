@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://ships-glory-limitations-couples.trycloudflare.com",
+    "backendUrl":  "https://interactive-vector-col-launches.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-12 08:50:30 +08:00",
+    "updatedAt":  "2026-06-12 09:51:05 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
