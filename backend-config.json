@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://registration-accessing-healthcare-variance.trycloudflare.com",
+    "backendUrl":  "https://counting-term-results-treating.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-13 03:56:35 +08:00",
+    "updatedAt":  "2026-06-13 04:57:34 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
