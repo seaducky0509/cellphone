@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://interactive-vector-col-launches.trycloudflare.com",
+    "backendUrl":  "https://cindy-allowing-inkjet-potter.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-12 09:51:05 +08:00",
+    "updatedAt":  "2026-06-12 09:57:41 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
