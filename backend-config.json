@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://criterion-suggestions-logic-presidential.trycloudflare.com",
+    "backendUrl":  "https://short-fred-stripes-computed.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-12 20:01:06 +08:00",
+    "updatedAt":  "2026-06-12 20:04:49 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
