@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://flooring-politics-assumed-con.trycloudflare.com",
+    "backendUrl":  "https://agents-clean-registry-set.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-12 22:45:13 +08:00",
+    "updatedAt":  "2026-06-12 23:45:32 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
