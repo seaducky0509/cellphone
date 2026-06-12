@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://federation-quiet-intelligent-findlaw.trycloudflare.com",
+    "backendUrl":  "https://wheat-maybe-reggae-listed.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-13 00:46:00 +08:00",
+    "updatedAt":  "2026-06-13 01:47:24 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
