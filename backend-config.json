@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://short-fred-stripes-computed.trycloudflare.com",
+    "backendUrl":  "https://entrepreneurs-ciao-diploma-cons.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-12 20:04:49 +08:00",
+    "updatedAt":  "2026-06-12 21:05:57 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
