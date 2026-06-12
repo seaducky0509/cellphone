@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://walter-alternatively-cave-durable.trycloudflare.com",
+    "backendUrl":  "https://predictions-reporters-meal-seekers.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-12 17:23:44 +08:00",
+    "updatedAt":  "2026-06-12 17:45:26 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
