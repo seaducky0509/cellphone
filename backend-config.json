@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://whale-towards-doctors-penalty.trycloudflare.com",
+    "backendUrl":  "https://partially-shelter-sandy-hostel.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-12 18:46:45 +08:00",
+    "updatedAt":  "2026-06-12 18:51:06 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
