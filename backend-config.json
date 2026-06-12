@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://partially-shelter-sandy-hostel.trycloudflare.com",
+    "backendUrl":  "https://bunny-between-wooden-cornell.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-12 18:51:06 +08:00",
+    "updatedAt":  "2026-06-12 18:54:52 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
