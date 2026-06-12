@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://john-choosing-bottle-harold.trycloudflare.com",
+    "backendUrl":  "https://ebook-invisible-graph-game.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-12 07:45:58 +08:00",
+    "updatedAt":  "2026-06-12 08:46:50 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
