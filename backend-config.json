@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://soldiers-viewpicture-pike-liberty.trycloudflare.com",
+    "backendUrl":  "https://detect-concentrations-earl-gary.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-12 10:02:23 +08:00",
+    "updatedAt":  "2026-06-12 11:03:25 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
