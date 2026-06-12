@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://bunny-between-wooden-cornell.trycloudflare.com",
+    "backendUrl":  "https://chronic-basement-marker-wisdom.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-12 18:54:52 +08:00",
+    "updatedAt":  "2026-06-12 19:00:00 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
