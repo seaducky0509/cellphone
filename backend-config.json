@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://somehow-uri-pace-garcia.trycloudflare.com",
+    "backendUrl":  "https://passage-pam-intranet-privilege.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-12 17:04:29 +08:00",
+    "updatedAt":  "2026-06-12 17:18:35 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
