@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://refer-turtle-install-adopted.trycloudflare.com",
+    "backendUrl":  "https://connectivity-polymer-ooo-salad.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-13 17:46:22 +08:00",
+    "updatedAt":  "2026-06-13 18:47:20 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
