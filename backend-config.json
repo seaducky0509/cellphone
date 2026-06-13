@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://packs-radar-briefs-zinc.trycloudflare.com",
+    "backendUrl":  "https://clocks-rows-worked-guards.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-13 08:00:47 +08:00",
+    "updatedAt":  "2026-06-13 09:01:48 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
