@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://bay-offline-ashley-limited.trycloudflare.com",
+    "backendUrl":  "https://drinking-dude-tactics-catalog.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-14 01:12:26 +08:00",
+    "updatedAt":  "2026-06-14 02:13:29 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
