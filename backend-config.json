@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://combinations-medicare-prostores-equity.trycloudflare.com",
+    "backendUrl":  "https://refer-turtle-install-adopted.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-13 16:45:12 +08:00",
+    "updatedAt":  "2026-06-13 17:46:22 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
