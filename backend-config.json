@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://clocks-rows-worked-guards.trycloudflare.com",
+    "backendUrl":  "https://null-sailing-evident-bringing.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-13 09:01:48 +08:00",
+    "updatedAt":  "2026-06-13 10:02:53 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
