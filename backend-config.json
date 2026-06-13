@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://drinking-dude-tactics-catalog.trycloudflare.com",
+    "backendUrl":  "https://watt-carol-ham-ticket.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-14 02:13:29 +08:00",
+    "updatedAt":  "2026-06-14 03:14:59 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
