@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://linear-spoke-pride-kinase.trycloudflare.com",
+    "backendUrl":  "https://solution-sport-opened-pound.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-13 12:05:00 +08:00",
+    "updatedAt":  "2026-06-13 13:06:30 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
