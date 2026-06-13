@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://recommends-stat-northeast-tent.trycloudflare.com",
+    "backendUrl":  "https://dated-class-mark-strategies.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-13 20:48:59 +08:00",
+    "updatedAt":  "2026-06-13 21:49:59 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
