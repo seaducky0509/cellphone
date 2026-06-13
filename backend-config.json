@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://solution-sport-opened-pound.trycloudflare.com",
+    "backendUrl":  "https://guns-sol-qui-documented.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-13 13:06:30 +08:00",
+    "updatedAt":  "2026-06-13 14:07:00 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
