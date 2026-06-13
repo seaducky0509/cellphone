@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://government-borders-added-sponsored.trycloudflare.com",
+    "backendUrl":  "https://packs-radar-briefs-zinc.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-13 06:59:41 +08:00",
+    "updatedAt":  "2026-06-13 08:00:47 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
