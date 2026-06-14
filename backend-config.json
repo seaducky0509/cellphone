@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://detailed-milk-architect-she.trycloudflare.com",
+    "backendUrl":  "https://tap-these-reading-usage.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-15 04:51:45 +08:00",
+    "updatedAt":  "2026-06-15 05:52:48 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
