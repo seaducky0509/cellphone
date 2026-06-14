@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://nature-ellis-echo-sculpture.trycloudflare.com",
+    "backendUrl":  "https://just-gap-hockey-tender.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-14 18:36:00 +08:00",
+    "updatedAt":  "2026-06-14 19:41:45 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
