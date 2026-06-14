@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://managed-crossword-football-ministers.trycloudflare.com",
+    "backendUrl":  "https://conduct-magic-sets-conventional.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-14 11:52:31 +08:00",
+    "updatedAt":  "2026-06-14 12:06:08 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
