@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://seattle-strip-other-joyce.trycloudflare.com",
+    "backendUrl":  "https://browsers-reads-inns-layers.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-14 20:43:27 +08:00",
+    "updatedAt":  "2026-06-14 21:44:35 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
