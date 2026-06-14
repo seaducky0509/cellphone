@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://programmers-jews-forge-knives.trycloudflare.com",
+    "backendUrl":  "https://common-planners-states-dayton.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-14 16:41:45 +08:00",
+    "updatedAt":  "2026-06-14 17:04:26 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
