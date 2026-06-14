@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://linda-lands-carroll-prev.trycloudflare.com",
+    "backendUrl":  "https://cord-mph-lane-gates.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-14 14:37:54 +08:00",
+    "updatedAt":  "2026-06-14 15:15:34 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
