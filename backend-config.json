@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://cord-mph-lane-gates.trycloudflare.com",
+    "backendUrl":  "https://heart-join-tomorrow-totally.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-14 15:15:34 +08:00",
+    "updatedAt":  "2026-06-14 15:18:32 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
