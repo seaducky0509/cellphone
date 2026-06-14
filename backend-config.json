@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://offline-vanilla-vienna-children.trycloudflare.com",
+    "backendUrl":  "https://scroll-stephanie-bat-completed.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-15 00:47:41 +08:00",
+    "updatedAt":  "2026-06-15 01:48:44 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
