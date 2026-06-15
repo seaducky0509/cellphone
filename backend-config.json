@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://well-crop-determination-eve.trycloudflare.com",
+    "backendUrl":  "https://mental-static-baseline-martin.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-15 17:28:22 +08:00",
+    "updatedAt":  "2026-06-15 17:32:03 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
