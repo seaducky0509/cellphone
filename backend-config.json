@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://oriental-samuel-colorado-initial.trycloudflare.com",
+    "backendUrl":  "https://translated-uniprotkb-answers-shelf.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-15 17:47:30 +08:00",
+    "updatedAt":  "2026-06-15 17:54:26 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
