@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://tribal-transparent-institutional-carlos.trycloudflare.com",
+    "backendUrl":  "https://sending-cradle-amber-adaptation.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-15 22:31:02 +08:00",
+    "updatedAt":  "2026-06-15 23:31:56 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
