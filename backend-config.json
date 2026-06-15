@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://auckland-wma-supporters-pumps.trycloudflare.com",
+    "backendUrl":  "https://projectors-venues-promotes-cork.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-15 14:01:08 +08:00",
+    "updatedAt":  "2026-06-15 14:30:46 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
