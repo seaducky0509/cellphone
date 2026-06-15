@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://scan-figured-heaven-aaron.trycloudflare.com",
+    "backendUrl":  "https://totally-terminal-initially-disks.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-15 20:23:38 +08:00",
+    "updatedAt":  "2026-06-15 20:28:44 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
