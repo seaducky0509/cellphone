@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://attach-payroll-der-logo.trycloudflare.com",
+    "backendUrl":  "https://plastic-suse-lucas-surveys.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-15 11:08:35 +08:00",
+    "updatedAt":  "2026-06-15 11:18:54 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
