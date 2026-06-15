@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://constructed-planet-webcams-halloween.trycloudflare.com",
+    "backendUrl":  "https://explains-movements-maximum-lens.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-15 15:29:59 +08:00",
+    "updatedAt":  "2026-06-15 16:19:01 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
