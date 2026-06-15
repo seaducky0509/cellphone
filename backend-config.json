@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://translated-uniprotkb-answers-shelf.trycloudflare.com",
+    "backendUrl":  "https://others-kijiji-solaris-hosted.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-15 17:54:26 +08:00",
+    "updatedAt":  "2026-06-15 17:59:15 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
