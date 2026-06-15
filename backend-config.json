@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://put-minute-doom-coalition.trycloudflare.com",
+    "backendUrl":  "https://attach-payroll-der-logo.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-15 11:02:55 +08:00",
+    "updatedAt":  "2026-06-15 11:08:35 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
