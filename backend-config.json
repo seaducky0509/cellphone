@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://others-kijiji-solaris-hosted.trycloudflare.com",
+    "backendUrl":  "https://perception-well-creations-tion.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-15 17:59:15 +08:00",
+    "updatedAt":  "2026-06-15 18:17:07 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
