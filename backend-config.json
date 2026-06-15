@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://coat-qld-share-represents.trycloudflare.com",
+    "backendUrl":  "https://vsnet-sixth-feeds-boulevard.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-16 01:33:48 +08:00",
+    "updatedAt":  "2026-06-16 02:35:18 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
