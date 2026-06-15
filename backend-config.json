@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://theatre-missions-but-maintaining.trycloudflare.com",
+    "backendUrl":  "https://pst-correction-developments-airport.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-15 13:31:31 +08:00",
+    "updatedAt":  "2026-06-15 13:49:00 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
