@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://plastic-suse-lucas-surveys.trycloudflare.com",
+    "backendUrl":  "https://carolina-guam-evans-furnishings.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-15 11:18:54 +08:00",
+    "updatedAt":  "2026-06-15 12:11:07 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
