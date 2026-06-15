@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://perception-well-creations-tion.trycloudflare.com",
+    "backendUrl":  "https://acres-charles-meyer-explanation.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-15 18:17:07 +08:00",
+    "updatedAt":  "2026-06-15 18:21:30 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
