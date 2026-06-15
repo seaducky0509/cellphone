@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://blend-cement-alexandria-logos.trycloudflare.com",
+    "backendUrl":  "https://theatre-missions-but-maintaining.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-15 13:10:21 +08:00",
+    "updatedAt":  "2026-06-15 13:31:31 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
