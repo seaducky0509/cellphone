@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://pst-correction-developments-airport.trycloudflare.com",
+    "backendUrl":  "https://auckland-wma-supporters-pumps.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-15 13:49:00 +08:00",
+    "updatedAt":  "2026-06-15 14:01:08 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
