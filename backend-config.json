@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://normally-legitimate-mining-here.trycloudflare.com",
+    "backendUrl":  "https://maker-logic-attribute-stage.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-16 15:35:25 +08:00",
+    "updatedAt":  "2026-06-16 15:39:25 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
