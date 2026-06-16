@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://castle-ball-number-voters.trycloudflare.com",
+    "backendUrl":  "https://narrow-button-venues-pharmacology.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-16 21:07:18 +08:00",
+    "updatedAt":  "2026-06-16 22:08:29 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
