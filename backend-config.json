@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://golden-amanda-mile-arrested.trycloudflare.com",
+    "backendUrl":  "https://reduction-cars-masters-foam.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-16 11:32:40 +08:00",
+    "updatedAt":  "2026-06-16 12:33:33 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
