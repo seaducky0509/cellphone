@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://incentives-silly-circus-cole.trycloudflare.com",
+    "backendUrl":  "https://rip-relating-harvey-finger.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-17 00:14:02 +08:00",
+    "updatedAt":  "2026-06-17 01:15:41 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
