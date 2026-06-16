@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://gateway-exchange-potentially-prisoners.trycloudflare.com",
+    "backendUrl":  "https://kills-klein-changed-groups.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-17 06:20:10 +08:00",
+    "updatedAt":  "2026-06-17 07:21:14 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
