@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://workshops-beds-parts-delaware.trycloudflare.com",
+    "backendUrl":  "https://castle-ball-number-voters.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-16 20:05:51 +08:00",
+    "updatedAt":  "2026-06-16 21:07:18 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
