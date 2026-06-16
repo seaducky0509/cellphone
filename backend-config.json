@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://dealtime-ash-sherman-permalink.trycloudflare.com",
+    "backendUrl":  "https://patch-essentially-name-fisheries.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-16 16:50:59 +08:00",
+    "updatedAt":  "2026-06-16 16:56:11 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
