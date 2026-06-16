@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://tar-random-measured-music.trycloudflare.com",
+    "backendUrl":  "https://steven-lets-deal-population.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-17 04:18:10 +08:00",
+    "updatedAt":  "2026-06-17 05:19:41 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
