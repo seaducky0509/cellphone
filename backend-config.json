@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://entries-crown-bluetooth-equal.trycloudflare.com",
+    "backendUrl":  "https://incentives-silly-circus-cole.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-16 23:13:26 +08:00",
+    "updatedAt":  "2026-06-17 00:14:02 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
