@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://excess-mixed-robots-balance.trycloudflare.com",
+    "backendUrl":  "https://shopping-tax-concept-gamecube.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-16 15:59:47 +08:00",
+    "updatedAt":  "2026-06-16 16:04:12 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
