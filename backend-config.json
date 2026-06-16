@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://visibility-unit-incentive-separate.trycloudflare.com",
+    "backendUrl":  "https://tar-random-measured-music.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-17 03:17:14 +08:00",
+    "updatedAt":  "2026-06-17 04:18:10 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
