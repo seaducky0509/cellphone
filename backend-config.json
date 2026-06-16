@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://soft-gba-extraction-examining.trycloudflare.com",
+    "backendUrl":  "https://dealtime-ash-sherman-permalink.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-16 16:45:13 +08:00",
+    "updatedAt":  "2026-06-16 16:50:59 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
