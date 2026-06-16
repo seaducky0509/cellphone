@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://shopping-tax-concept-gamecube.trycloudflare.com",
+    "backendUrl":  "https://property-makers-congressional-ottawa.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-16 16:04:12 +08:00",
+    "updatedAt":  "2026-06-16 16:09:52 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
