@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://starts-seek-brief-albums.trycloudflare.com",
+    "backendUrl":  "https://rrp-transmission-editor-lang.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-17 15:15:22 +08:00",
+    "updatedAt":  "2026-06-17 15:21:24 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
