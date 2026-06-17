@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://charm-environments-angels-stars.trycloudflare.com",
+    "backendUrl":  "https://programming-emotional-arise-rachel.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-17 09:23:47 +08:00",
+    "updatedAt":  "2026-06-17 10:24:52 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
