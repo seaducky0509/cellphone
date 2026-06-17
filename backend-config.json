@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://tiger-cottages-merry-foundation.trycloudflare.com",
+    "backendUrl":  "https://diamond-las-george-entered.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-17 23:20:23 +08:00",
+    "updatedAt":  "2026-06-18 00:20:45 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
