@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://terrain-victory-infant-lbs.trycloudflare.com",
+    "backendUrl":  "https://scanner-backed-vista-wives.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-17 20:06:48 +08:00",
+    "updatedAt":  "2026-06-17 21:08:18 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
