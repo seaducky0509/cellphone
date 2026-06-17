@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://participants-adequate-what-ventures.trycloudflare.com",
+    "backendUrl":  "https://guam-spirits-required-headquarters.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-18 04:00:47 +08:00",
+    "updatedAt":  "2026-06-18 05:01:13 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
