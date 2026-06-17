@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://machines-spend-thing-proceeds.trycloudflare.com",
+    "backendUrl":  "https://shots-theoretical-after-pci.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-17 12:16:11 +08:00",
+    "updatedAt":  "2026-06-17 12:20:17 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
