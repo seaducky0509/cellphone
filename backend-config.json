@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://prev-dollars-doctor-geometry.trycloudflare.com",
+    "backendUrl":  "https://terrain-victory-infant-lbs.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-17 19:06:32 +08:00",
+    "updatedAt":  "2026-06-17 20:06:48 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
