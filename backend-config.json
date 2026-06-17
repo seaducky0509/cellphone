@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://optimal-district-authorized-revisions.trycloudflare.com",
+    "backendUrl":  "https://starts-seek-brief-albums.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-17 15:11:43 +08:00",
+    "updatedAt":  "2026-06-17 15:15:22 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
