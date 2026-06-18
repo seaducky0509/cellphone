@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://hero-wireless-millennium-pediatric.trycloudflare.com",
+    "backendUrl":  "https://sunset-reserve-steps-comparisons.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-18 20:24:02 +08:00",
+    "updatedAt":  "2026-06-18 21:25:03 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
