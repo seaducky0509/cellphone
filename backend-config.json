@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://flat-leone-spas-gold.trycloudflare.com",
+    "backendUrl":  "https://sodium-confidentiality-flood-reproduce.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-18 22:26:13 +08:00",
+    "updatedAt":  "2026-06-18 23:27:28 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
