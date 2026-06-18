@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://kyle-unsubscribe-vegetables-bought.trycloudflare.com",
+    "backendUrl":  "https://sol-rocky-creativity-bands.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-18 13:16:25 +08:00",
+    "updatedAt":  "2026-06-18 14:17:05 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
