@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://sodium-confidentiality-flood-reproduce.trycloudflare.com",
+    "backendUrl":  "https://starting-pick-carnival-lamps.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-18 23:27:28 +08:00",
+    "updatedAt":  "2026-06-19 00:28:39 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
