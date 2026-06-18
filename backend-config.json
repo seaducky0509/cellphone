@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://sol-rocky-creativity-bands.trycloudflare.com",
+    "backendUrl":  "https://relay-accessing-poems-eddie.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-18 14:17:05 +08:00",
+    "updatedAt":  "2026-06-18 15:18:36 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
