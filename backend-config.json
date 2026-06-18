@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://salt-lights-settle-elliott.trycloudflare.com",
+    "backendUrl":  "https://representations-source-improvement-precious.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-18 07:03:15 +08:00",
+    "updatedAt":  "2026-06-18 08:04:22 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
