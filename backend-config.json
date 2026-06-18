@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://relay-accessing-poems-eddie.trycloudflare.com",
+    "backendUrl":  "https://experts-direct-measurement-folding.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-18 15:18:36 +08:00",
+    "updatedAt":  "2026-06-18 16:19:43 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
