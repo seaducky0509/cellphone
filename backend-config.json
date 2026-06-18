@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://manufacturing-proprietary-adapted-believe.trycloudflare.com",
+    "backendUrl":  "https://jan-elvis-sustainability-contracting.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-19 02:32:12 +08:00",
+    "updatedAt":  "2026-06-19 03:33:10 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
