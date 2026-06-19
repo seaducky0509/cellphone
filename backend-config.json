@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://benz-alto-homeland-ventures.trycloudflare.com",
+    "backendUrl":  "https://louis-issue-addition-terminals.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-19 12:52:25 +08:00",
+    "updatedAt":  "2026-06-19 13:53:51 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
