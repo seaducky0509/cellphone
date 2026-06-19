@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://athletics-plot-oct-stockings.trycloudflare.com",
+    "backendUrl":  "https://aerial-connect-handy-julian.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-19 07:37:52 +08:00",
+    "updatedAt":  "2026-06-19 08:39:12 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
