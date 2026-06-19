@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://stripes-surely-constitutional-recordings.trycloudflare.com",
+    "backendUrl":  "https://arc-arms-bass-yacht.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-19 16:57:00 +08:00",
+    "updatedAt":  "2026-06-19 17:58:08 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
