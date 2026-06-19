@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://leg-gpl-frames-decrease.trycloudflare.com",
+    "backendUrl":  "https://protective-hammer-approved-rover.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-20 01:58:24 +08:00",
+    "updatedAt":  "2026-06-20 02:59:50 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
