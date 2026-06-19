@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://provisions-letting-moderator-partner.trycloudflare.com",
+    "backendUrl":  "https://billion-lake-radio-contacting.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-20 04:00:58 +08:00",
+    "updatedAt":  "2026-06-20 05:02:01 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
