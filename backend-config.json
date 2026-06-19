@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://aerial-connect-handy-julian.trycloudflare.com",
+    "backendUrl":  "https://fraction-tags-interests-mystery.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-19 08:39:12 +08:00",
+    "updatedAt":  "2026-06-19 08:43:53 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
