@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://arc-arms-bass-yacht.trycloudflare.com",
+    "backendUrl":  "https://minute-features-harry-cons.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-19 17:58:08 +08:00",
+    "updatedAt":  "2026-06-19 18:59:18 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
