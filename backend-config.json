@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://gate-trees-enlargement-assist.trycloudflare.com",
+    "backendUrl":  "https://sql-transform-sectors-cameras.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-19 14:54:49 +08:00",
+    "updatedAt":  "2026-06-19 15:55:54 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
