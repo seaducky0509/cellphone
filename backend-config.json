@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://secretary-commonwealth-fitting-seed.trycloudflare.com",
+    "backendUrl":  "https://productive-met-combine-fossil.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-19 10:49:40 +08:00",
+    "updatedAt":  "2026-06-19 11:50:50 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
