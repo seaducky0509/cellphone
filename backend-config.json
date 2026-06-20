@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://annie-labour-heading-hope.trycloudflare.com",
+    "backendUrl":  "https://organ-chat-attempts-mega.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-20 16:19:06 +08:00",
+    "updatedAt":  "2026-06-20 17:19:44 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
