@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://motor-sought-stocks-subjects.trycloudflare.com",
+    "backendUrl":  "https://rating-those-owners-feelings.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-21 04:35:29 +08:00",
+    "updatedAt":  "2026-06-21 05:36:34 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
