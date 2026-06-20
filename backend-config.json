@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://drew-special-josh-phrases.trycloudflare.com",
+    "backendUrl":  "https://chorus-fare-attendance-candle.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-20 19:21:52 +08:00",
+    "updatedAt":  "2026-06-20 20:23:01 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
