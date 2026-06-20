@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://judge-sends-provision-ict.trycloudflare.com",
+    "backendUrl":  "https://drew-special-josh-phrases.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-20 18:21:16 +08:00",
+    "updatedAt":  "2026-06-20 19:21:52 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
