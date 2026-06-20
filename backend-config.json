@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://survive-pharmacology-mil-firewall.trycloudflare.com",
+    "backendUrl":  "https://ideas-howto-reduces-optional.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-20 11:13:18 +08:00",
+    "updatedAt":  "2026-06-20 12:14:24 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
