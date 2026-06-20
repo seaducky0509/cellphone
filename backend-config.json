@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://ashley-sea-terry-mattress.trycloudflare.com",
+    "backendUrl":  "https://motor-sought-stocks-subjects.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-21 04:31:34 +08:00",
+    "updatedAt":  "2026-06-21 04:35:29 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
