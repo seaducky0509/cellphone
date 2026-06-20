@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://oxide-arizona-sympathy-dallas.trycloudflare.com",
+    "backendUrl":  "https://institutional-blanket-pharmaceutical-fly.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-21 06:37:41 +08:00",
+    "updatedAt":  "2026-06-21 07:39:05 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
