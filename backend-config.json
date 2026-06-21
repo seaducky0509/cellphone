@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://asthma-bills-lat-exterior.trycloudflare.com",
+    "backendUrl":  "https://review-souls-controlling-stephen.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-21 23:16:08 +08:00",
+    "updatedAt":  "2026-06-22 00:17:06 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
