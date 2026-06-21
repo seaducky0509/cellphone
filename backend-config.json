@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://kelly-tapes-catalogue-spas.trycloudflare.com",
+    "backendUrl":  "https://thru-reproduced-guild-symbols.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-21 16:58:53 +08:00",
+    "updatedAt":  "2026-06-21 17:03:12 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
