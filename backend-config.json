@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://lafayette-boss-duty-willow.trycloudflare.com",
+    "backendUrl":  "https://sitting-activists-stands-freedom.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-21 12:52:39 +08:00",
+    "updatedAt":  "2026-06-21 13:54:10 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
