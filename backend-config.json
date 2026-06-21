@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://institutional-blanket-pharmaceutical-fly.trycloudflare.com",
+    "backendUrl":  "https://unix-ridge-percentage-acrylic.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-21 07:39:05 +08:00",
+    "updatedAt":  "2026-06-21 08:40:07 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
