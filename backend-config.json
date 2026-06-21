@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://prisoners-banana-ste-fool.trycloudflare.com",
+    "backendUrl":  "https://assured-perl-mel-bids.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-22 07:24:35 +08:00",
+    "updatedAt":  "2026-06-22 07:28:27 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
