@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://song-testimony-chief-warren.trycloudflare.com",
+    "backendUrl":  "https://asthma-bills-lat-exterior.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-21 22:14:59 +08:00",
+    "updatedAt":  "2026-06-21 23:16:08 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
