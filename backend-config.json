@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://cuts-stud-mathematical-mood.trycloudflare.com",
+    "backendUrl":  "https://achievement-rent-pepper-terminals.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-21 11:47:23 +08:00",
+    "updatedAt":  "2026-06-21 11:50:52 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
