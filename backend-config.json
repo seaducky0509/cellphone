@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://exploring-apparel-florist-possession.trycloudflare.com",
+    "backendUrl":  "https://amp-trains-humanity-fog.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-22 13:47:17 +08:00",
+    "updatedAt":  "2026-06-22 14:47:45 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
