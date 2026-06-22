@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://amp-trains-humanity-fog.trycloudflare.com",
+    "backendUrl":  "https://surrounded-proportion-exhibits-prescribed.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-22 14:47:45 +08:00",
+    "updatedAt":  "2026-06-22 14:52:09 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
