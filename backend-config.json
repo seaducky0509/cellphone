@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://feeling-niagara-exit-motels.trycloudflare.com",
+    "backendUrl":  "https://corrected-commander-increasing-operational.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-23 03:06:05 +08:00",
+    "updatedAt":  "2026-06-23 04:07:18 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
