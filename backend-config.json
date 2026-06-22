@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://impressed-interpretation-season-scope.trycloudflare.com",
+    "backendUrl":  "https://nuke-nested-dns-patrick.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-23 01:03:53 +08:00",
+    "updatedAt":  "2026-06-23 02:04:54 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
