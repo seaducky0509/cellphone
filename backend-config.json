@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://government-pixels-plates-trip.trycloudflare.com",
+    "backendUrl":  "https://impressed-interpretation-season-scope.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-23 00:02:55 +08:00",
+    "updatedAt":  "2026-06-23 01:03:53 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
