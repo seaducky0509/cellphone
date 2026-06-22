@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://retention-philips-pamela-florence.trycloudflare.com",
+    "backendUrl":  "https://tall-vegetables-replied-fleece.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-22 18:56:27 +08:00",
+    "updatedAt":  "2026-06-22 19:57:42 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
