@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://approval-showing-enforcement-closing.trycloudflare.com",
+    "backendUrl":  "https://government-pixels-plates-trip.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-22 23:01:19 +08:00",
+    "updatedAt":  "2026-06-23 00:02:55 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
