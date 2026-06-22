@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://foundations-stats-regards-recordings.trycloudflare.com",
+    "backendUrl":  "https://eligibility-thompson-funny-measurements.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-22 09:30:42 +08:00",
+    "updatedAt":  "2026-06-22 10:43:35 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
