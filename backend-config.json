@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://homeland-furniture-wing-lat.trycloudflare.com",
+    "backendUrl":  "https://animals-ends-ran-residence.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-22 15:53:09 +08:00",
+    "updatedAt":  "2026-06-22 16:54:06 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
