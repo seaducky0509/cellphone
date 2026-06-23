@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://would-extensive-shoot-belfast.trycloudflare.com",
+    "backendUrl":  "https://venue-nor-file-side.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-23 11:15:27 +08:00",
+    "updatedAt":  "2026-06-23 12:16:43 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
