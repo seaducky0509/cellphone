@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://results-flower-verde-vertex.trycloudflare.com",
+    "backendUrl":  "https://opt-fan-indexes-seven.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-23 20:12:37 +08:00",
+    "updatedAt":  "2026-06-23 21:14:07 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
