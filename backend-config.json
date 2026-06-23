@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://gets-extended-ranks-del.trycloudflare.com",
+    "backendUrl":  "https://olympics-use-academics-heavily.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-24 02:33:23 +08:00",
+    "updatedAt":  "2026-06-24 03:34:31 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
