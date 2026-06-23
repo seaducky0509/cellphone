@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://tomorrow-cleanup-applicable-yesterday.trycloudflare.com",
+    "backendUrl":  "https://hood-suggested-sail-worm.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-23 16:08:32 +08:00",
+    "updatedAt":  "2026-06-23 17:09:50 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
