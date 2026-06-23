@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://perspectives-washer-jane-fingers.trycloudflare.com",
+    "backendUrl":  "https://tomorrow-cleanup-applicable-yesterday.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-23 15:07:08 +08:00",
+    "updatedAt":  "2026-06-23 16:08:32 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
