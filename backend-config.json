@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://hood-suggested-sail-worm.trycloudflare.com",
+    "backendUrl":  "https://bailey-library-screensavers-llc.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-23 17:09:50 +08:00",
+    "updatedAt":  "2026-06-23 18:10:28 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
