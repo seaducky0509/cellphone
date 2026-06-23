@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://venue-nor-file-side.trycloudflare.com",
+    "backendUrl":  "https://trans-bags-approach-spam.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-23 12:16:43 +08:00",
+    "updatedAt":  "2026-06-23 12:50:24 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
