@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://consistent-short-desert-packing.trycloudflare.com",
+    "backendUrl":  "https://distinct-race-acoustic-july.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-24 00:24:06 +08:00",
+    "updatedAt":  "2026-06-24 00:31:53 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
