@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://somewhere-genius-symantec-stores.trycloudflare.com",
+    "backendUrl":  "https://gets-extended-ranks-del.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-24 01:32:14 +08:00",
+    "updatedAt":  "2026-06-24 02:33:23 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
