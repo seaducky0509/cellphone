@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://distinct-race-acoustic-july.trycloudflare.com",
+    "backendUrl":  "https://somewhere-genius-symantec-stores.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-24 00:31:53 +08:00",
+    "updatedAt":  "2026-06-24 01:32:14 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
