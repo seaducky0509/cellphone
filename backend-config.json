@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://avoiding-programmer-episode-chains.trycloudflare.com",
+    "backendUrl":  "https://festival-spirits-usgs-congressional.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-24 18:15:33 +08:00",
+    "updatedAt":  "2026-06-24 18:19:07 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
