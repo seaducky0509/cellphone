@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://sweet-nextel-everything-upper.trycloudflare.com",
+    "backendUrl":  "https://doing-rare-secondary-nathan.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-25 02:57:05 +08:00",
+    "updatedAt":  "2026-06-25 03:57:52 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
