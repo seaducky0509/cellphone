@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://festival-spirits-usgs-congressional.trycloudflare.com",
+    "backendUrl":  "https://partner-received-volume-latitude.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-24 18:19:07 +08:00",
+    "updatedAt":  "2026-06-24 18:40:45 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
