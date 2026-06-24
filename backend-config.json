@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://encoding-poor-checkout-evolution.trycloudflare.com",
+    "backendUrl":  "https://nitrogen-wendy-tale-gene.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-24 20:46:19 +08:00",
+    "updatedAt":  "2026-06-24 21:47:25 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
