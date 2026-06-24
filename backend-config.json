@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://wireless-behalf-opportunity-players.trycloudflare.com",
+    "backendUrl":  "https://pcs-hollywood-appliances-connector.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-24 12:48:42 +08:00",
+    "updatedAt":  "2026-06-24 13:50:26 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
