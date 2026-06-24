@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://scholarships-rotation-remove-beverages.trycloudflare.com",
+    "backendUrl":  "https://aim-ids-scenarios-north.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-25 06:04:02 +08:00",
+    "updatedAt":  "2026-06-25 07:04:53 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
