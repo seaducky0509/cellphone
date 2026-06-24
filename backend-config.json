@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://home-installed-firewall-initially.trycloudflare.com",
+    "backendUrl":  "https://scholarships-rotation-remove-beverages.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-25 05:59:25 +08:00",
+    "updatedAt":  "2026-06-25 06:04:02 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
