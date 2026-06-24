@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://brunswick-restored-sandy-seal.trycloudflare.com",
+    "backendUrl":  "https://threshold-heritage-behavioral-tee.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-24 10:46:07 +08:00",
+    "updatedAt":  "2026-06-24 11:47:13 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
