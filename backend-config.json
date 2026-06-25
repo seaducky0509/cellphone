@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://right-ind-selective-disabled.trycloudflare.com",
+    "backendUrl":  "https://struck-exports-recruiting-event.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-26 06:11:19 +08:00",
+    "updatedAt":  "2026-06-26 06:14:40 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
