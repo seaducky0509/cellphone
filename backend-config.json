@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://judgment-scsi-cologne-registry.trycloudflare.com",
+    "backendUrl":  "https://ronald-notify-birmingham-merchandise.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-25 22:33:24 +08:00",
+    "updatedAt":  "2026-06-25 23:35:11 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
