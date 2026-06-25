@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://aim-ids-scenarios-north.trycloudflare.com",
+    "backendUrl":  "https://occurred-curves-obtain-modems.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-25 07:04:53 +08:00",
+    "updatedAt":  "2026-06-25 08:05:58 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
