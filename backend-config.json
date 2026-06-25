@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://restricted-hub-citations-snowboard.trycloudflare.com",
+    "backendUrl":  "https://right-ind-selective-disabled.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-26 05:10:11 +08:00",
+    "updatedAt":  "2026-06-26 06:11:19 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
