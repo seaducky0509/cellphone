@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://examinations-cornwall-openings-geology.trycloudflare.com",
+    "backendUrl":  "https://appraisal-grey-thread-process.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-26 03:08:03 +08:00",
+    "updatedAt":  "2026-06-26 04:08:33 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
