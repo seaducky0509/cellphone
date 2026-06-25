@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://checkout-public-leaving-trustee.trycloudflare.com",
+    "backendUrl":  "https://nick-degree-resident-summer.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-25 16:17:54 +08:00",
+    "updatedAt":  "2026-06-25 17:19:04 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
