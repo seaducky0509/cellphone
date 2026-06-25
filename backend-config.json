@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://mix-anytime-bent-dual.trycloudflare.com",
+    "backendUrl":  "https://seriously-optional-continually-set.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-25 10:08:01 +08:00",
+    "updatedAt":  "2026-06-25 10:11:42 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
