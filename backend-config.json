@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://attend-dining-janet-brief.trycloudflare.com",
+    "backendUrl":  "https://agenda-stem-machine-estimates.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-25 20:27:02 +08:00",
+    "updatedAt":  "2026-06-25 21:27:35 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
