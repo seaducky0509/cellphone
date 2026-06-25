@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://asylum-extend-roommate-undergraduate.trycloudflare.com",
+    "backendUrl":  "https://judgment-scsi-cologne-registry.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-25 22:28:57 +08:00",
+    "updatedAt":  "2026-06-25 22:33:24 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
