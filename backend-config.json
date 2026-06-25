@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://founded-johnny-due-hindu.trycloudflare.com",
+    "backendUrl":  "https://checkout-public-leaving-trustee.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-25 15:16:54 +08:00",
+    "updatedAt":  "2026-06-25 16:17:54 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
