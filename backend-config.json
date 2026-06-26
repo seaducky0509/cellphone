@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://geo-keno-batman-miller.trycloudflare.com",
+    "backendUrl":  "https://nights-marc-vinyl-shot.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-26 17:47:24 +08:00",
+    "updatedAt":  "2026-06-26 18:48:30 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
