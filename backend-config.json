@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://nights-marc-vinyl-shot.trycloudflare.com",
+    "backendUrl":  "https://vpn-merry-foo-powers.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-26 18:48:30 +08:00",
+    "updatedAt":  "2026-06-26 18:53:15 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
