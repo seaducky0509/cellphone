@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://pressed-legislative-hosts-uniprotkb.trycloudflare.com",
+    "backendUrl":  "https://readily-communications-champions-shaw.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-26 12:58:25 +08:00",
+    "updatedAt":  "2026-06-26 13:14:39 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
