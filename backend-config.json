@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://develops-tutorials-kings-strikes.trycloudflare.com",
+    "backendUrl":  "https://farm-doug-craig-appropriate.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-26 19:54:50 +08:00",
+    "updatedAt":  "2026-06-26 20:55:15 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
