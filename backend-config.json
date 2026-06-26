@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://encounter-hammer-mortality-glucose.trycloudflare.com",
+    "backendUrl":  "https://katie-scientists-besides-arrange.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-27 05:17:27 +08:00",
+    "updatedAt":  "2026-06-27 05:21:08 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
