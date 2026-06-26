@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://hierarchy-gateway-rack-rarely.trycloudflare.com",
+    "backendUrl":  "https://pressed-legislative-hosts-uniprotkb.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-26 12:20:38 +08:00",
+    "updatedAt":  "2026-06-26 12:58:25 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
