@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://receivers-wireless-guy-personally.trycloudflare.com",
+    "backendUrl":  "https://projects-launches-appropriate-robots.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-27 02:14:52 +08:00",
+    "updatedAt":  "2026-06-27 03:15:26 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
