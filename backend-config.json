@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://blvd-alleged-food-grip.trycloudflare.com",
+    "backendUrl":  "https://enquiry-node-valid-raised.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-26 08:16:11 +08:00",
+    "updatedAt":  "2026-06-26 09:17:19 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
