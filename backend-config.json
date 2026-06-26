@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://melissa-extending-magnet-carmen.trycloudflare.com",
+    "backendUrl":  "https://blvd-alleged-food-grip.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-26 07:15:02 +08:00",
+    "updatedAt":  "2026-06-26 08:16:11 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
