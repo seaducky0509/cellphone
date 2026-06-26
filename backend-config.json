@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://army-competing-little-puerto.trycloudflare.com",
+    "backendUrl":  "https://volvo-kind-forbes-machines.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-26 21:04:13 +08:00",
+    "updatedAt":  "2026-06-26 22:05:03 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
