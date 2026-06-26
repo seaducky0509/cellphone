@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://vpn-merry-foo-powers.trycloudflare.com",
+    "backendUrl":  "https://develops-tutorials-kings-strikes.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-26 18:53:15 +08:00",
+    "updatedAt":  "2026-06-26 19:54:50 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
