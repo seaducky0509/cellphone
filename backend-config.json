@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://philosophy-entrepreneur-mem-compliance.trycloudflare.com",
+    "backendUrl":  "https://investigations-stuart-prototype-meter.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-26 10:18:22 +08:00",
+    "updatedAt":  "2026-06-26 11:19:31 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
