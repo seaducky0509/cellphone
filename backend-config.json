@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://katie-scientists-besides-arrange.trycloudflare.com",
+    "backendUrl":  "https://stadium-detection-aggregate-helped.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-27 05:21:08 +08:00",
+    "updatedAt":  "2026-06-27 06:22:52 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
