@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://volvo-kind-forbes-machines.trycloudflare.com",
+    "backendUrl":  "https://amplifier-rewards-cable-photo.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-26 22:05:03 +08:00",
+    "updatedAt":  "2026-06-26 22:09:32 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
