@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://intent-gains-qualities-inclusion.trycloudflare.com",
+    "backendUrl":  "https://geo-keno-batman-miller.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-26 16:46:16 +08:00",
+    "updatedAt":  "2026-06-26 17:47:24 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
