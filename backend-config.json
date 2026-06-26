@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://confidentiality-lexmark-grant-modified.trycloudflare.com",
+    "backendUrl":  "https://intent-gains-qualities-inclusion.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-26 15:44:39 +08:00",
+    "updatedAt":  "2026-06-26 16:46:16 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
