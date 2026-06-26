@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://pda-category-analog-flu.trycloudflare.com",
+    "backendUrl":  "https://encounter-hammer-mortality-glucose.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-27 04:16:32 +08:00",
+    "updatedAt":  "2026-06-27 05:17:27 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
