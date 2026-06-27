@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://ada-caroline-artwork-juvenile.trycloudflare.com",
+    "backendUrl":  "https://publishers-sunrise-lows-governments.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-27 13:31:22 +08:00",
+    "updatedAt":  "2026-06-27 14:32:29 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
