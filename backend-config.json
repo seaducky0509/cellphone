@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://host-address-sarah-tomato.trycloudflare.com",
+    "backendUrl":  "https://historical-commitments-stated-directly.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-27 14:51:28 +08:00",
+    "updatedAt":  "2026-06-27 15:52:12 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
