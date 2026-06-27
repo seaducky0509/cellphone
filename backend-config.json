@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://publishers-sunrise-lows-governments.trycloudflare.com",
+    "backendUrl":  "https://host-address-sarah-tomato.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-27 14:32:29 +08:00",
+    "updatedAt":  "2026-06-27 14:51:28 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
