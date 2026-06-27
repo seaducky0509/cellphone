@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://terminology-educated-dom-west.trycloudflare.com",
+    "backendUrl":  "https://detected-domain-northwest-listen.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-27 11:29:05 +08:00",
+    "updatedAt":  "2026-06-27 12:30:29 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
