@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://dietary-simulation-gibson-informative.trycloudflare.com",
+    "backendUrl":  "https://industry-inputs-acre-homes.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-27 23:00:26 +08:00",
+    "updatedAt":  "2026-06-28 00:01:30 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
