@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://advance-mean-gathered-man.trycloudflare.com",
+    "backendUrl":  "https://precision-pack-minority-kyle.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-28 02:04:05 +08:00",
+    "updatedAt":  "2026-06-28 03:04:56 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
