@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://doe-function-thu-opposition.trycloudflare.com",
+    "backendUrl":  "https://advance-mean-gathered-man.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-28 01:02:31 +08:00",
+    "updatedAt":  "2026-06-28 02:04:05 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
