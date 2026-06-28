@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://feeling-cubic-trace-tagged.trycloudflare.com",
+    "backendUrl":  "https://scientists-input-founded-diverse.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-28 09:17:24 +08:00",
+    "updatedAt":  "2026-06-28 10:19:01 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
