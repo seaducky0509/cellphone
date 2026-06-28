@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://joel-truth-colon-ccd.trycloudflare.com",
+    "backendUrl":  "https://examples-refugees-widescreen-mean.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-28 19:29:43 +08:00",
+    "updatedAt":  "2026-06-28 20:30:31 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
