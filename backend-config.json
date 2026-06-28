@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://designer-mistress-christopher-code.trycloudflare.com",
+    "backendUrl":  "https://dsl-offer-conventions-park.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-28 13:21:05 +08:00",
+    "updatedAt":  "2026-06-28 14:22:31 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
