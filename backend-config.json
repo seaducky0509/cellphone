@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://fixtures-life-cartoons-camel.trycloudflare.com",
+    "backendUrl":  "https://feeling-cubic-trace-tagged.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-28 08:16:51 +08:00",
+    "updatedAt":  "2026-06-28 09:17:24 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
