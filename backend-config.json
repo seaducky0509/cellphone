@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://screens-vic-headlines-kilometers.trycloudflare.com",
+    "backendUrl":  "https://hour-lion-rhode-reduced.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-28 16:25:10 +08:00",
+    "updatedAt":  "2026-06-28 17:26:51 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
