@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://pleasant-sort-turtle-scotland.trycloudflare.com",
+    "backendUrl":  "https://explanation-summary-chemical-analyzed.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-28 11:20:12 +08:00",
+    "updatedAt":  "2026-06-28 12:20:49 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
