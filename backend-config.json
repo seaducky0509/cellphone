@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://lived-momentum-hitting-korea.trycloudflare.com",
+    "backendUrl":  "https://functioning-purchased-overview-calculator.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-29 04:38:22 +08:00",
+    "updatedAt":  "2026-06-29 05:39:22 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
