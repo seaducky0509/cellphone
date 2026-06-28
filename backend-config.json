@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://empire-waiver-remove-sen.trycloudflare.com",
+    "backendUrl":  "https://contributor-bailey-watching-reports.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-28 22:32:09 +08:00",
+    "updatedAt":  "2026-06-28 23:33:02 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
