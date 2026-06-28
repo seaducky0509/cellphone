@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://scientists-input-founded-diverse.trycloudflare.com",
+    "backendUrl":  "https://pleasant-sort-turtle-scotland.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-28 10:19:01 +08:00",
+    "updatedAt":  "2026-06-28 11:20:12 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
