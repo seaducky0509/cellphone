@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://texture-gamma-neither-selected.trycloudflare.com",
+    "backendUrl":  "https://empire-waiver-remove-sen.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-28 21:31:37 +08:00",
+    "updatedAt":  "2026-06-28 22:32:09 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
