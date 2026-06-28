@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://manual-reprints-advertising-foundations.trycloudflare.com",
+    "backendUrl":  "https://joel-truth-colon-ccd.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-28 18:27:57 +08:00",
+    "updatedAt":  "2026-06-28 19:29:43 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
