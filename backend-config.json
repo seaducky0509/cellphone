@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://impaired-belt-boating-smoking.trycloudflare.com",
+    "backendUrl":  "https://screens-vic-headlines-kilometers.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-28 15:23:55 +08:00",
+    "updatedAt":  "2026-06-28 16:25:10 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
