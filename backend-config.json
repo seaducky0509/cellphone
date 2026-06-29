@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://bugs-mill-exceptional-challenge.trycloudflare.com",
+    "backendUrl":  "https://bee-victorian-interview-latitude.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-29 14:49:43 +08:00",
+    "updatedAt":  "2026-06-29 15:51:28 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
