@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://duo-sin-proposal-fruit.trycloudflare.com",
+    "backendUrl":  "https://twice-analytical-packaging-min.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-29 16:10:45 +08:00",
+    "updatedAt":  "2026-06-29 16:13:55 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
