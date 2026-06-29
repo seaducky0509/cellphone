@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://seattle-maximum-refinance-eva.trycloudflare.com",
+    "backendUrl":  "https://medications-asp-suggest-bath.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-29 18:16:04 +08:00",
+    "updatedAt":  "2026-06-29 18:47:15 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
