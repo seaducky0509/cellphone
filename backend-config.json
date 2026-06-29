@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://bee-victorian-interview-latitude.trycloudflare.com",
+    "backendUrl":  "https://duo-sin-proposal-fruit.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-29 15:51:28 +08:00",
+    "updatedAt":  "2026-06-29 16:10:45 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
