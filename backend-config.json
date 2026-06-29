@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://twice-analytical-packaging-min.trycloudflare.com",
+    "backendUrl":  "https://pioneer-vegetables-robert-episodes.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-29 16:13:55 +08:00",
+    "updatedAt":  "2026-06-29 17:14:59 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
