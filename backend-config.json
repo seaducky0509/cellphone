@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://impaired-coffee-consists-favour.trycloudflare.com",
+    "backendUrl":  "https://instance-defined-translation-friends.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-29 09:43:55 +08:00",
+    "updatedAt":  "2026-06-29 10:45:04 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
