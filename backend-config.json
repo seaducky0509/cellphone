@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://instance-defined-translation-friends.trycloudflare.com",
+    "backendUrl":  "https://voted-michel-hit-basics.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-29 10:45:04 +08:00",
+    "updatedAt":  "2026-06-29 11:46:07 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
