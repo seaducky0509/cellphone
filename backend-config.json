@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://matching-myself-gnome-destinations.trycloudflare.com",
+    "backendUrl":  "https://planets-relying-wagon-above.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-30 06:09:07 +08:00",
+    "updatedAt":  "2026-06-30 07:09:43 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
