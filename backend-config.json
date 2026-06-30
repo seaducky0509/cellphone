@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://planets-relying-wagon-above.trycloudflare.com",
+    "backendUrl":  "https://kathy-hormone-strings-obligation.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-30 07:09:43 +08:00",
+    "updatedAt":  "2026-06-30 08:10:43 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
