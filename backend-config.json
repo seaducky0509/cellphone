@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://communicate-happy-shelf-standing.trycloudflare.com",
+    "backendUrl":  "https://paint-sussex-ntsc-chan.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-30 22:52:25 +08:00",
+    "updatedAt":  "2026-06-30 22:58:31 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
