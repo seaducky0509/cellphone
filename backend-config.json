@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://rouge-whom-documented-walk.trycloudflare.com",
+    "backendUrl":  "https://additions-belle-bios-win.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-30 11:13:59 +08:00",
+    "updatedAt":  "2026-06-30 12:15:01 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
