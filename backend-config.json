@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://patient-identical-necklace-opera.trycloudflare.com",
+    "backendUrl":  "https://optimal-closest-amenities-children.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-30 16:23:28 +08:00",
+    "updatedAt":  "2026-06-30 16:28:19 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
