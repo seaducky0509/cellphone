@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://screening-rid-mud-adaptation.trycloudflare.com",
+    "backendUrl":  "https://installed-least-modular-pharmacies.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-01 05:19:48 +08:00",
+    "updatedAt":  "2026-07-01 06:20:21 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
