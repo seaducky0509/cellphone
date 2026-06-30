@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://press-carlo-machines-orange.trycloudflare.com",
+    "backendUrl":  "https://fitted-hartford-duck-looking.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-01 02:15:45 +08:00",
+    "updatedAt":  "2026-07-01 03:16:44 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
