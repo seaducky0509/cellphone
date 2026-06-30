@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://hansen-referred-vermont-factory.trycloudflare.com",
+    "backendUrl":  "https://press-carlo-machines-orange.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-01 02:09:14 +08:00",
+    "updatedAt":  "2026-07-01 02:15:45 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
