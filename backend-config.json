@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://creator-weekend-kingdom-give.trycloudflare.com",
+    "backendUrl":  "https://voltage-navigator-secret-flyer.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-01 01:01:16 +08:00",
+    "updatedAt":  "2026-07-01 02:01:46 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
