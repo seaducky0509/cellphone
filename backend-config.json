@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://coaching-index-continuous-med.trycloudflare.com",
+    "backendUrl":  "https://height-delete-casual-commonwealth.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-30 14:16:58 +08:00",
+    "updatedAt":  "2026-06-30 14:21:01 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
