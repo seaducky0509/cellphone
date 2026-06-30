@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://skilled-baptist-shannon-loud.trycloudflare.com",
+    "backendUrl":  "https://coaching-index-continuous-med.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-30 13:15:56 +08:00",
+    "updatedAt":  "2026-06-30 14:16:58 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
