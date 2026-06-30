@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://paint-sussex-ntsc-chan.trycloudflare.com",
+    "backendUrl":  "https://organized-jon-combat-corrections.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-06-30 22:58:31 +08:00",
+    "updatedAt":  "2026-06-30 23:59:35 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
