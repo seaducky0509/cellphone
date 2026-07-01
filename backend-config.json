@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://poem-assumes-average-travel.trycloudflare.com",
+    "backendUrl":  "https://rational-bin-triangle-stuck.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-01 18:18:04 +08:00",
+    "updatedAt":  "2026-07-01 19:19:26 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
