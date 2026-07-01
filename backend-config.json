@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://san-rating-warranty-pct.trycloudflare.com",
+    "backendUrl":  "https://your-scenarios-drink-yea.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-01 23:29:29 +08:00",
+    "updatedAt":  "2026-07-01 23:35:34 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
