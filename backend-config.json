@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://your-scenarios-drink-yea.trycloudflare.com",
+    "backendUrl":  "https://contacts-success-daily-contemporary.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-01 23:35:34 +08:00",
+    "updatedAt":  "2026-07-02 00:37:12 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
