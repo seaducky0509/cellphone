@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://garmin-fate-compiled-bases.trycloudflare.com",
+    "backendUrl":  "https://southwest-few-worship-geology.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-01 15:35:48 +08:00",
+    "updatedAt":  "2026-07-01 16:37:17 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
