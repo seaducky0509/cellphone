@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://non-asus-dress-birds.trycloudflare.com",
+    "backendUrl":  "https://poem-assumes-average-travel.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-01 17:17:45 +08:00",
+    "updatedAt":  "2026-07-01 18:18:04 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
