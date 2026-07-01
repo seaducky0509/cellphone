@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://manually-cove-ratio-dodge.trycloudflare.com",
+    "backendUrl":  "https://judge-office-players-century.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-01 22:22:22 +08:00",
+    "updatedAt":  "2026-07-01 22:28:16 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
