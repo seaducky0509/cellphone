@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://wagner-allan-deferred-wet.trycloudflare.com",
+    "backendUrl":  "https://pit-address-recommended-settle.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-02 09:07:15 +08:00",
+    "updatedAt":  "2026-07-02 09:12:03 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
