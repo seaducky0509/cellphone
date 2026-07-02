@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://ground-gas-travel-adaptation.trycloudflare.com",
+    "backendUrl":  "https://utilities-far-goal-appliance.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-02 18:02:59 +08:00",
+    "updatedAt":  "2026-07-02 19:04:19 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
