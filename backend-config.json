@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://focusing-belle-arrive-theatre.trycloudflare.com",
+    "backendUrl":  "https://launches-outdoor-ties-guitar.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-03 00:27:16 +08:00",
+    "updatedAt":  "2026-07-03 00:33:34 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
