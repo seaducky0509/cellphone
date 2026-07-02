@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://positions-ftp-missouri-thoughts.trycloudflare.com",
+    "backendUrl":  "https://act-walnut-trainers-privacy.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-02 23:08:15 +08:00",
+    "updatedAt":  "2026-07-02 23:14:19 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
