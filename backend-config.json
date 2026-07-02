@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://silence-streets-temp-net.trycloudflare.com",
+    "backendUrl":  "https://launches-authentication-phases-reload.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-03 06:25:32 +08:00",
+    "updatedAt":  "2026-07-03 06:32:15 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
