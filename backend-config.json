@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://juan-test-mileage-designed.trycloudflare.com",
+    "backendUrl":  "https://yarn-impressed-yea-results.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-03 02:51:31 +08:00",
+    "updatedAt":  "2026-07-03 02:57:34 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
