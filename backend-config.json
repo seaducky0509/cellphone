@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://wilson-atmosphere-criterion-wesley.trycloudflare.com",
+    "backendUrl":  "https://illustrations-par-cad-achievements.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-03 01:30:30 +08:00",
+    "updatedAt":  "2026-07-03 01:37:33 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
