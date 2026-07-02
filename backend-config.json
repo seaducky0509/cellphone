@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://combine-sewing-victoria-suites.trycloudflare.com",
+    "backendUrl":  "https://building-cst-controller-armed.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-03 00:51:42 +08:00",
+    "updatedAt":  "2026-07-03 00:57:45 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
