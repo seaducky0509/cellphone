@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://salary-lol-primarily-pas.trycloudflare.com",
+    "backendUrl":  "https://extras-brandon-conditioning-array.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-03 01:17:55 +08:00",
+    "updatedAt":  "2026-07-03 01:23:57 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
