@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://must-conventional-scanner-expressions.trycloudflare.com",
+    "backendUrl":  "https://markers-josh-elements-departments.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-03 00:09:25 +08:00",
+    "updatedAt":  "2026-07-03 00:15:58 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
