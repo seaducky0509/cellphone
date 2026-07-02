@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://trains-throw-blessed-combination.trycloudflare.com",
+    "backendUrl":  "https://passion-interpretation-seeds-patch.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-02 16:19:09 +08:00",
+    "updatedAt":  "2026-07-02 17:01:13 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
