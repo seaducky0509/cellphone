@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://building-cst-controller-armed.trycloudflare.com",
+    "backendUrl":  "https://tech-limousines-range-inspection.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-03 00:57:45 +08:00",
+    "updatedAt":  "2026-07-03 01:03:46 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
