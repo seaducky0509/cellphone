@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://ripe-dim-stops-smooth.trycloudflare.com",
+    "backendUrl":  "https://accessories-concrete-handhelds-right.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-02 12:15:11 +08:00",
+    "updatedAt":  "2026-07-02 13:16:55 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
