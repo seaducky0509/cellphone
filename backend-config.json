@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://thereby-judge-participated-held.trycloudflare.com",
+    "backendUrl":  "https://sword-aid-bids-bufing.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-03 03:56:46 +08:00",
+    "updatedAt":  "2026-07-03 04:57:36 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
