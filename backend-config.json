@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://consideration-peaceful-aged-loop.trycloudflare.com",
+    "backendUrl":  "https://nation-internal-comics-rough.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-02 23:32:31 +08:00",
+    "updatedAt":  "2026-07-02 23:38:35 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
