@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://shown-taylor-sail-optimal.trycloudflare.com",
+    "backendUrl":  "https://flash-device-terminology-correction.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-04 05:52:07 +08:00",
+    "updatedAt":  "2026-07-04 06:53:10 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
