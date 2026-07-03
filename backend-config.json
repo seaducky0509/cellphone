@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://jackets-conclude-prep-scuba.trycloudflare.com",
+    "backendUrl":  "https://timely-captured-hello-members.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-03 23:24:36 +08:00",
+    "updatedAt":  "2026-07-03 23:33:02 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
