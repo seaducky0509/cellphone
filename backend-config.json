@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://comments-horizon-dawn-naval.trycloudflare.com",
+    "backendUrl":  "https://dash-bundle-indirect-work.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-03 21:03:50 +08:00",
+    "updatedAt":  "2026-07-03 21:10:04 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
