@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://timely-captured-hello-members.trycloudflare.com",
+    "backendUrl":  "https://sun-self-functioning-behalf.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-03 23:33:02 +08:00",
+    "updatedAt":  "2026-07-03 23:39:51 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
