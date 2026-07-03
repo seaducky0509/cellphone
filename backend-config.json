@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://transmit-griffin-appointments-urban.trycloudflare.com",
+    "backendUrl":  "https://production-customized-efficient-reservations.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-03 21:16:09 +08:00",
+    "updatedAt":  "2026-07-03 22:17:18 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
