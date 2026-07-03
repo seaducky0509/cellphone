@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://height-decide-undefined-interviews.trycloudflare.com",
+    "backendUrl":  "https://pos-assistance-define-secrets.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-04 03:49:42 +08:00",
+    "updatedAt":  "2026-07-04 04:50:49 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
