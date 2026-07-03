@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://sun-self-functioning-behalf.trycloudflare.com",
+    "backendUrl":  "https://ppc-steering-liz-consequently.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-03 23:39:51 +08:00",
+    "updatedAt":  "2026-07-04 00:40:49 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
