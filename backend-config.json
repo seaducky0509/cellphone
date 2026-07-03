@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://affairs-guaranteed-satisfactory-native.trycloudflare.com",
+    "backendUrl":  "https://antonio-michel-animated-scenic.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-03 12:12:09 +08:00",
+    "updatedAt":  "2026-07-03 13:13:19 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
