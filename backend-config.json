@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://production-customized-efficient-reservations.trycloudflare.com",
+    "backendUrl":  "https://guests-sphere-utah-legendary.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-03 22:17:18 +08:00",
+    "updatedAt":  "2026-07-03 23:18:28 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
