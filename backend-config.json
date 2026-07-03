@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://lucy-exclusive-guild-institutional.trycloudflare.com",
+    "backendUrl":  "https://retro-phase-rolling-product.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-03 09:48:22 +08:00",
+    "updatedAt":  "2026-07-03 09:53:10 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
