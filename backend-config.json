@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://dash-bundle-indirect-work.trycloudflare.com",
+    "backendUrl":  "https://transmit-griffin-appointments-urban.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-03 21:10:04 +08:00",
+    "updatedAt":  "2026-07-03 21:16:09 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
