@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://baskets-doe-dash-simon.trycloudflare.com",
+    "backendUrl":  "https://josh-notices-greetings-arctic.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-04 15:24:41 +08:00",
+    "updatedAt":  "2026-07-04 16:29:43 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
