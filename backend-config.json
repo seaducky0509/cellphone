@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://josh-notices-greetings-arctic.trycloudflare.com",
+    "backendUrl":  "https://tagged-avoiding-glucose-roger.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-04 16:29:43 +08:00",
+    "updatedAt":  "2026-07-04 16:36:01 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
