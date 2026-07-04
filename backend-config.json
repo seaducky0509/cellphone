@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://src-carpet-performance-carpet.trycloudflare.com",
+    "backendUrl":  "https://discrete-pacific-joy-plug.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-05 06:15:55 +08:00",
+    "updatedAt":  "2026-07-05 07:16:55 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
