@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://build-guardian-provincial-aim.trycloudflare.com",
+    "backendUrl":  "https://they-pat-textbooks-scholar.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-04 19:46:17 +08:00",
+    "updatedAt":  "2026-07-04 20:47:27 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
