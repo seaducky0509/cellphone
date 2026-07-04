@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://flag-jean-street-female.trycloudflare.com",
+    "backendUrl":  "https://inc-maui-proceedings-ensure.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-04 14:17:43 +08:00",
+    "updatedAt":  "2026-07-04 15:18:30 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
