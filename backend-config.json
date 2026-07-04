@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://lay-trading-till-coaching.trycloudflare.com",
+    "backendUrl":  "https://ocean-capitol-hypothesis-rob.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-04 21:48:11 +08:00",
+    "updatedAt":  "2026-07-04 22:49:51 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
