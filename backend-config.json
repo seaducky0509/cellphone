@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://bell-proposed-separation-taxation.trycloudflare.com",
+    "backendUrl":  "https://screenshot-anatomy-calculator-polyphonic.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-04 16:42:11 +08:00",
+    "updatedAt":  "2026-07-04 17:44:03 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
