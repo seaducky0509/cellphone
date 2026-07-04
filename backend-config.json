@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://ocean-capitol-hypothesis-rob.trycloudflare.com",
+    "backendUrl":  "https://symposium-basename-versus-controversial.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-04 22:49:51 +08:00",
+    "updatedAt":  "2026-07-04 22:55:22 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
