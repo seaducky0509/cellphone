@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://implied-heaven-diagram-rational.trycloudflare.com",
+    "backendUrl":  "https://travels-happiness-lucia-senators.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-04 23:55:55 +08:00",
+    "updatedAt":  "2026-07-05 00:56:47 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
