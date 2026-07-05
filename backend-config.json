@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://forming-cameron-affected-voluntary.trycloudflare.com",
+    "backendUrl":  "https://pad-satisfactory-mice-explain.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-06 03:28:22 +08:00",
+    "updatedAt":  "2026-07-06 04:24:08 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
