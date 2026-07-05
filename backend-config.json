@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://rebound-nat-cultural-circle.trycloudflare.com",
+    "backendUrl":  "https://neighbor-commitment-spray-prefer.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-06 01:51:31 +08:00",
+    "updatedAt":  "2026-07-06 01:59:03 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
