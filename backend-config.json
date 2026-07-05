@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://iron-associations-beth-arrival.trycloudflare.com",
+    "backendUrl":  "https://guys-station-vertical-chips.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-05 11:28:50 +08:00",
+    "updatedAt":  "2026-07-05 12:12:18 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
