@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://marks-determination-sources-finds.trycloudflare.com",
+    "backendUrl":  "https://transform-televisions-bobby-moderate.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-05 14:15:41 +08:00",
+    "updatedAt":  "2026-07-05 14:59:12 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
