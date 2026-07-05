@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://bat-remind-scales-moments.trycloudflare.com",
+    "backendUrl":  "https://documented-nec-instructor-off.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-05 22:54:39 +08:00",
+    "updatedAt":  "2026-07-05 23:04:09 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
