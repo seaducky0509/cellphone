@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://discrete-pacific-joy-plug.trycloudflare.com",
+    "backendUrl":  "https://jazz-nat-ruled-electron.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-05 07:16:55 +08:00",
+    "updatedAt":  "2026-07-05 08:18:41 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
