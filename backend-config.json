@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://violin-standings-experimental-pulled.trycloudflare.com",
+    "backendUrl":  "https://bat-remind-scales-moments.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-05 21:29:41 +08:00",
+    "updatedAt":  "2026-07-05 22:54:39 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
