@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://promotions-cart-come-streets.trycloudflare.com",
+    "backendUrl":  "https://bureau-shield-invision-senator.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-07 17:53:24 +08:00",
+    "updatedAt":  "2026-07-07 18:05:29 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
