@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://bureau-shield-invision-senator.trycloudflare.com",
+    "backendUrl":  "https://frontpage-address-knives-dicke.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-07 18:05:29 +08:00",
+    "updatedAt":  "2026-07-07 18:58:37 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
