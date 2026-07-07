@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://capture-monetary-workstation-function.trycloudflare.com",
+    "backendUrl":  "https://warnings-essence-creating-routing.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-07 19:43:36 +08:00",
+    "updatedAt":  "2026-07-07 20:45:14 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
