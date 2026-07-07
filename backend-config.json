@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://manor-surface-panels-pays.trycloudflare.com",
+    "backendUrl":  "https://aaa-growth-wet-gmt.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-08 02:52:28 +08:00",
+    "updatedAt":  "2026-07-08 03:38:59 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
