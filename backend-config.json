@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://attempts-plain-klein-scheme.trycloudflare.com",
+    "backendUrl":  "https://hydrogen-glass-comparable-receptors.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-07 22:47:03 +08:00",
+    "updatedAt":  "2026-07-07 23:48:19 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
