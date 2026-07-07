@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://issue-sustained-recall-equations.trycloudflare.com",
+    "backendUrl":  "https://modified-speech-choir-gel.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-07 15:24:17 +08:00",
+    "updatedAt":  "2026-07-07 16:25:23 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
