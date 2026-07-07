@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://cover-info-selective-written.trycloudflare.com",
+    "backendUrl":  "https://cream-dan-farmers-bookmarks.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-08 06:44:16 +08:00",
+    "updatedAt":  "2026-07-08 07:44:44 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
