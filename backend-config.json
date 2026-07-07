@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://equity-directive-vegetation-subdivision.trycloudflare.com",
+    "backendUrl":  "https://attempts-plain-klein-scheme.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-07 21:46:21 +08:00",
+    "updatedAt":  "2026-07-07 22:47:03 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
