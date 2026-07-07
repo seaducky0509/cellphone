@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://bruce-completed-afternoon-des.trycloudflare.com",
+    "backendUrl":  "https://details-selecting-cherry-wesley.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-08 04:40:45 +08:00",
+    "updatedAt":  "2026-07-08 05:43:19 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
