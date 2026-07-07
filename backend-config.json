@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://betty-deaf-render-ict.trycloudflare.com",
+    "backendUrl":  "https://interactive-critics-towards-conscious.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-07 17:27:05 +08:00",
+    "updatedAt":  "2026-07-07 17:33:27 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
