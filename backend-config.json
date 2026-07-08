@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://forward-aspect-oaks-tomato.trycloudflare.com",
+    "backendUrl":  "https://dice-searching-screen-atmosphere.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-09 03:42:04 +08:00",
+    "updatedAt":  "2026-07-09 04:43:11 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
