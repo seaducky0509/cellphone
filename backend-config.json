@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://front-kitty-disc-fashion.trycloudflare.com",
+    "backendUrl":  "https://containing-ata-subaru-wellness.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-08 21:36:28 +08:00",
+    "updatedAt":  "2026-07-08 21:39:50 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
