@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://clicking-picnic-such-guitars.trycloudflare.com",
+    "backendUrl":  "https://trinity-arnold-int-bring.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-08 14:11:50 +08:00",
+    "updatedAt":  "2026-07-08 15:12:39 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
