@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://containing-ata-subaru-wellness.trycloudflare.com",
+    "backendUrl":  "https://belfast-list-sessions-buffalo.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-08 21:39:50 +08:00",
+    "updatedAt":  "2026-07-08 22:41:02 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
