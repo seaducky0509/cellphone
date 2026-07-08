@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://unexpected-seven-languages-forward.trycloudflare.com",
+    "backendUrl":  "https://philosophy-redeem-ivory-eco.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-08 18:32:48 +08:00",
+    "updatedAt":  "2026-07-08 19:34:07 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
