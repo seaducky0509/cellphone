@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://boat-jonathan-generic-forget.trycloudflare.com",
+    "backendUrl":  "https://therapy-documentation-means-flexible.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-08 10:49:02 +08:00",
+    "updatedAt":  "2026-07-08 11:50:12 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
