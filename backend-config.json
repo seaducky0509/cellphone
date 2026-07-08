@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://dice-searching-screen-atmosphere.trycloudflare.com",
+    "backendUrl":  "https://involving-supplied-eagle-rome.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-09 04:43:11 +08:00",
+    "updatedAt":  "2026-07-09 05:44:14 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
