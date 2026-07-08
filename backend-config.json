@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://dollars-metallica-closely-gardening.trycloudflare.com",
+    "backendUrl":  "https://front-kitty-disc-fashion.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-08 20:34:48 +08:00",
+    "updatedAt":  "2026-07-08 21:36:28 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
