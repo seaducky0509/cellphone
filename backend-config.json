@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://ash-huge-alan-here.trycloudflare.com",
+    "backendUrl":  "https://reserves-untitled-unsigned-receivers.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-09 09:33:54 +08:00",
+    "updatedAt":  "2026-07-09 10:34:57 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
