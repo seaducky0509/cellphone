@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://examines-jump-rare-gods.trycloudflare.com",
+    "backendUrl":  "https://hundred-rendered-chi-bold.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-09 17:18:04 +08:00",
+    "updatedAt":  "2026-07-09 17:24:48 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
