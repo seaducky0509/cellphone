@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://requested-endorsed-turned-witch.trycloudflare.com",
+    "backendUrl":  "https://chosen-findings-gentle-binary.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-09 14:51:32 +08:00",
+    "updatedAt":  "2026-07-09 14:57:32 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
