@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://innovation-local-pick-studies.trycloudflare.com",
+    "backendUrl":  "https://hazardous-intranet-instrumental-bachelor.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-09 12:43:38 +08:00",
+    "updatedAt":  "2026-07-09 12:49:40 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
