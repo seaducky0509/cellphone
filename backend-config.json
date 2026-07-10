@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://competing-samples-aruba-acrylic.trycloudflare.com",
+    "backendUrl":  "https://revenue-saskatchewan-modify-submitted.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-10 07:09:09 +08:00",
+    "updatedAt":  "2026-07-10 08:10:50 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
