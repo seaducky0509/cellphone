@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://queue-creates-bargain-bestsellers.trycloudflare.com",
+    "backendUrl":  "https://gained-generations-using-floyd.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-10 17:20:57 +08:00",
+    "updatedAt":  "2026-07-10 18:21:40 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
