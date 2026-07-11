@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://angel-century-bills-distribute.trycloudflare.com",
+    "backendUrl":  "https://meeting-restructuring-nearest-den.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-11 10:44:10 +08:00",
+    "updatedAt":  "2026-07-11 11:45:54 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
