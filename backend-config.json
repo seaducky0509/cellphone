@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://meeting-restructuring-nearest-den.trycloudflare.com",
+    "backendUrl":  "https://proposal-vital-starsmerchant-issued.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-11 11:45:54 +08:00",
+    "updatedAt":  "2026-07-11 12:46:58 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
