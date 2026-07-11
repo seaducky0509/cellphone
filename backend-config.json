@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://proposal-vital-starsmerchant-issued.trycloudflare.com",
+    "backendUrl":  "https://apnic-develop-cement-judicial.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-11 12:46:58 +08:00",
+    "updatedAt":  "2026-07-11 13:26:47 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
