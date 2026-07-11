@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://paying-surfing-ethernet-twin.trycloudflare.com",
+    "backendUrl":  "https://angel-century-bills-distribute.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-11 09:43:01 +08:00",
+    "updatedAt":  "2026-07-11 10:44:10 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
