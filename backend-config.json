@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://apnic-develop-cement-judicial.trycloudflare.com",
+    "backendUrl":  "https://struct-equal-assessed-naples.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-11 13:26:47 +08:00",
+    "updatedAt":  "2026-07-11 14:28:01 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
