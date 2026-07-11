@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://mounted-blind-clinics-editing.trycloudflare.com",
+    "backendUrl":  "https://poetry-gates-andale-june.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-12 04:48:17 +08:00",
+    "updatedAt":  "2026-07-12 05:49:26 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
