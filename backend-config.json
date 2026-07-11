@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://slight-slots-deviant-americas.trycloudflare.com",
+    "backendUrl":  "https://rolling-tune-roller-maria.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-11 22:40:19 +08:00",
+    "updatedAt":  "2026-07-11 23:43:01 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
