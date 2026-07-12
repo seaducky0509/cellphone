@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://capture-picked-patch-generated.trycloudflare.com",
+    "backendUrl":  "https://brunette-lives-dublin-confidentiality.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-12 16:17:15 +08:00",
+    "updatedAt":  "2026-07-12 17:18:28 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
