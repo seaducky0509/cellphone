@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://brunette-lives-dublin-confidentiality.trycloudflare.com",
+    "backendUrl":  "https://ebook-trainer-midi-jelsoft.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-12 17:18:28 +08:00",
+    "updatedAt":  "2026-07-12 18:19:58 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
