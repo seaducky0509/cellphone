@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://ebook-trainer-midi-jelsoft.trycloudflare.com",
+    "backendUrl":  "https://displays-reservations-deaf-welding.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-12 18:19:58 +08:00",
+    "updatedAt":  "2026-07-12 19:20:36 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
