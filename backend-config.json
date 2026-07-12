@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://sandwich-francis-supervisor-metres.trycloudflare.com",
+    "backendUrl":  "https://rational-cms-zoo-ideal.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-12 22:24:40 +08:00",
+    "updatedAt":  "2026-07-12 23:25:50 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
