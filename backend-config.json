@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://invision-inc-centered-tba.trycloudflare.com",
+    "backendUrl":  "https://debut-summer-rio-permits.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-13 02:32:17 +08:00",
+    "updatedAt":  "2026-07-13 03:33:22 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
