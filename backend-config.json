@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://tenant-equilibrium-chips-revised.trycloudflare.com",
+    "backendUrl":  "https://anna-december-andrews-processes.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-13 04:34:25 +08:00",
+    "updatedAt":  "2026-07-13 05:34:55 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
