@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://anaheim-programmes-strictly-optimal.trycloudflare.com",
+    "backendUrl":  "https://restrict-worm-showcase-walter.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-12 10:09:49 +08:00",
+    "updatedAt":  "2026-07-12 11:11:48 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
