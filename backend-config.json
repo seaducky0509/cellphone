@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://fragrances-melbourne-gentle-pointing.trycloudflare.com",
+    "backendUrl":  "https://capture-picked-patch-generated.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-12 15:16:31 +08:00",
+    "updatedAt":  "2026-07-12 16:17:15 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
