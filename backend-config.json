@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://restrict-worm-showcase-walter.trycloudflare.com",
+    "backendUrl":  "https://importance-concrete-ships-permission.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-12 11:11:48 +08:00",
+    "updatedAt":  "2026-07-12 12:12:25 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
