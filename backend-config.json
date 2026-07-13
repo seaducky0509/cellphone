@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://performance-packets-ranked-military.trycloudflare.com",
+    "backendUrl":  "https://bizrate-emotions-payments-joining.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-13 12:42:32 +08:00",
+    "updatedAt":  "2026-07-13 13:43:42 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
