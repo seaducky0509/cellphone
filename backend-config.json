@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://ser-fitted-development-struck.trycloudflare.com",
+    "backendUrl":  "https://towers-greg-level-count.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-14 05:11:13 +08:00",
+    "updatedAt":  "2026-07-14 05:16:24 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
