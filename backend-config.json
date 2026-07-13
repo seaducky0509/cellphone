@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://towers-greg-level-count.trycloudflare.com",
+    "backendUrl":  "https://immunology-study-multi-ebook.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-14 05:16:24 +08:00",
+    "updatedAt":  "2026-07-14 06:17:08 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
