@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://minor-afternoon-smallest-contractors.trycloudflare.com",
+    "backendUrl":  "https://doors-kick-its-championship.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-13 08:38:20 +08:00",
+    "updatedAt":  "2026-07-13 09:39:23 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
