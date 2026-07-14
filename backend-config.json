@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://jewelry-assessments-sugar-justin.trycloudflare.com",
+    "backendUrl":  "https://wizard-favor-eclipse-burlington.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-14 18:30:24 +08:00",
+    "updatedAt":  "2026-07-14 19:31:12 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
