@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://auctions-compressed-such-infrastructure.trycloudflare.com",
+    "backendUrl":  "https://fifteen-bobby-proprietary-truth.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-15 01:38:49 +08:00",
+    "updatedAt":  "2026-07-15 02:39:48 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
