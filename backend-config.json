@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://wizard-favor-eclipse-burlington.trycloudflare.com",
+    "backendUrl":  "https://expenses-earning-easter-jumping.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-14 19:31:12 +08:00",
+    "updatedAt":  "2026-07-14 20:32:17 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
