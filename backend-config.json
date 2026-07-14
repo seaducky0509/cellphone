@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://charter-firewall-governing-temporarily.trycloudflare.com",
+    "backendUrl":  "https://project-debut-alternative-sms.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-14 15:27:45 +08:00",
+    "updatedAt":  "2026-07-14 16:28:28 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
