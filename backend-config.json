@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://endif-extent-unlock-engine.trycloudflare.com",
+    "backendUrl":  "https://joined-mud-cloud-questions.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-15 04:42:33 +08:00",
+    "updatedAt":  "2026-07-15 04:47:14 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
