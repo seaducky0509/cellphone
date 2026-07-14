@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://cet-prophet-london-modes.trycloudflare.com",
+    "backendUrl":  "https://auctions-compressed-such-infrastructure.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-15 00:37:46 +08:00",
+    "updatedAt":  "2026-07-15 01:38:49 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
