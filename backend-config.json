@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://touring-rail-suitable-information.trycloudflare.com",
+    "backendUrl":  "https://races-experienced-rfc-contractor.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-14 10:22:45 +08:00",
+    "updatedAt":  "2026-07-14 11:23:21 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
