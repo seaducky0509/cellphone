@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://expenses-earning-easter-jumping.trycloudflare.com",
+    "backendUrl":  "https://bent-pdt-ana-delivered.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-14 20:32:17 +08:00",
+    "updatedAt":  "2026-07-14 21:33:58 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
