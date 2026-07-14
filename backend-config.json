@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://vegetation-incoming-choice-mods.trycloudflare.com",
+    "backendUrl":  "https://recent-tales-ecological-delhi.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-14 22:35:37 +08:00",
+    "updatedAt":  "2026-07-14 23:36:38 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
