@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://recent-tales-ecological-delhi.trycloudflare.com",
+    "backendUrl":  "https://cet-prophet-london-modes.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-14 23:36:38 +08:00",
+    "updatedAt":  "2026-07-15 00:37:46 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
