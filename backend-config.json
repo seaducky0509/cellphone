@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://screens-stephanie-helena-horse.trycloudflare.com",
+    "backendUrl":  "https://supported-rooms-cached-conceptual.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-16 01:39:46 +08:00",
+    "updatedAt":  "2026-07-16 01:43:55 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
