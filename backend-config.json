@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://focus-reviewer-southwest-belfast.trycloudflare.com",
+    "backendUrl":  "https://separation-defend-combines-thompson.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-15 22:34:37 +08:00",
+    "updatedAt":  "2026-07-15 23:35:03 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
