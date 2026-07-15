@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://lows-three-metal-polished.trycloudflare.com",
+    "backendUrl":  "https://technological-gazette-turning-promising.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-15 15:07:49 +08:00",
+    "updatedAt":  "2026-07-15 16:08:16 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
