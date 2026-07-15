@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://novels-instrumentation-chi-keen.trycloudflare.com",
+    "backendUrl":  "https://emails-tucson-hitachi-homework.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-15 11:59:42 +08:00",
+    "updatedAt":  "2026-07-15 13:00:48 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
