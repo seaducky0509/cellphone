@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://generates-finite-index-singles.trycloudflare.com",
+    "backendUrl":  "https://focus-reviewer-southwest-belfast.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-15 21:34:16 +08:00",
+    "updatedAt":  "2026-07-15 22:34:37 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
