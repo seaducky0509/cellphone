@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://symphony-wed-extent-payment.trycloudflare.com",
+    "backendUrl":  "https://lounge-collaborative-packages-textiles.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-15 19:14:05 +08:00",
+    "updatedAt":  "2026-07-15 19:25:08 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
