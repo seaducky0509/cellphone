@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://helena-router-generations-anniversary.trycloudflare.com",
+    "backendUrl":  "https://athletic-editions-sorted-sheriff.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-16 05:54:15 +08:00",
+    "updatedAt":  "2026-07-16 06:55:23 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
