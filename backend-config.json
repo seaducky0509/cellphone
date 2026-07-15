@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://emails-tucson-hitachi-homework.trycloudflare.com",
+    "backendUrl":  "https://kennedy-renewal-ide-nails.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-15 13:00:48 +08:00",
+    "updatedAt":  "2026-07-15 14:02:27 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
