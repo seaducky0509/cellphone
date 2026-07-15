@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://pine-newsletters-branches-yet.trycloudflare.com",
+    "backendUrl":  "https://generates-finite-index-singles.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-15 20:31:41 +08:00",
+    "updatedAt":  "2026-07-15 21:34:16 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
