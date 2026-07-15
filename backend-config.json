@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://lounge-collaborative-packages-textiles.trycloudflare.com",
+    "backendUrl":  "https://pine-newsletters-branches-yet.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-15 19:25:08 +08:00",
+    "updatedAt":  "2026-07-15 20:31:41 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
