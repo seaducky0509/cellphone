@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://hydrogen-holdem-receipt-floating.trycloudflare.com",
+    "backendUrl":  "https://shown-system-warren-around.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-15 07:52:11 +08:00",
+    "updatedAt":  "2026-07-15 08:53:17 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
