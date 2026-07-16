@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://draw-win-yang-consolidation.trycloudflare.com",
+    "backendUrl":  "https://pendant-nyc-platforms-early.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-16 23:22:35 +08:00",
+    "updatedAt":  "2026-07-16 23:27:54 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
