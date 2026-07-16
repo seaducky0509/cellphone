@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://companies-consolidation-ada-susan.trycloudflare.com",
+    "backendUrl":  "https://webpage-defines-chicago-wagner.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-17 00:33:41 +08:00",
+    "updatedAt":  "2026-07-17 01:34:56 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
