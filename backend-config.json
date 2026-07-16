@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://apartments-geography-letters-deny.trycloudflare.com",
+    "backendUrl":  "https://merit-grades-receivers-instruments.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-17 03:36:50 +08:00",
+    "updatedAt":  "2026-07-17 04:09:15 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
