@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://per-companies-rover-literacy.trycloudflare.com",
+    "backendUrl":  "https://companies-consolidation-ada-susan.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-16 23:31:03 +08:00",
+    "updatedAt":  "2026-07-17 00:33:41 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
