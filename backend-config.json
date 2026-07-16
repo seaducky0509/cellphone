@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://scales-emphasis-sie-whats.trycloudflare.com",
+    "backendUrl":  "https://democratic-auckland-zinc-training.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-16 14:11:43 +08:00",
+    "updatedAt":  "2026-07-16 15:12:24 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
