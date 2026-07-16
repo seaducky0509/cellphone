@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://democratic-auckland-zinc-training.trycloudflare.com",
+    "backendUrl":  "https://mono-cell-inf-conscious.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-16 15:12:24 +08:00",
+    "updatedAt":  "2026-07-16 16:13:32 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
