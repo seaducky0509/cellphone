@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://clinics-trees-boston-mac.trycloudflare.com",
+    "backendUrl":  "https://respond-demonstration-reveal-polls.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-16 09:00:28 +08:00",
+    "updatedAt":  "2026-07-16 10:02:55 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
