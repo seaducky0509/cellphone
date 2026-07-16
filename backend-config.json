@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://mono-cell-inf-conscious.trycloudflare.com",
+    "backendUrl":  "https://allocation-drinking-applicant-spectrum.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-16 16:13:32 +08:00",
+    "updatedAt":  "2026-07-16 17:15:09 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
