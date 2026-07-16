@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://daily-ready-bennett-franchise.trycloudflare.com",
+    "backendUrl":  "https://discipline-kits-distance-cached.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-16 21:19:38 +08:00",
+    "updatedAt":  "2026-07-16 22:20:47 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
