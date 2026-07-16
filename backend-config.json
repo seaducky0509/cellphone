@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://dem-dinner-smell-median.trycloudflare.com",
+    "backendUrl":  "https://scales-emphasis-sie-whats.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-16 13:10:33 +08:00",
+    "updatedAt":  "2026-07-16 14:11:43 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
