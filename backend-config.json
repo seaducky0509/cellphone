@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://pendant-nyc-platforms-early.trycloudflare.com",
+    "backendUrl":  "https://per-companies-rover-literacy.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-16 23:27:54 +08:00",
+    "updatedAt":  "2026-07-16 23:31:03 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
