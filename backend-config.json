@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://approximately-pushing-democrats-republican.trycloudflare.com",
+    "backendUrl":  "https://scuba-pros-notebook-stake.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-17 16:36:40 +08:00",
+    "updatedAt":  "2026-07-17 17:37:43 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
