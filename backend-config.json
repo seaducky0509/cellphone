@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://insights-radios-doctor-working.trycloudflare.com",
+    "backendUrl":  "https://carrier-fossil-unlikely-duties.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-17 09:32:20 +08:00",
+    "updatedAt":  "2026-07-17 10:32:27 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
