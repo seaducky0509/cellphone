@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://movie-standard-chief-pirates.trycloudflare.com",
+    "backendUrl":  "https://avatar-pete-gourmet-alleged.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-18 05:54:44 +08:00",
+    "updatedAt":  "2026-07-18 06:09:28 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
