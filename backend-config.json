@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://metal-dinner-moderators-hist.trycloudflare.com",
+    "backendUrl":  "https://sciences-fought-perspectives-imported.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-17 23:48:07 +08:00",
+    "updatedAt":  "2026-07-18 00:48:43 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
