@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://used-apnic-rejected-variety.trycloudflare.com",
+    "backendUrl":  "https://serum-omissions-wars-lancaster.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-18 02:51:13 +08:00",
+    "updatedAt":  "2026-07-18 03:52:00 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
