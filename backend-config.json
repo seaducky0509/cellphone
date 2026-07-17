@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://scuba-pros-notebook-stake.trycloudflare.com",
+    "backendUrl":  "https://tropical-missouri-template-achieved.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-17 17:37:43 +08:00",
+    "updatedAt":  "2026-07-17 18:37:49 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
