@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://constitute-eligible-micro-bread.trycloudflare.com",
+    "backendUrl":  "https://insights-radios-doctor-working.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-17 08:30:51 +08:00",
+    "updatedAt":  "2026-07-17 09:32:20 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
