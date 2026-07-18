@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://wonderful-fraser-elevation-packaging.trycloudflare.com",
+    "backendUrl":  "https://rack-care-usgs-productive.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-18 12:24:26 +08:00",
+    "updatedAt":  "2026-07-18 13:26:07 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
