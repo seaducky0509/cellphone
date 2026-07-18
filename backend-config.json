@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://promised-debate-mere-relations.trycloudflare.com",
+    "backendUrl":  "https://plots-architectural-fifth-soul.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-18 08:20:24 +08:00",
+    "updatedAt":  "2026-07-18 09:21:46 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
