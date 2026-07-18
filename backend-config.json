@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://branches-gdp-session-reservation.trycloudflare.com",
+    "backendUrl":  "https://exterior-slowly-mas-fonts.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-18 19:33:19 +08:00",
+    "updatedAt":  "2026-07-18 20:33:52 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
