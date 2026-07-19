@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://altered-stocks-supervision-variables.trycloudflare.com",
+    "backendUrl":  "https://slideshow-nikon-forwarding-cattle.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-19 11:19:07 +08:00",
+    "updatedAt":  "2026-07-19 12:20:26 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
