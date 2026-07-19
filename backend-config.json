@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://slideshow-nikon-forwarding-cattle.trycloudflare.com",
+    "backendUrl":  "https://hand-iii-hon-specifies.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-19 12:20:26 +08:00",
+    "updatedAt":  "2026-07-19 13:21:10 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
