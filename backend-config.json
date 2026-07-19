@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://boat-sufficient-reduced-sen.trycloudflare.com",
+    "backendUrl":  "https://prisoners-herein-mysql-grip.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-20 02:38:52 +08:00",
+    "updatedAt":  "2026-07-20 03:40:00 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
