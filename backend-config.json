@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://hand-iii-hon-specifies.trycloudflare.com",
+    "backendUrl":  "https://lewis-belongs-reduced-patch.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-19 13:21:10 +08:00",
+    "updatedAt":  "2026-07-19 14:22:11 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
