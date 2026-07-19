@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://prisoners-herein-mysql-grip.trycloudflare.com",
+    "backendUrl":  "https://mba-independently-iso-mounted.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-20 03:40:00 +08:00",
+    "updatedAt":  "2026-07-20 04:40:43 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
