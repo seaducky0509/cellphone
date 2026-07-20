@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://police-received-analysis-copying.trycloudflare.com",
+    "backendUrl":  "https://clock-advertisements-enjoy-projector.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-21 01:45:21 +08:00",
+    "updatedAt":  "2026-07-21 02:18:37 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
