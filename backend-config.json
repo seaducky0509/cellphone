@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://heroes-securities-midi-campaigns.trycloudflare.com",
+    "backendUrl":  "https://twins-millennium-aircraft-carol.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-20 20:31:59 +08:00",
+    "updatedAt":  "2026-07-20 21:33:39 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
