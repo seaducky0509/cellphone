@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://homes-graduated-reading-queries.trycloudflare.com",
+    "backendUrl":  "https://kingdom-sunshine-acres-ways.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-21 05:24:12 +08:00",
+    "updatedAt":  "2026-07-21 06:24:46 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
