@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://merchants-many-gulf-growth.trycloudflare.com",
+    "backendUrl":  "https://transit-coordinator-expenses-documents.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-20 09:07:22 +08:00",
+    "updatedAt":  "2026-07-20 10:07:45 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
