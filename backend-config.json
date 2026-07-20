@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://forbes-expectations-reality-blank.trycloudflare.com",
+    "backendUrl":  "https://venice-tampa-bird-entity.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-21 03:19:32 +08:00",
+    "updatedAt":  "2026-07-21 04:22:07 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
