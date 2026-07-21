@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://census-undertaken-gate-freely.trycloudflare.com",
+    "backendUrl":  "https://doubt-undertake-east-violin.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-21 09:28:40 +08:00",
+    "updatedAt":  "2026-07-21 10:29:18 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
