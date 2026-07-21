@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://plenty-housing-intensity-basic.trycloudflare.com",
+    "backendUrl":  "https://traveller-moore-silk-tribute.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-21 15:35:37 +08:00",
+    "updatedAt":  "2026-07-21 16:37:52 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
