@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://creative-criterion-univ-native.trycloudflare.com",
+    "backendUrl":  "https://ent-analyst-kenneth-invited.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-22 06:59:31 +08:00",
+    "updatedAt":  "2026-07-22 07:04:10 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
