@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://nextel-buy-southampton-acres.trycloudflare.com",
+    "backendUrl":  "https://grams-flashing-rap-operations.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-21 17:38:35 +08:00",
+    "updatedAt":  "2026-07-21 18:39:43 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
