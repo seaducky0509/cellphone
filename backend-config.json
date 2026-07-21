@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://doubt-undertake-east-violin.trycloudflare.com",
+    "backendUrl":  "https://cement-throw-intent-heath.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-21 10:29:18 +08:00",
+    "updatedAt":  "2026-07-21 11:30:26 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
