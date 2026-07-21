@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://disabled-johnny-holly-meters.trycloudflare.com",
+    "backendUrl":  "https://creative-criterion-univ-native.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-22 05:58:26 +08:00",
+    "updatedAt":  "2026-07-22 06:59:31 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
