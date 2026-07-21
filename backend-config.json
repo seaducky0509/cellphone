@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://grams-flashing-rap-operations.trycloudflare.com",
+    "backendUrl":  "https://trans-blast-abstract-anti.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-21 18:39:43 +08:00",
+    "updatedAt":  "2026-07-21 18:43:29 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
