@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://adoption-loud-opinion-spirits.trycloudflare.com",
+    "backendUrl":  "https://indicators-graduates-unwrap-distinction.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-22 21:46:46 +08:00",
+    "updatedAt":  "2026-07-22 22:47:46 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
