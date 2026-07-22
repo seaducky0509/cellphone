@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://balloon-baseline-buffalo-beds.trycloudflare.com",
+    "backendUrl":  "https://classics-spots-even-publishers.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-22 12:14:00 +08:00",
+    "updatedAt":  "2026-07-22 13:15:02 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
