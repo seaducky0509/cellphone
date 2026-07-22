@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://lock-frequently-temperatures-providence.trycloudflare.com",
+    "backendUrl":  "https://camp-member-production-guarantee.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-22 08:04:37 +08:00",
+    "updatedAt":  "2026-07-22 09:05:37 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
