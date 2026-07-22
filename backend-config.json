@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://campbell-setup-answered-armor.trycloudflare.com",
+    "backendUrl":  "https://features-avoid-magnetic-statutory.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-22 10:10:18 +08:00",
+    "updatedAt":  "2026-07-22 11:12:23 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
