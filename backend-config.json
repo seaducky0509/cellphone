@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://asia-pro-changelog-treatment.trycloudflare.com",
+    "backendUrl":  "https://supply-schema-hockey-hong.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-22 18:41:55 +08:00",
+    "updatedAt":  "2026-07-22 19:43:32 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
