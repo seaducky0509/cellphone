@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://supply-schema-hockey-hong.trycloudflare.com",
+    "backendUrl":  "https://news-preferences-underwear-requirements.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-22 19:43:32 +08:00",
+    "updatedAt":  "2026-07-22 20:45:09 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
