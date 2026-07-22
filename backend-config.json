@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://socks-expo-assignment-sheet.trycloudflare.com",
+    "backendUrl":  "https://brain-bunch-cement-cholesterol.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-23 05:56:35 +08:00",
+    "updatedAt":  "2026-07-23 06:57:40 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
