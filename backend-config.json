@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://und-installed-attacked-munich.trycloudflare.com",
+    "backendUrl":  "https://bones-legendary-rotation-morrison.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-22 16:38:36 +08:00",
+    "updatedAt":  "2026-07-22 17:41:09 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
