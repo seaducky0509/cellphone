@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://therapist-alloy-descending-permissions.trycloudflare.com",
+    "backendUrl":  "https://rational-horn-meet-carol.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-22 14:16:16 +08:00",
+    "updatedAt":  "2026-07-22 14:20:58 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
