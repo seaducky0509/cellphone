@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://rational-horn-meet-carol.trycloudflare.com",
+    "backendUrl":  "https://must-und-instance-clara.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-22 14:20:58 +08:00",
+    "updatedAt":  "2026-07-22 14:24:06 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
