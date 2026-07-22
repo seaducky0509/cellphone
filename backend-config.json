@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://camp-member-production-guarantee.trycloudflare.com",
+    "backendUrl":  "https://road-christ-usb-tigers.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-22 09:05:37 +08:00",
+    "updatedAt":  "2026-07-22 09:09:16 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
