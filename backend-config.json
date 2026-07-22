@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://ent-analyst-kenneth-invited.trycloudflare.com",
+    "backendUrl":  "https://lock-frequently-temperatures-providence.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-22 07:04:10 +08:00",
+    "updatedAt":  "2026-07-22 08:04:37 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
