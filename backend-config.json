@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://floors-examination-contribution-among.trycloudflare.com",
+    "backendUrl":  "https://meters-problems-goals-matches.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-23 08:59:59 +08:00",
+    "updatedAt":  "2026-07-23 10:02:07 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
