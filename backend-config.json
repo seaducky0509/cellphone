@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://table-sao-electro-tone.trycloudflare.com",
+    "backendUrl":  "https://extend-classical-dock-loud.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-27 19:22:32 +08:00",
+    "updatedAt":  "2026-07-27 19:26:16 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
