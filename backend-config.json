@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://pants-laws-involvement-resource.trycloudflare.com",
+    "backendUrl":  "https://member-cyber-string-calculated.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-27 11:56:52 +08:00",
+    "updatedAt":  "2026-07-27 12:58:42 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
