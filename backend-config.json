@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://medication-reminder-packs-robin.trycloudflare.com",
+    "backendUrl":  "https://gently-sound-search-discuss.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-28 03:31:11 +08:00",
+    "updatedAt":  "2026-07-28 04:31:58 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
