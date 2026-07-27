@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://meters-problems-goals-matches.trycloudflare.com",
+    "backendUrl":  "https://pants-laws-involvement-resource.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-23 10:02:07 +08:00",
+    "updatedAt":  "2026-07-27 11:56:52 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
