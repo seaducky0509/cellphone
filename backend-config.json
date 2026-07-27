@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://reliance-hub-relay-medical.trycloudflare.com",
+    "backendUrl":  "https://table-sao-electro-tone.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-27 18:21:24 +08:00",
+    "updatedAt":  "2026-07-27 19:22:32 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
