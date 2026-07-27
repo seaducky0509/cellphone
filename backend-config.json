@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://generate-blocks-perry-staff.trycloudflare.com",
+    "backendUrl":  "https://signatures-believes-link-removing.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-27 15:06:33 +08:00",
+    "updatedAt":  "2026-07-27 16:07:04 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
