@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://holds-senior-default-calm.trycloudflare.com",
+    "backendUrl":  "https://cigarette-says-appeared-variations.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-27 22:31:02 +08:00",
+    "updatedAt":  "2026-07-27 23:32:09 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
