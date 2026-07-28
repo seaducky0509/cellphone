@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://authentic-greeting-tan-jones.trycloudflare.com",
+    "backendUrl":  "https://stars-graduated-physics-degree.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-29 00:03:32 +08:00",
+    "updatedAt":  "2026-07-29 01:04:04 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
