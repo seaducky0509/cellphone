@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://weeks-ana-aquatic-external.trycloudflare.com",
+    "backendUrl":  "https://stopping-cleared-lawrence-copied.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-28 14:43:30 +08:00",
+    "updatedAt":  "2026-07-28 15:44:43 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
