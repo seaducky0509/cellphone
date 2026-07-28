@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://paths-bishop-stuffed-strange.trycloudflare.com",
+    "backendUrl":  "https://attached-messaging-confident-narrow.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-29 04:12:34 +08:00",
+    "updatedAt":  "2026-07-29 05:13:45 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
