@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://sas-revelation-condition-default.trycloudflare.com",
+    "backendUrl":  "https://lower-pike-rates-admissions.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-28 20:50:36 +08:00",
+    "updatedAt":  "2026-07-28 20:55:18 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
