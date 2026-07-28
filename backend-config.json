@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://pixels-restricted-alloy-connected.trycloudflare.com",
+    "backendUrl":  "https://watch-endorsed-southern-cycle.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-28 10:37:45 +08:00",
+    "updatedAt":  "2026-07-28 11:39:26 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
