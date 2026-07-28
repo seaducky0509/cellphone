@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://barriers-reggae-test-deadline.trycloudflare.com",
+    "backendUrl":  "https://appliances-villas-creativity-which.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-29 07:15:51 +08:00",
+    "updatedAt":  "2026-07-29 07:19:34 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
