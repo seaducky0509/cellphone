@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://oasis-aimed-accounts-flu.trycloudflare.com",
+    "backendUrl":  "https://sunset-jonathan-decrease-proud.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-29 19:48:06 +08:00",
+    "updatedAt":  "2026-07-29 20:49:19 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
