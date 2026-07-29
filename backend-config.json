@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://tractor-jewel-side-ver.trycloudflare.com",
+    "backendUrl":  "https://oasis-aimed-accounts-flu.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-29 18:46:59 +08:00",
+    "updatedAt":  "2026-07-29 19:48:06 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
