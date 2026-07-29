@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://administrators-happening-timothy-stories.trycloudflare.com",
+    "backendUrl":  "https://mold-tucson-compact-domain.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-29 16:35:26 +08:00",
+    "updatedAt":  "2026-07-29 17:37:07 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
