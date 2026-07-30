@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://management-msie-greetings-contemporary.trycloudflare.com",
+    "backendUrl":  "https://object-subscribers-eternal-boundaries.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-30 16:25:23 +08:00",
+    "updatedAt":  "2026-07-30 17:27:06 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
