@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://charging-bench-matches-read.trycloudflare.com",
+    "backendUrl":  "https://gardening-vessel-wan-estates.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-30 09:10:10 +08:00",
+    "updatedAt":  "2026-07-30 10:11:16 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
