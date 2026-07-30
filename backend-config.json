@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://scanned-persistent-must-cms.trycloudflare.com",
+    "backendUrl":  "https://flyer-york-shirts-stop.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-31 01:48:20 +08:00",
+    "updatedAt":  "2026-07-31 02:49:18 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
