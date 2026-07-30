@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://gardening-vessel-wan-estates.trycloudflare.com",
+    "backendUrl":  "https://aruba-webpage-dylan-offices.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-30 10:11:16 +08:00",
+    "updatedAt":  "2026-07-30 11:12:53 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
