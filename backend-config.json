@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://bonus-senior-savings-lauren.trycloudflare.com",
+    "backendUrl":  "https://saves-flower-reed-goto.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-30 22:40:23 +08:00",
+    "updatedAt":  "2026-07-30 23:41:32 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
