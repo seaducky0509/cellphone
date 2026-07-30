@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://class-art-inquiries-amendment.trycloudflare.com",
+    "backendUrl":  "https://alpine-councils-solving-matters.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-31 04:51:34 +08:00",
+    "updatedAt":  "2026-07-31 04:54:49 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
