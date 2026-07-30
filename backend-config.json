@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://intervention-deposit-jennifer-europe.trycloudflare.com",
+    "backendUrl":  "https://ruby-hotel-aluminum-slides.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-30 07:08:36 +08:00",
+    "updatedAt":  "2026-07-30 08:09:51 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
