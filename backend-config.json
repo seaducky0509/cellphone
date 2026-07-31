@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://pets-towards-format-outlined.trycloudflare.com",
+    "backendUrl":  "https://rebecca-ventures-tin-pockets.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-31 10:05:41 +08:00",
+    "updatedAt":  "2026-07-31 10:10:13 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
