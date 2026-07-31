@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://postcards-responsibility-lexington-hunt.trycloudflare.com",
+    "backendUrl":  "https://learning-cycles-solely-switched.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-31 12:12:07 +08:00",
+    "updatedAt":  "2026-07-31 13:13:42 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
