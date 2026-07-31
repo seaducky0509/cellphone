@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://rebecca-ventures-tin-pockets.trycloudflare.com",
+    "backendUrl":  "https://levy-futures-imposed-snow.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-31 10:10:13 +08:00",
+    "updatedAt":  "2026-07-31 11:11:02 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
