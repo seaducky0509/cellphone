@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://author-excluding-aging-rankings.trycloudflare.com",
+    "backendUrl":  "https://liz-expo-legs-behalf.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-08-01 04:50:04 +08:00",
+    "updatedAt":  "2026-08-01 05:51:19 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
