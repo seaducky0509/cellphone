@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://learning-cycles-solely-switched.trycloudflare.com",
+    "backendUrl":  "https://dsc-organized-recipe-plate.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-31 13:13:42 +08:00",
+    "updatedAt":  "2026-07-31 14:09:17 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
