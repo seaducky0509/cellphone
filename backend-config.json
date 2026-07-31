@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://studio-resource-dice-analyzed.trycloudflare.com",
+    "backendUrl":  "https://capabilities-streaming-patches-methodology.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-07-31 22:38:29 +08:00",
+    "updatedAt":  "2026-07-31 23:39:42 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
