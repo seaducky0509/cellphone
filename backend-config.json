@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://gardens-articles-warren-colleges.trycloudflare.com",
+    "backendUrl":  "https://freight-nomination-cited-cad.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-08-01 00:40:56 +08:00",
+    "updatedAt":  "2026-08-01 00:45:33 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
