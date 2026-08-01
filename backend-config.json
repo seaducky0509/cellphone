@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://cool-summaries-tariff-daisy.trycloudflare.com",
+    "backendUrl":  "https://findlaw-same-feb-troy.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-08-01 09:55:16 +08:00",
+    "updatedAt":  "2026-08-01 10:56:30 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
