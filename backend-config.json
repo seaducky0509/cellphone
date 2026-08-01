@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://reception-rfc-pin-wisdom.trycloudflare.com",
+    "backendUrl":  "https://los-sublime-particle-fate.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-08-01 18:06:58 +08:00",
+    "updatedAt":  "2026-08-01 19:08:02 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
