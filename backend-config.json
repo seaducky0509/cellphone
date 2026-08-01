@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://ball-chart-attacked-applicant.trycloudflare.com",
+    "backendUrl":  "https://blocked-yes-peers-appropriate.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-08-01 13:00:48 +08:00",
+    "updatedAt":  "2026-08-01 14:01:35 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
