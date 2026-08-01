@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://greg-charlie-walls-pilot.trycloudflare.com",
+    "backendUrl":  "https://resort-seeks-scores-phillips.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-08-01 20:09:42 +08:00",
+    "updatedAt":  "2026-08-01 21:14:30 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
