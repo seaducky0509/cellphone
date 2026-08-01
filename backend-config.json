@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://hardware-moscow-allergy-literary.trycloudflare.com",
+    "backendUrl":  "https://inspections-operates-loading-pac.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-08-02 02:20:08 +08:00",
+    "updatedAt":  "2026-08-02 03:21:24 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
