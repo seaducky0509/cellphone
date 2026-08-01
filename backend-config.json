@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://gilbert-atlanta-valves-extension.trycloudflare.com",
+    "backendUrl":  "https://mostly-bend-begins-aberdeen.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-08-02 00:18:13 +08:00",
+    "updatedAt":  "2026-08-02 01:19:25 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
