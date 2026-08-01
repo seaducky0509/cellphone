@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://spending-village-criteria-displayed.trycloudflare.com",
+    "backendUrl":  "https://gilbert-atlanta-valves-extension.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-08-01 23:16:27 +08:00",
+    "updatedAt":  "2026-08-02 00:18:13 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
