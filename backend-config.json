@@ -1,6 +1,6 @@
 ﻿{
-    "backendUrl":  "https://imports-tour-sleeve-organised.trycloudflare.com",
+    "backendUrl":  "https://reception-rfc-pin-wisdom.trycloudflare.com",
     "provider":  "cloudflared",
-    "updatedAt":  "2026-08-01 17:05:22 +08:00",
+    "updatedAt":  "2026-08-01 18:06:58 +08:00",
     "note":  "Auto-updated by scripts/start-mobile-tunnel.ps1"
 }
